@@ -1,0 +1,625 @@
+<?php
+/**
+ * KeyCRM Integration.
+ *
+ * @package  WC_Keycrm_Orders
+ * @category Integration
+ * @author   KeyCRM
+ */
+
+if ( ! class_exists( 'WC_Keycrm_Orders' ) ) :
+
+    /**
+     * Class WC_Keycrm_Orders
+     */
+    class WC_Keycrm_Orders
+    {
+        /** @var bool|WC_Keycrm_Proxy|\WC_Keycrm_Client_V5|\WC_Keycrm_Client_V4 */
+        protected $keycrm;
+
+        /** @var array */
+        protected $keycrm_settings;
+
+        /** @var WC_Keycrm_Order_Item */
+        protected $order_item;
+
+        /** @var WC_Keycrm_Order_Address */
+        protected $order_address;
+
+        /** @var WC_Keycrm_Order_Payment */
+        protected $order_payment;
+
+        /** @var WC_Keycrm_Customers */
+        protected $customers;
+
+        /** @var WC_Keycrm_Order */
+        protected $orders;
+
+        /** @var array */
+        private $ordersGetRequestCache = array();
+
+        /** @var array */
+        private $order = array();
+
+        /** @var array */
+        private $payment = array();
+
+        public function __construct(
+            $keycrm = false,
+            $keycrm_settings,
+            $order_item,
+            $order_address,
+            $customers,
+            $orders,
+            $order_payment
+        ) {
+            $this->keycrm = $keycrm;
+            $this->keycrm_settings = $keycrm_settings;
+            $this->order_item = $order_item;
+            $this->order_address = $order_address;
+            $this->customers = $customers;
+            $this->orders = $orders;
+            $this->order_payment = $order_payment;
+        }
+
+        /**
+         * Upload orders to CRM
+         *
+         * @param array $include
+         *
+         * @return array $uploadOrders | null
+         * @throws \Exception
+         */
+        public function ordersUpload($include = array())
+        {
+            if (!$this->keycrm) {
+                return null;
+            }
+
+            $uploader = new WC_Keycrm_Customers(
+                $this->keycrm,
+                $this->keycrm_settings,
+                new WC_Keycrm_Customer_Address()
+            );
+
+            $orders = get_posts(array(
+                'numberposts' => -1,
+                'post_type' => wc_get_order_types('view-orders'),
+                'post_status' => array_keys(wc_get_order_statuses()),
+                'include' => $include
+            ));
+
+            $regularUploadErrors = array();
+            $corporateUploadErrors = array();
+
+            foreach ($orders as $data_order) {
+                $order = wc_get_order($data_order->ID);
+
+                $errorMessage = $this->orderCreate($data_order->ID);
+
+                if (is_string($errorMessage)) {
+                    if ($this->keycrm->getCorporateEnabled() && self::isCorporateOrder($order)) {
+                        $corporateUploadErrors[$data_order->ID] = $errorMessage;
+                    } else {
+                        $regularUploadErrors[$data_order->ID] = $errorMessage;
+                    }
+                }
+            }
+
+            static::logOrdersUploadErrors($regularUploadErrors, 'Error while uploading these regular orders');
+            static::logOrdersUploadErrors($corporateUploadErrors, 'Error while uploading these corporate orders');
+
+            return array();
+        }
+
+        /**
+         * Create order. Returns wc_get_order data or error string.
+         *
+         * @param      $order_id
+         *
+         * @return bool|WC_Order|WC_Order_Refund|string
+         * @throws \Exception
+         */
+        public function orderCreate($order_id)
+        {
+            if (!$this->keycrm) {
+                return null;
+            }
+
+            $this->order_payment->reset_data();
+
+            $wcOrder = wc_get_order($order_id);
+            $this->processOrder($wcOrder);
+
+            try {
+                $response = $this->keycrm->ordersCreate($this->order);
+
+                if ($response instanceof WC_Keycrm_Response) {
+                    if ($response->isSuccessful()) {
+                        return $wcOrder;
+                    }
+
+                    return $response->getErrorString();
+                }
+            } catch (InvalidArgumentException $exception) {
+                return $exception->getMessage();
+            }
+
+            return $wcOrder;
+        }
+
+        /**
+         * Process order customer data
+         *
+         * @param \WC_Order $wcOrder
+         * @param bool      $update
+         *
+         * @return bool Returns false if order cannot be processed
+         * @throws \Exception
+         */
+        protected function processOrderCustomerInfo($wcOrder, $update = false)
+        {
+            $customerWasChanged = false;
+            $wpUser = $wcOrder->get_user();
+
+            if ($update) {
+                $response = $this->getCrmOrder($wcOrder->get_id());
+
+                if (!empty($response)) {
+                    $customerWasChanged = self::isOrderCustomerWasChanged($wcOrder, $response);
+                }
+            }
+
+            if ($wpUser instanceof WP_User) {
+                if (!$this->customers->isCustomer($wpUser)) {
+                    return false;
+                }
+
+                $wpUserId = (int) $wpUser->get('ID');
+
+                if (!$update || ($update && $customerWasChanged)) {
+                    $this->fillOrderCreate($wpUserId, $wpUser->get('billing_email'), $wcOrder);
+                }
+            } else {
+                $wcCustomer = $this->customers->buildCustomerFromOrderData($wcOrder);
+
+                if (!$update || ($update && $customerWasChanged)) {
+                    $this->fillOrderCreate(0, $wcCustomer->get_billing_email(), $wcOrder);
+                }
+            }
+
+            if ($update && $customerWasChanged) {
+                $firstName = $wcOrder->get_shipping_first_name();
+                $lastName = $wcOrder->get_shipping_last_name();
+
+                if(empty($firstName) && empty($lastName))
+                {
+                    $firstName = $wcOrder->get_billing_first_name();
+                    $lastName = $wcOrder->get_billing_last_name();
+                }
+
+                $this->order['firstName'] = $firstName;
+                $this->order['lastName'] = $lastName;
+            }
+
+            return true;
+        }
+
+        /**
+         * Fill order on create
+         *
+         * @param int       $wcCustomerId
+         * @param string    $wcCustomerEmail
+         * @param \WC_Order $wcOrder
+         *
+         * @throws \Exception
+         */
+        protected function fillOrderCreate($wcCustomerId, $wcCustomerEmail, $wcOrder)
+        {
+            $foundCustomerId = '';
+            $foundCustomer = $this->customers->findCustomerEmailOrId($wcCustomerId, $wcCustomerEmail);
+
+            if (empty($foundCustomer)) {
+                $foundCustomerId = $this->customers->createCustomer($wcCustomerId, $wcOrder);
+
+                if (!empty($foundCustomerId)) {
+                    $this->order['customer']['id'] = $foundCustomerId;
+                }
+            } else {
+                $this->order['customer']['id'] = $foundCustomer['id'];
+                $foundCustomerId = $foundCustomer['id'];
+            }
+
+            $this->order['contragent']['contragentType'] = 'individual';
+
+            if ($this->keycrm->getCorporateEnabled() && static::isCorporateOrder($wcOrder)) {
+                unset($this->order['contragent']['contragentType']);
+
+                $crmCorporate = $this->customers->searchCorporateCustomer(array(
+                    'contactIds' => array($foundCustomerId),
+                    'companyName' => $wcOrder->get_billing_company()
+                ));
+
+                if (empty($crmCorporate)) {
+                    $crmCorporate = $this->customers->searchCorporateCustomer(array(
+                        'companyName' => $wcOrder->get_billing_company()
+                    ));
+                }
+
+                if (empty($crmCorporate)) {
+                    $corporateId = $this->customers->createCorporateCustomerForOrder(
+                        $foundCustomerId,
+                        $wcCustomerId,
+                        $wcOrder
+                    );
+                    $this->order['customer']['id'] = $corporateId;
+                } else {
+                    $this->customers->fillCorporateAddress(
+                        $crmCorporate['id'],
+                        new WC_Customer($wcCustomerId),
+                        $wcOrder
+                    );
+                    $this->order['customer']['id'] = $crmCorporate['id'];
+                }
+
+                $companiesResponse = $this->keycrm->customersCorporateCompanies(
+                    $this->order['customer']['id'],
+                    array(),
+                    null,
+                    null,
+                    'id'
+                );
+
+                if (!empty($companiesResponse) && $companiesResponse->isSuccessful()) {
+                    foreach ($companiesResponse['companies'] as $company) {
+                        if ($company['name'] == $wcOrder->get_billing_company()) {
+                            $this->order['company'] = array(
+                                'id' => $company['id'],
+                                'name' => $company['name']
+                            );
+                            break;
+                        }
+                    }
+                }
+
+                $this->order['contact']['id'] = $foundCustomerId;
+            }
+        }
+
+        /**
+         * Edit order in CRM
+         *
+         * @param int $order_id
+         *
+         * @return WC_Order $order | null
+         * @throws \Exception
+         */
+        public function updateOrder($order_id)
+        {
+            if (!$this->keycrm) {
+                return null;
+            }
+
+            $wcOrder = wc_get_order($order_id);
+            $this->processOrder($wcOrder, true);
+
+            $response = $this->keycrm->ordersEdit($this->order);
+
+            if (!empty($response) && $response->isSuccessful()) {
+                $this->payment = $this->orderUpdatePaymentType($wcOrder);
+            }
+
+            return $wcOrder;
+        }
+
+        /**
+         * Update order payment type
+         *
+         * @param WC_Order $order
+         *
+         * @return null | array $payment
+         */
+        protected function orderUpdatePaymentType($order)
+        {
+            if (!isset($this->keycrm_settings[$order->get_payment_method()])) {
+                return null;
+            }
+
+            $keycrmOrder = $this->getCrmOrder($order->get_id());
+
+            if (!empty($keycrmOrder)) {
+                foreach ($keycrmOrder['payments'] as $payment_data) {
+                    $payment_external_id = explode('-', $payment_data['externalId']);
+
+                    if ($payment_external_id[0] == $order->get_id()) {
+                        $payment = $payment_data;
+                    }
+                }
+            }
+
+            if (isset($payment) && $payment['type'] == $this->keycrm_settings[$order->get_payment_method()] && $order->is_paid()) {
+                $payment = $this->sendPayment($order, true, $payment['externalId']);
+
+                return $payment;
+            }
+
+            if (isset($payment) && $payment['type'] != $this->keycrm_settings[$order->get_payment_method()]) {
+                $response = $this->keycrm->ordersPaymentDelete($payment['id']);
+
+                if (!empty($response) && $response->isSuccessful()) {
+                    $payment = $this->sendPayment($order);
+
+                    return $payment;
+                }
+            }
+
+            return null;
+        }
+
+        /**
+         * process to combine order data
+         *
+         * @param WC_Order $order
+         * @param boolean  $update
+         *
+         * @return void
+         * @throws \Exception
+         */
+        protected function processOrder($order, $update = false)
+        {
+            if (!$order instanceof WC_Order) {
+                return;
+            }
+
+            if ($order->get_status() == 'auto-draft') {
+                return;
+            }
+
+            if ($update === true) {
+                $this->orders->is_new = false;
+            }
+
+            $order_data = $this->orders->build($order)->get_data();
+
+            if ($order->get_items('shipping')) {
+                $shippings = $order->get_items('shipping');
+                $shipping = reset($shippings);
+                $shipping_code = explode(':', $shipping['method_id']);
+
+                if (isset($this->keycrm_settings[$shipping['method_id']])) {
+                    $shipping_method = $shipping['method_id'];
+                } elseif (isset($this->keycrm_settings[$shipping_code[0]])) {
+                    $shipping_method = $shipping_code[0];
+                } else {
+                    $shipping_method = $shipping['method_id'] . ':' . $shipping['instance_id'];
+                }
+
+                $shipping_cost = $shipping['total'] + $shipping['total_tax'];
+
+                if (!empty($shipping_method) && !empty($this->keycrm_settings[$shipping_method])) {
+                    $order_data['delivery']['code'] = $this->keycrm_settings[$shipping_method];
+                    $service = keycrm_get_delivery_service($shipping['method_id'], $shipping['instance_id']);
+
+                    if ($service) {
+                        $order_data['delivery']['service'] = array(
+                            'name' => $service['title'],
+                            'code' => $service['instance_id'],
+                            'active' => true
+                        );
+                    }
+                }
+
+                if (!empty($shipping_cost)) {
+                    $order_data['delivery']['cost'] = $shipping_cost;
+                }
+
+                $activeNetCost = null;
+
+                if (isset($this->keycrm_settings['send_delivery_net_cost'])){
+                    $activeNetCost = $this->keycrm_settings['send_delivery_net_cost'];
+                }
+
+                if ($shipping['total'] && $activeNetCost != 'yes') {
+                    $order_data['delivery']['netCost'] = $shipping['total'];
+                }
+            }
+
+            $order_items = array();
+            $order_data['delivery']['address'] = $this->order_address
+                ->setFallbackToBilling(true)
+                ->setWCAddressType(WC_Keycrm_Abstracts_Address::ADDRESS_TYPE_SHIPPING)
+                ->build($order)
+                ->get_data();
+
+            /** @var WC_Order_Item_Product $item */
+            foreach ($order->get_items() as $item) {
+                $order_items[] = $this->order_item->build($item)->get_data();
+                $this->order_item->reset_data();
+            }
+
+            $order_data['items'] = $order_items;
+
+            $order_data['discountManualAmount'] = 0;
+            $order_data['discountManualPercent'] = 0;
+
+            if (!$update && $order->get_total() > 0) {
+                $this->order_payment->is_new = true;
+                $order_data['payments'][] = $this->order_payment->build($order)->get_data();
+            }
+
+            $this->order = WC_Keycrm_Plugin::clearArray($order_data);
+            $this->processOrderCustomerInfo($order, $update);
+
+            $this->order = apply_filters(
+                'keycrm_process_order',
+                WC_Keycrm_Plugin::clearArray($this->order),
+                $order
+            );
+        }
+
+        /**
+         * Send payment in CRM
+         *
+         * @param WC_Order $order
+         * @param boolean $update
+         * @param mixed $externalId
+         *
+         * @return array $payment
+         */
+        protected function sendPayment($order, $update = false, $externalId = false)
+        {
+            $this->order_payment->is_new = !$update;
+            $payment = $this->order_payment->build($order, $externalId)->get_data();
+
+            if ($update === false) {
+                $this->keycrm->ordersPaymentCreate($payment);
+            } else {
+                $this->keycrm->ordersPaymentEdit($payment);
+            }
+
+            return $payment;
+        }
+
+        /**
+         * ordersGet wrapper with cache (in order to minimize request count).
+         *
+         * @param int|string $orderId
+         * @param bool       $cached
+         *
+         * @return array
+         */
+        protected function getCrmOrder($orderId, $cached = true)
+        {
+            if ($cached && isset($this->ordersGetRequestCache[$orderId])) {
+                return (array) $this->ordersGetRequestCache[$orderId];
+            }
+
+            $crmOrder = array();
+            $response = $this->keycrm->ordersGet($orderId);
+
+            if (!empty($response) && $response->isSuccessful() && isset($response['order'])) {
+                $crmOrder = (array) $response['order'];
+                $this->ordersGetRequestCache[$orderId] = $crmOrder;
+            }
+
+            return $crmOrder;
+        }
+
+        /**
+         * @return array
+         */
+        public function getOrder()
+        {
+            return $this->order;
+        }
+
+        /**
+         * @return array
+         */
+        public function getPayment()
+        {
+            return $this->payment;
+        }
+
+        /**
+         * Returns true if provided order is for corporate customer
+         *
+         * @param WC_Order $order
+         *
+         * @return bool
+         */
+        public static function isCorporateOrder($order)
+        {
+            $billingCompany = $order->get_billing_company();
+
+            return !empty($billingCompany);
+        }
+
+        /**
+         * Returns true if passed crm order is corporate
+         *
+         * @param array|\ArrayAccess $order
+         *
+         * @return bool
+         */
+        public static function isCorporateCrmOrder($order)
+        {
+            return (is_array($order) || $order instanceof ArrayAccess)
+                && isset($order['customer'])
+                && isset($order['customer']['type'])
+                && $order['customer']['type'] == 'customer_corporate';
+        }
+
+        /**
+         * Returns true if customer in order was changed. `true` will be returned if one of these four conditions is met:
+         *
+         *  1. If CMS order is corporate and keyCRM order is not corporate or vice versa, then customer obviously
+         *     needs to be updated in keyCRM.
+         *  2. If billing company from CMS order is not the same as the one in the keyCRM order,
+         *     then company needs to be updated.
+         *  3. If contact person or individual externalId is different from customer ID in the CMS order, then
+         *     contact person or customer in keyCRM should be updated (even if customer id in the order is not set).
+         *  4. If contact person or individual email is not the same as the CMS order billing email, then
+         *     contact person or customer in keyCRM should be updated.
+         *
+         * @param \WC_Order $wcOrder
+         * @param array|\ArrayAccess $crmOrder
+         *
+         * @return bool
+         */
+        public static function isOrderCustomerWasChanged($wcOrder, $crmOrder)
+        {
+            if (!isset($crmOrder['customer'])) {
+                return false;
+            }
+
+            $customerWasChanged = self::isCorporateOrder($wcOrder) != self::isCorporateCrmOrder($crmOrder);
+            $synchronizableUserData = self::isCorporateCrmOrder($crmOrder)
+                ? $crmOrder['contact'] : $crmOrder['customer'];
+
+            if (!$customerWasChanged) {
+                if (self::isCorporateCrmOrder($crmOrder)) {
+                    $currentCrmCompany = isset($crmOrder['company']) ? $crmOrder['company']['name'] : '';
+
+                    if (!empty($currentCrmCompany) && $currentCrmCompany != $wcOrder->get_billing_company()) {
+                        $customerWasChanged = true;
+                    }
+                }
+
+                if (isset($synchronizableUserData['externalId'])
+                    && $synchronizableUserData['externalId'] != $wcOrder->get_customer_id()
+                ) {
+                    $customerWasChanged = true;
+                } elseif (isset($synchronizableUserData['email'])
+                    && $synchronizableUserData['email'] != $wcOrder->get_billing_email()
+                ) {
+                    $customerWasChanged = true;
+                }
+            }
+
+            return $customerWasChanged;
+        }
+
+        /**
+         * Logs orders upload errors with prefix log message.
+         * Array keys must be orders ID's in WooCommerce, values must be strings (error messages).
+         *
+         * @param array  $errors
+         * @param string $prefix
+         */
+        public static function logOrdersUploadErrors($errors, $prefix = 'Errors while uploading these orders')
+        {
+            if (empty($errors)) {
+                return;
+            }
+
+            WC_Keycrm_Logger::add($prefix);
+
+            foreach ($errors as $orderId => $error) {
+                WC_Keycrm_Logger::add(sprintf("[%d] => %s", $orderId, $error));
+            }
+
+            WC_Keycrm_Logger::add('==================================');
+        }
+    }
+endif;

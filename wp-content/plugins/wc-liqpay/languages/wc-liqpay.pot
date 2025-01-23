@@ -1,0 +1,187 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Payment Gateway for LiqPay for Woocommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-20 21:02+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.5; wp-6.0.2\n"
+"X-Domain: wc-liqpay"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:172
+msgid "Button"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:116
+msgid "Description"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:118
+msgid "Description that appears on the checkout page"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:175
+msgid "Full path to the image of the button to go to LiqPay"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:167
+msgid "Full path to the logo, located on the order page"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:85
+msgid "Gateway disabled"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:108
+msgid "Heading"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://komanda.dev/"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:150
+msgid ""
+"Interface language (For uk + en install multi-language plugin. Separating "
+"languages ​​with :: .)"
+msgstr ""
+
+#. Author of the plugin
+msgid "komanda.dev"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:146
+msgid "Language"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:155
+msgid "Language detection function"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:71
+msgid "Last returned result is liqpay:"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:86
+msgid "Liqpay does not support your stores currencies ."
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:164
+msgid "Logotype"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:124
+#: includes/WC_Gateway_kmnd_Liqpay.php:126
+msgid "Message before payment"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:308
+msgid "Order has been paid (payment received)"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:180
+msgid "Order status"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:183
+msgid "Order status after successful payment"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:119
+msgid "Pay using the payment system LiqPay::Pay with LiqPay payment system"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:262
+msgid "Payment for order -"
+msgstr ""
+
+#. Name of the plugin
+msgid "Payment Gateway for LiqPay for Woocommerce"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:313
+msgid "Payment has not been received"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:18
+#: includes/WC_Gateway_kmnd_Liqpay.php:68
+msgid "Payment system LiqPay"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Plugin for paying for products through the LiqPay service. Works in "
+"conjunction with the Woocommerce plugin"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:139
+msgid "Private key"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:141
+msgid "Private key LiqPay. Required parameter"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:132
+msgid "Public key"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:134
+msgid "Public key LiqPay. Required parameter"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:196
+msgid "Redirect page URL"
+msgstr ""
+
+#: wc-liqpay.php:60
+msgid "Settings"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:188
+msgid "Test mode"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:309
+msgid "The client paid for his order"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:158
+msgid "The function of determining the language of your plugin"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:191
+msgid ""
+"This mode will help to test the payment without withdrawing funds from the "
+"cards"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:110
+msgid "Title that appears on the checkout page"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:103
+#: includes/WC_Gateway_kmnd_Liqpay.php:189
+msgid "Turn on"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:101
+msgid "Turn on/Switch off"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:204
+msgid "URL error Payment page"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:199
+#: includes/WC_Gateway_kmnd_Liqpay.php:207
+msgid "URL page to go to after gateway LiqPay"
+msgstr ""

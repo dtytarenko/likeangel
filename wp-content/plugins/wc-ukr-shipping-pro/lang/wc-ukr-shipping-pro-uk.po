@@ -1,0 +1,712 @@
+# Copyright (C) 2023 Qodax Software
+# This file is distributed under the same license as the WC Ukraine Shipping PRO plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Ukraine Shipping PRO 1.13.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wc-ukr-shipping-"
+"pro\n"
+"POT-Creation-Date: 2024-08-05T14:49:07+03:00\n"
+"PO-Revision-Date: 2024-11-08 12:09+0000\n"
+"Last-Translator: Котюк Олександр\n"
+"Language-Team: Українська\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Domain: wc-ukr-shipping\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"X-Loco-Version: 2.6.11; wp-6.6.2"
+
+#. Plugin Name of the plugin
+msgid "WC Ukraine Shipping PRO"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://kirillbdev.pro/wc-ukr-shipping-pro/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Integration of Nova Poshta delivery service for WooCommerce"
+msgstr "Інтеграція служби доставки Нова Пошта для WooCommerce"
+
+#. Author of the plugin
+msgid "Qodax Software"
+msgstr ""
+
+#: src/Component/ListTable/AutomationListTable.php:56 views/automation.php:27
+msgid "Name"
+msgstr "Назва"
+
+#: src/Component/ListTable/AutomationListTable.php:57
+msgid "Event"
+msgstr "Подія"
+
+#: src/Component/ListTable/AutomationListTable.php:58
+msgid "Event data"
+msgstr "Дані події"
+
+#: src/Component/ListTable/AutomationListTable.php:59 views/automation.php:33
+msgid "Active"
+msgstr "Активний"
+
+#: src/Component/ListTable/AutomationListTable.php:60
+msgid "Created At"
+msgstr "Дата створення"
+
+#: src/Component/ListTable/AutomationListTable.php:92
+#: src/Modules/Backend/EditOrder.php:106
+#: src/Modules/Backend/OptionsPage.php:120
+#: src/Modules/Backend/OptionsPage.php:121
+msgid "Edit"
+msgstr "Редагувати"
+
+#: src/Component/ListTable/AutomationListTable.php:97
+msgid "Confirm action"
+msgstr "Підтвердіть дію"
+
+#: src/Component/ListTable/AutomationListTable.php:98
+#: src/Modules/Backend/AssetLoader.php:224 src/Modules/Backend/Orders.php:174
+#: views/order/edit_order_metabox.php:19
+msgid "Delete"
+msgstr "Видалити"
+
+#: src/Http/Controllers/OptionsController.php:72
+msgid "This feature works only with new UI"
+msgstr "Ця функція працює тільки з новим UI"
+
+#: src/Modules/Backend/AssetLoader.php:190
+msgid "Warehouses data of Nova Poshta"
+msgstr "Дані відділень Нової Пошти"
+
+#: src/Modules/Backend/AssetLoader.php:191
+msgid "Last update date"
+msgstr "Дата останнього оновлення"
+
+#: src/Modules/Backend/AssetLoader.php:192
+msgid "Status"
+msgstr "Статус"
+
+#: src/Modules/Backend/AssetLoader.php:193
+msgid "Continue update"
+msgstr "Продовжити оновлення"
+
+#: src/Modules/Backend/AssetLoader.php:194
+msgid "Update warehouses"
+msgstr "Оновити відділення"
+
+#: src/Modules/Backend/AssetLoader.php:195
+msgid "Not completed"
+msgstr "Не завершено"
+
+#: src/Modules/Backend/AssetLoader.php:196
+msgid "Completed"
+msgstr "Завершено"
+
+#: src/Modules/Backend/AssetLoader.php:197
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: src/Modules/Backend/AssetLoader.php:198
+msgid "Load areas"
+msgstr "Завантаження областей"
+
+#: src/Modules/Backend/AssetLoader.php:199
+msgid "Load cities"
+msgstr "Завантаження міст"
+
+#: src/Modules/Backend/AssetLoader.php:200
+msgid "Load warehouses"
+msgstr "Завантаження відділень"
+
+#: src/Modules/Backend/AssetLoader.php:201
+msgid "Warehouses db updated successfully"
+msgstr "Дані відділень успішно оновлені"
+
+#: src/Modules/Backend/AssetLoader.php:202
+#: src/Modules/Frontend/AssetLoader.php:126
+msgid "City"
+msgstr "Місто"
+
+#: src/Modules/Backend/AssetLoader.php:203
+#: src/Modules/Frontend/AssetLoader.php:127 views/settings.php:242
+msgid "Warehouse"
+msgstr "Відділення"
+
+#: src/Modules/Backend/AssetLoader.php:204
+#: src/Modules/Frontend/AssetLoader.php:129
+#: src/Services/TranslateService.php:107
+msgid "Settlement"
+msgstr "Населений пункт"
+
+#: src/Modules/Backend/AssetLoader.php:205
+#: src/Modules/Frontend/AssetLoader.php:130
+#: src/Services/TranslateService.php:109
+msgid "Street"
+msgstr "Вулиця"
+
+#: src/Modules/Backend/AssetLoader.php:206
+#: src/Modules/Frontend/AssetLoader.php:131
+#: src/Services/TranslateService.php:111
+msgid "House"
+msgstr "Будинок"
+
+#: src/Modules/Backend/AssetLoader.php:207
+#: src/Modules/Frontend/AssetLoader.php:132
+#: src/Services/TranslateService.php:113
+msgid "Flat"
+msgstr "Квартира"
+
+#: src/Modules/Backend/AssetLoader.php:208
+msgid "Shipping cost"
+msgstr "Вартість доставки"
+
+#: src/Modules/Backend/AssetLoader.php:209
+msgid "Shipping cost type"
+msgstr "Тип вартості доставки"
+
+#: src/Modules/Backend/AssetLoader.php:210
+msgid "Fixed"
+msgstr "Фіксована"
+
+#: src/Modules/Backend/AssetLoader.php:211
+msgid "From order amount"
+msgstr "Від суми замовлення"
+
+#: src/Modules/Backend/AssetLoader.php:212
+msgid "Nova Poshta API"
+msgstr "Нова Пошта API"
+
+#: src/Modules/Backend/AssetLoader.php:213
+msgid "Cargo type"
+msgstr "Тип вантажу"
+
+#: src/Modules/Backend/AssetLoader.php:214
+msgid "Cargo"
+msgstr "Вантаж"
+
+#: src/Modules/Backend/AssetLoader.php:215
+msgid "Documents"
+msgstr "Документи"
+
+#: src/Modules/Backend/AssetLoader.php:216
+msgid "TiresWheels"
+msgstr "Шини-Диски"
+
+#: src/Modules/Backend/AssetLoader.php:217
+msgid "Pallet"
+msgstr "Палети"
+
+#: src/Modules/Backend/AssetLoader.php:218
+msgid "Parcel"
+msgstr "Посилка"
+
+#: src/Modules/Backend/AssetLoader.php:219
+msgid "Address shipping cost"
+msgstr "Вартість адресної доставки"
+
+#: src/Modules/Backend/AssetLoader.php:220
+msgid "Enable separated cost"
+msgstr "Увімкнути окрему вартість"
+
+#: src/Modules/Backend/AssetLoader.php:221
+msgid "Fixed cost"
+msgstr "Фіксована вартість"
+
+#: src/Modules/Backend/AssetLoader.php:222
+msgid "Order amount"
+msgstr "Сума замовлення"
+
+#: src/Modules/Backend/AssetLoader.php:223
+msgid "Add"
+msgstr "Додати"
+
+#: src/Modules/Backend/AssetLoader.php:225
+msgid "COD"
+msgstr "Зворотня доставка"
+
+#: src/Modules/Backend/AssetLoader.php:226
+msgid "COD method"
+msgstr "Метод зворотньої доставки"
+
+#: src/Modules/Backend/AssetLoader.php:227
+msgid "Take COD into account when calculating shipping cost"
+msgstr "Враховувати зворотню доставку при розрахунку вартості"
+
+#: src/Modules/Backend/AssetLoader.php:228
+msgid "Separate name for free shipping"
+msgstr "Окрема назва для безкоштовної доставки"
+
+#: src/Modules/Backend/AssetLoader.php:229
+msgid "Enable separate name"
+msgstr "Увімкнути окрему назву"
+
+#: src/Modules/Backend/AssetLoader.php:230
+msgid "Free shipping name"
+msgstr "Назва безкоштовної доставки"
+
+#: src/Modules/Backend/AssetLoader.php:231
+msgid "Default sender warehouse"
+msgstr "Відділення відправника за-замовчуванням"
+
+#: src/Modules/Backend/AssetLoader.php:232
+msgid "Default sender address"
+msgstr "Адреса відправника за замовчуванням"
+
+#: src/Modules/Backend/AssetLoader.php:233 views/partial/options_license.php:4
+msgid "License key"
+msgstr "Ліцензійний ключ"
+
+#: src/Modules/Backend/EditOrder.php:61 src/Modules/Backend/Orders.php:67
+#: views/settings.php:26
+msgid "Invoice"
+msgstr "Експрес-накладна"
+
+#: src/Modules/Backend/EditOrder.php:78
+msgid "Invoice creation is unavailable for this order"
+msgstr "Створення накладної для цього замовлення недоступне"
+
+#: src/Modules/Backend/OptionsPage.php:70 src/Modules/Core/PluginInfo.php:42
+#: views/settings.php:9
+msgid "Settings"
+msgstr "Налаштування"
+
+#: src/Modules/Backend/OptionsPage.php:81
+#: src/Modules/Backend/OptionsPage.php:82
+msgid "Create TTN"
+msgstr "Створити накладну"
+
+#: src/Modules/Backend/OptionsPage.php:90
+#: src/Modules/Backend/OptionsPage.php:91
+msgid "Orders"
+msgstr "Замовлення"
+
+#: src/Modules/Backend/OptionsPage.php:99
+#: src/Modules/Backend/OptionsPage.php:100
+msgid "Automation"
+msgstr "Автоматизація"
+
+#: src/Modules/Backend/OptionsPage.php:111
+#: src/Modules/Backend/OptionsPage.php:112 src/Modules/Backend/Orders.php:183
+#: views/order/edit_order_metabox.php:26
+msgid "Create"
+msgstr "Створити"
+
+#: src/Modules/Backend/OptionsPage.php:216
+msgid "Add rule"
+msgstr "Додати правило"
+
+#: src/Modules/Backend/OptionsPage.php:234
+msgid "Rule not found"
+msgstr "Правило не знайдено"
+
+#: src/Modules/Backend/OptionsPage.php:244
+msgid "Rule saved successfully"
+msgstr "Правило успішно збережено"
+
+#: src/Modules/Backend/Orders.php:68 src/Modules/Backend/Orders.php:117
+msgid "Invoice number"
+msgstr "Номер накладної"
+
+#: src/Modules/Backend/Orders.php:170 views/order/edit_order_metabox.php:15
+msgid "Print"
+msgstr "Друк"
+
+#: src/Modules/Backend/Orders.php:186 views/order/edit_order_metabox.php:29
+msgid "Attach"
+msgstr "Прив'язати"
+
+#: src/Modules/Frontend/AssetLoader.php:121
+#: src/Services/TranslateService.php:101
+msgid "Shipping address"
+msgstr "Адреса доставки"
+
+#: src/Modules/Frontend/AssetLoader.php:122
+msgid "to the warehouse"
+msgstr "Нова Пошта до відділення"
+
+#: src/Modules/Frontend/AssetLoader.php:123
+msgid "to the doors"
+msgstr "Адресна доставка кур'єром Нової Пошти"
+
+#: src/Modules/Frontend/AssetLoader.php:124
+msgid "to the poshtomat"
+msgstr "Нова Пошта до поштомату"
+
+#: src/Modules/Frontend/AssetLoader.php:128
+msgid "Poshtomat"
+msgstr "Поштомат"
+
+#: src/Modules/Frontend/AssetLoader.php:133
+msgid "Enter value for search"
+msgstr "Введіть значення для пошуку"
+
+#: src/Modules/Frontend/AssetLoader.php:134
+msgid "Loading..."
+msgstr "Завантаження..."
+
+#: src/Modules/Frontend/AssetLoader.php:135
+msgid "Load more..."
+msgstr "Завантажити ще..."
+
+#: src/Modules/Frontend/AssetLoader.php:136
+#: src/Services/TranslateService.php:115
+msgid "Nothing found"
+msgstr "Нічого не знайдено"
+
+#: src/Modules/Frontend/AssetLoader.php:137
+msgid "Enter more chars"
+msgstr "Введіть більше символів"
+
+#: src/Modules/Frontend/AssetLoader.php:138
+msgid "Enter full address"
+msgstr "Введіть повну адресу"
+
+#: src/Modules/Frontend/Checkout.php:64
+msgid "Middle name"
+msgstr "По-батькові"
+
+#: src/Services/TranslateService.php:99
+msgid "Nova Poshta"
+msgstr "Нова Пошта"
+
+#: src/Services/TranslateService.php:100
+msgid "Nova Poshta (COD)"
+msgstr "Нова Пошта (накладений платіж)"
+
+#: src/Services/TranslateService.php:102
+msgid "Select area"
+msgstr "Оберіть область"
+
+#: src/Services/TranslateService.php:103
+msgid "Select city"
+msgstr "Оберіть місто"
+
+#: src/Services/TranslateService.php:104
+msgid "Select warehouse"
+msgstr "Оберіть відділення"
+
+#: src/Services/TranslateService.php:105
+msgid "Need address shipping"
+msgstr "Потрібна адресна доставка"
+
+#: src/Services/TranslateService.php:106
+msgid "Enter address"
+msgstr "Введіть адресу"
+
+#: src/Services/TranslateService.php:108 src/Services/TranslateService.php:110
+msgid "Start typing a word or part of a word"
+msgstr "Почніть вводити слово або частину слова"
+
+#: src/Services/TranslateService.php:116
+msgid "Select warehouse of <strong>Nova Poshta</strong>"
+msgstr "Оберіть відділення <strong>Нової Пошти</strong>"
+
+#: src/Services/TranslateService.php:117
+msgid "Select settlement"
+msgstr "Оберіть населений пункт"
+
+#: src/Services/TranslateService.php:118
+msgid "Select street"
+msgstr "Оберіть вулицю"
+
+#: src/Services/TranslateService.php:119
+msgid "Enter house number"
+msgstr "Введіть номер будинку"
+
+#: views/automation.php:15
+msgid "Rule constructor"
+msgstr "Конструктор правил"
+
+#: views/automation.php:20 views/settings.php:11
+msgid "Save"
+msgstr "Зберегти"
+
+#: views/partial/options_sender_default.php:2
+msgid "Default sender"
+msgstr "Відправник за замовчуванням"
+
+#: views/partial/options_sender_default.php:10
+msgid "Sender identifier"
+msgstr "Ідентифікатор відправника"
+
+#: views/partial/options_sender_default.php:12
+msgid "Select sender"
+msgstr "Оберіть відправника"
+
+#: views/partial/options_sender_default.php:19
+msgid "Sender contact"
+msgstr "Контакт відправника"
+
+#: views/partial/options_sender_default.php:21
+msgid "Select contact"
+msgstr "Оберіть контакт"
+
+#: views/partial/options_shipping.php:12
+msgid "Enable address shipping"
+msgstr "Увімкнути адресну доставку"
+
+#: views/partial/options_shipping.php:21
+msgid "Calculate shipping cost for view only"
+msgstr "Розраховувати вартість доставки лише для перегляду"
+
+#: views/partial/options_shipping.php:27
+msgid "Consider dimensions when calculating shipping cost"
+msgstr "Враховувати габарити при розрахунку вартості доставки"
+
+#: views/partial/options_shipping.php:41
+msgid "Display language of cities and departments"
+msgstr "Мова відображення міст та відділень"
+
+#: views/partial/options_shipping.php:43
+msgid "Russian"
+msgstr "Російська"
+
+#: views/partial/options_shipping.php:44
+msgid "Ukrainian"
+msgstr "Українська"
+
+#: views/partial/options_shipping.php:53
+msgid "Shipping block position on checkout page"
+msgstr "Позиція блоку доставки на сторінці оформлення замовлення"
+
+#: views/partial/options_shipping.php:55
+msgid "Default section"
+msgstr "Основна секція"
+
+#: views/partial/options_shipping.php:56
+msgid "Additional section"
+msgstr "Додаткова секція"
+
+#: views/partial/options_shipping.php:69
+msgid "Save last customer address"
+msgstr "Зберігати останнє відділення користувача"
+
+#: views/partial/options_shipping.php:79
+msgid "Use Nova Poshta API for address shipping"
+msgstr "Використовувати API Нової Пошти для адресної доставки"
+
+#: views/partial/options_shipping.php:89
+msgid "Inject additional shipping fields"
+msgstr "Додати додаткові поля доставки"
+
+#: views/partial/options_shipping.php:91
+msgid ""
+"This option allows you to inject Middle name and Phone fields for delivery "
+"to another address."
+msgstr ""
+"Ця опція дозволяє вам додати поля По батькові та Телефон для доставки на "
+"іншу адресу."
+
+#: views/partial/top_panel.php:12
+msgid "Our site"
+msgstr "Наш сайт"
+
+#: views/partial/top_panel.php:16
+msgid "Documentation"
+msgstr "Документація"
+
+#: views/settings.php:15
+msgid "Settings saved successfully"
+msgstr "Налаштування успішно збережені"
+
+#: views/settings.php:23
+msgid "General"
+msgstr "Основні"
+
+#: views/settings.php:24
+msgid "Shipping"
+msgstr "Доставка"
+
+#: views/settings.php:25
+msgid "Translates"
+msgstr "Переклади"
+
+#: views/settings.php:27
+msgid "Updates"
+msgstr "Оновлення"
+
+#: views/settings.php:33
+msgid "API key of Nova Poshta"
+msgstr "API ключ Нової Пошти"
+
+#: views/settings.php:39
+msgid "Color of spinner in frontend"
+msgstr "Колір спінера у frontend"
+
+#: views/settings.php:50
+msgid "Use new UI"
+msgstr "Використовувати новий UI"
+
+#: views/settings.php:59
+msgid "Show only cargo warehouses"
+msgstr "Показувати тільки вантажні відділення"
+
+#: views/settings.php:68
+msgid "Show poshtomats"
+msgstr "Показувати поштомати"
+
+#: views/settings.php:72
+msgid "Load translates from"
+msgstr "Завантажувати переклади з"
+
+#: views/settings.php:76
+msgid "Plugin settings"
+msgstr "Налаштувань плагіну"
+
+#: views/settings.php:77
+msgid "Wordpress localization files"
+msgstr "Файлів локалізації Wordpress"
+
+#: views/settings.php:80
+msgid ""
+"If you are using language plugins such as WPML or Polylang - select "
+"\"Wordpress localization files\" option"
+msgstr ""
+"Якщо ви використовуєте такі мовні плагіни, як WPML або Polylang, оберіть "
+"опцію \"Файли локалізації Wordpress\""
+
+#: views/settings.php:97
+msgid "Shipping method name"
+msgstr "Назва методу доставки"
+
+#: views/settings.php:103
+msgid "Shipping block title"
+msgstr "Заголовок блоку доставки"
+
+#: views/settings.php:109
+msgid "Placeholder of select area field"
+msgstr "Placeholder поля вибору області"
+
+#: views/settings.php:115
+msgid "Placeholder of select city field"
+msgstr "Placeholder поля вибору міста"
+
+#: views/settings.php:121
+msgid "Placeholder of select warehouse field"
+msgstr "Placeholder поля вибору відділення"
+
+#: views/settings.php:127
+msgid "Label of address shipping"
+msgstr "Заголовок для адресної доставки"
+
+#: views/settings.php:133
+msgid "Placeholder of address shipping"
+msgstr "Placeholder адресної доставки"
+
+#: views/settings.php:139
+msgid "Label of settlement field"
+msgstr "Заголовок поля населеного пункту"
+
+#: views/settings.php:145
+msgid "Placeholder of settlement field"
+msgstr "Placeholder поля населеного пункту"
+
+#: views/settings.php:151
+msgid "Label of street field"
+msgstr "Заголовок поля вулиці"
+
+#: views/settings.php:157
+msgid "Placeholder of street field"
+msgstr "Placeholder поля вулиці"
+
+#: views/settings.php:163
+msgid "Label of house field"
+msgstr "Заголовок поля будинку"
+
+#: views/settings.php:169
+msgid "Placeholder of house field"
+msgstr "Placeholder поля будинку"
+
+#: views/settings.php:175
+msgid "Label of flat field"
+msgstr "Заголовок поля квартири"
+
+#: views/settings.php:181
+msgid "Placeholder of flat field"
+msgstr "Placeholder поля квартири"
+
+#: views/settings.php:187
+msgid "Empty result text"
+msgstr "Текст порожнього результату"
+
+#: views/settings.php:193
+msgid "Validation error text"
+msgstr "Текст помилки валідації"
+
+#: views/settings.php:199
+msgid "Settlement Validation error text"
+msgstr "Текст помилки валідації населеного пункту"
+
+#: views/settings.php:205
+msgid "Street Validation error text"
+msgstr "Текст помилки валідації вулиці"
+
+#: views/settings.php:211
+msgid "House Validation error text"
+msgstr "Текст помилки валідації будинку"
+
+#: views/settings.php:232
+msgid "Default payer"
+msgstr "Платник за-замовчуванням"
+
+#: views/settings.php:234
+msgid "Sender"
+msgstr "Відправник"
+
+#: views/settings.php:235
+msgid "Recipient"
+msgstr "Отримувач"
+
+#: views/settings.php:240
+msgid "Send as default from"
+msgstr "Відправляти за-замовчуванням з"
+
+#: views/settings.php:243
+msgid "Address"
+msgstr "Адреси"
+
+#: views/settings.php:248
+msgid "Default shipment description"
+msgstr "Опис відправлення за-замовчуванням"
+
+#: views/settings.php:256
+msgid "Default weight (kg)"
+msgstr "Вага за-замовчуванням (кг)"
+
+#: views/settings.php:262
+msgid "To disable this feature set value to 0"
+msgstr "Для того щоб вимкнути цю функцію встановіть значення в 0"
+
+#: views/settings.php:269
+msgid "Payment control"
+msgstr "Контроль оплати"
+
+#: views/settings.php:275
+msgid "Allow create invoice for any shipping methods"
+msgstr "Дозволити створення накладних для всіх методів доставки"
+
+#: views/settings.php:281
+msgid "Mail subject"
+msgstr "Тема листа"
+
+#: views/settings.php:287
+msgid "Mail template"
+msgstr "Шаблон листа"
+
+#: views/settings.php:301
+msgid "Automatically send an email when creating an invoice"
+msgstr "Автоматично відправляти email при створенні накладної"
+
+#: views/settings.php:314
+msgid "Enable cloud address API"
+msgstr "Увімкнути використання Cloud address API"
+
+#: views/settings.php:320
+msgid "Automatically add invoices to tracking"
+msgstr "Автоматично додавати накладні до трекінгу"
+
+#: wc-ukr-shipping-pro.php:27
+msgid "Lite version was deactivated"
+msgstr "Lite версія була деактивована"

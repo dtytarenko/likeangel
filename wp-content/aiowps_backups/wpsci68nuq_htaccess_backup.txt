@@ -1,0 +1,59 @@
+# BEGIN LSCACHE
+# END LSCACHE
+
+# BEGIN NON_LSCACHE
+# END NON_LSCACHE
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# Відредаговане правило для блокування небажаних ботів (за потреби можеш змінити список ботів)
+RewriteCond %{HTTP_USER_AGENT} !(YandexBot|bingbot) [NC]
+RewriteRule . /index.php [L]
+</IfModule>
+
+# BEGIN LiteSpeed
+<IfModule Litespeed>
+SetEnv noabort 1
+</IfModule>
+# END LiteSpeed
+
+# BEGIN WordPress
+# Директиви (рядки) між BEGIN WordPress і END WordPress
+# створені автоматично і підлягають змінам тільки через фільтри WordPress.
+# Зміни зроблені вручну між цими маркерами будуть перезаписані.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# BEGIN seraphinite-accelerator
+# Директиви (рядки) між BEGIN seraphinite-accelerator і END seraphinite-accelerator
+# створені автоматично і підлягають змінам тільки через фільтри WordPress.
+# Зміни зроблені вручну між цими маркерами будуть перезаписані.
+
+# END seraphinite-accelerator
+
+# BEGIN FRedirect_ErrorDocument
+# Директиви (рядки) між BEGIN FRedirect_ErrorDocument і END FRedirect_ErrorDocument
+# створені автоматично і підлягають змінам тільки через фільтри WordPress.
+# Зміни зроблені вручну між цими маркерами будуть перезаписані.
+ErrorDocument 404 /index.php?error=404
+# END FRedirect_ErrorDocument
+# BEGIN ShortPixelWebp
+# Директиви (рядки) між `BEGIN ShortPixelWebp` і `END ShortPixelWebp`
+# створені автоматично і підлягають змінам тільки через фільтри WordPress.
+# Зміни зроблені вручну між цими маркерами будуть перезаписані.
+
+# END ShortPixelWebp

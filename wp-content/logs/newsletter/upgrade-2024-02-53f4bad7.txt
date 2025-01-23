@@ -1,0 +1,33 @@
+29-02-2024 12:22:24 - INFO  - 8.1.7 - 111.1 MB/1 GB - Vyacheslav > Start upgrade from 0.0.0
+29-02-2024 12:22:24 - INFO  - 8.1.7 - 111.6 MB/1 GB - Vyacheslav > Array
+(
+    [`wp_newsletter_emails`] => Created table `wp_newsletter_emails`
+)
+
+29-02-2024 12:22:24 - INFO  - 8.1.7 - 111.6 MB/1 GB - Vyacheslav > Array
+(
+    [`wp_newsletter_sent`] => Created table `wp_newsletter_sent`
+)
+
+29-02-2024 12:22:24 - INFO  - 8.1.7 - 111.6 MB/1 GB - Vyacheslav > Array
+(
+    [`wp_newsletter`] => Created table `wp_newsletter`
+)
+
+29-02-2024 12:22:24 - INFO  - 8.1.7 - 111.6 MB/1 GB - Vyacheslav > Array
+(
+    [`wp_newsletter_user_logs`] => Created table `wp_newsletter_user_logs`
+)
+
+29-02-2024 12:22:24 - INFO  - 8.1.7 - 111.6 MB/1 GB - Vyacheslav > Array
+(
+    [`wp_newsletter_user_meta`] => Created table `wp_newsletter_user_meta`
+)
+
+29-02-2024 12:22:24 - INFO  - 8.1.7 - 111.6 MB/1 GB - Vyacheslav > Array
+(
+    [`wp_newsletter_stats`] => Created table `wp_newsletter_stats`
+)
+
+29-02-2024 12:22:24 - INFO  - 8.1.7 - 111.6 MB/1 GB - Vyacheslav > Backing up options of 0.0.0
+29-02-2024 12:22:24 - INFO  - 8.1.7 - 111.6 MB/1 GB - Vyacheslav > End

@@ -1,0 +1,135 @@
+/*
+ Theme Name:   Woodmart Child
+ Description:  Woodmart Child Theme
+ Author:       XTemos
+ Author URI:   http://xtemos.com
+ Template:     woodmart
+ Version:      1.0.0
+ Text Domain:  woodmart
+*/
+
+.wd-entities-title a {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+
+.wd-tools-element:is(.wd-design-2,.wd-design-5) .wd-tools-count{
+    background-color: #e98181!important;
+    font-size: 14px!important;
+}
+
+.wd-tools-element .wd-tools-count{
+    width: 16px!important;
+    height: 16px!important;
+}
+
+
+
+
+
+.elementor-15616 .elementor-element.elementor-element-860a7f4 .wd-nav-arrows {
+    --wd-arrow-offset-h: -47.9%;
+    --wd-arrow-offset-v: 26px;
+}
+
+
+.wd-nav-arrows.wd-pos-together {
+    position: absolute;
+    inset-inline-end:inherit!important;
+    left: 50%;
+    margin-left: -40px;
+}
+
+.cart-info .wd-entities-title{
+    font-size: 16px;
+}
+
+.liner-continer{
+    position: relative;
+}
+
+
+.menu_red a{
+    color: #e98181!important;
+}
+
+.menu_red a:hover{
+    color: #e98181b0!important;
+}
+
+
+
+
+
+.footer-container a{
+    color: #000!important;
+}
+
+
+
+.footer-container a:hover{
+    color: #d1d1d1!important;
+}
+
+
+.footer-container .wd-nav-vertical .menu_red a{
+    color: #e98181!important;
+}
+
+.footer-container .wd-nav-vertical .menu_red a:hover{
+    color: #e98181b0!important;
+}
+
+
+.cart-info div.quantity{
+    font-family: Arial!important;
+}
+
+
+.product-quantity .quantity{
+    font-family: Arial!important;
+}
+
+
+
+.cart-info span.quantity{
+    font-size: 20px!important;
+
+}
+
+
+
+.cart-info .wd-entities-title{
+    font-size: 16px!important;
+}
+
+.cart-totals-inner .checkout-button{
+    background-color: #000!important;
+}
+.wd-coupon-form .button[name="apply_coupon"]{
+    background-color: #000!important;
+}
+
+.woocommerce-mini-cart__buttons .checkout{
+    background-color: #000!important;
+}
+
+.single_add_to_cart_button{
+    background-color: #000!important;
+}
+
+/*
+
+.liner-continer:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    background: #000;
+    height: 1px;
+
+}
+*/

@@ -1,0 +1,33 @@
+# ---------------------------------------
+# Системне / IDE / OS
+# ---------------------------------------
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+.idea/
+.vscode/
+.env
+
+# ---------------------------------------
+# WordPress core / конфіг
+# ---------------------------------------
+wp-config.php
+.htaccess
+
+# ---------------------------------------
+# wp-content
+# ---------------------------------------
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backup/
+wp-content/backups/
+
+# Якщо використовуєте якісь custom-скрипти/збірки:
+node_modules/
+vendor/

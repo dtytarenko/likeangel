@@ -1,0 +1,462 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPadmin E-commerce integration\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-17 11:07+0300\n"
+"PO-Revision-Date: 2024-09-23 10:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: Українська\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.11; wp-6.6.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _e;__;_x\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: cmb\n"
+
+#: wp_autoupdate.php:132
+#| msgid ""
+#| ". Please renew your license to update. You can change your license key in "
+#| "<a href=\"/wp-admin/admin.php?page=wpadmin_settings\">E-commerce "
+#| "integration v2 > General options</a>"
+msgid ""
+" Please renew your license to update. You can change your license key in <a "
+"href=\"/wp-admin/admin.php?page=wpadmin_settings\">E-commerce integration v2 "
+"> General options</a>"
+msgstr ""
+". Щоб оновити, будь ласка, введіть активний ліцензійний ключ  тут - <a "
+"href=\"/wp-admin/admin.php?page=wpadmin_settings\">E-commerce integration v2 "
+"> Головні налаштування</a>"
+
+#: inc/admin.php:442
+msgid "Add analytics code?"
+msgstr "Додати код Google Analytics на сайт?"
+
+#: inc/admin.php:387
+msgid "Add Dynamic Remarketing code?"
+msgstr "Додати на сайт код динамічного ремаркетингу?"
+
+#: inc/admin.php:453
+msgid "Add FB pixel code?"
+msgstr "Додати на сайт код FB pixel ?"
+
+#: inc/admin.php:464
+msgid "Add Google ADS code?"
+msgstr "Додати на сайт код Google ADS ?"
+
+#: inc/admin.php:431
+msgid "Add TAG Manager code?"
+msgstr "Додати код  TAG Manager на сайт?"
+
+#: inc/admin.php:401
+msgid "Additional codes settings"
+msgstr "Додаткові налаштування коду"
+
+#: inc/admin.php:427
+msgid ""
+"Additional information you can find <a href='https://support.google."
+"com/tagmanager/answer/11994839?"
+"hl=en&ref_topic=12403939&sjid=9720146569662259092-EU' target='_blank'>"
+"here</a>"
+msgstr ""
+"Заповнюйте, якщо потрібно додати на сайт код TAG Manager (Детальніше <a "
+"href='https://support.google.com/tagmanager/answer/11994839?"
+"hl=en&ref_topic=12403939&sjid=9720146569662259092-EU' target='_blank'>тут</a>"
+")"
+
+#: inc/admin.php:478
+msgid "Advertising with guarantee"
+msgstr "Реклама інтернет-магазинів з гарантією за результат."
+
+#: inc/admin.php:275
+msgid ""
+"Avaliable API versions you can find <a href='https://developers.facebook."
+"com/docs/graph-api/changelog/#available-marketing-api-versions' "
+"target='_blank'>here</a>"
+msgstr ""
+"Доступні версії API можна побачити <a href='https://developers.facebook."
+"com/docs/graph-api/changelog/#available-marketing-api-versions' "
+"target='_blank'>тут</a>"
+
+#: inc/functions.php:232 inc/gen_feed.php:86
+msgid "BRAND NAME"
+msgstr "Мій бренд"
+
+#: inc/admin.php:295 inc/admin.php:307
+msgid ""
+"Change uk to ru or en for additional language if WPML or Polylang is used "
+"(optional)"
+msgstr ""
+"Змініть uk на en чи інший код мови, щоб у фід потрапила інформація з "
+"відповідного перекладу, якщо WPML чи Polylang використовується (не "
+"обов'язково)"
+
+#: inc/admin.php:336 inc/admin.php:346
+msgid "Choose attribute for custom_label"
+msgstr "Атрибут спеціальної мітки custom_label"
+
+#: inc/admin.php:322
+msgid "Choose attribute wich is used as color on product if exists."
+msgstr ""
+"Оберіть атрибут, в якому зберігається інформація про колір (якщо "
+"використовується)"
+
+#: inc/admin.php:332
+msgid "Choose attribute wich is used as size on product if exists."
+msgstr ""
+"Оберіть атрибут, в якому зберігається інформація про розмір (якщо "
+"використовується)"
+
+#: inc/admin.php:412
+msgid "Choose brand taxonomy"
+msgstr "Атрибут бренду"
+
+#: inc/admin.php:316
+msgid "Choose color attribute"
+msgstr "Атрибут кольору"
+
+#: inc/admin.php:326
+msgid "Choose size attribute"
+msgstr "Атрибут розміру"
+
+#: inc/admin.php:418
+msgid "Choose taxonomy wich is used as brand on product."
+msgstr ""
+"Оберіть атрибут, в якому зберігається інформація про бренд (якщо "
+"використовується)"
+
+#: inc/admin.php:282
+msgid "Code to test server events using the test events tool"
+msgstr ""
+"Код, який надає фейсбук для тестування подій (видаліть, якщо не тестуєте)"
+
+#: inc/admin.php:380
+msgid "Conversion Label"
+msgstr "Мітка конверсії"
+
+#: inc/admin.php:342 inc/admin.php:352
+#| msgid ""
+#| "Custom attribute custom_label_0 , details <a href='https://support.google."
+#| "com/merchants/answer/6324473?hl=uk' target='_blank'>here</a>"
+msgid ""
+"Custom attribute custom_label_X , details <a href='https://support.google."
+"com/merchants/answer/6324473?hl=uk' target='_blank'>here</a>"
+msgstr ""
+"Атрибут спеціальної мітки custom_label_X , детальніше<a href='https:"
+"//support.google.com/merchants/answer/6324473?hl=uk' target='_blank'>тут</a>"
+
+#: inc/admin.php:405
+msgid "Default brand name"
+msgstr "Бренд за замовчуванням"
+
+#. Author of the plugin
+msgid "Dmytro Kondriuk"
+msgstr "Дмитро Кондрюк"
+
+#: inc/admin.php:67 inc/admin.php:90 inc/admin.php:90
+msgid "E-commerce integration v2"
+msgstr "Ecommerce events&feeds for Google&Facebook"
+
+#: inc/admin.php:260
+msgid "e.g., 1230975293864912321387"
+msgstr "напр.,  123097529386491232"
+
+#: inc/admin.php:382
+msgid "e.g., 6c0C1_11FCOzR3e4"
+msgstr "напр., 6c0C1_11FCOzR3e4"
+
+#: inc/admin.php:375
+msgid "e.g., AW-XXXXXXXXX"
+msgstr "напр., AW-XXXXXXXXX"
+
+#: inc/admin.php:246 inc/admin.php:267
+msgid "e.g., Ev7Zcg5Ln4"
+msgstr "напр., Ev7Zcg5Ln4"
+
+#: inc/admin.php:426
+msgid "e.g., G-XXXXXXXXX"
+msgstr "напр., G-XXXXXXXXX"
+
+#: inc/admin.php:281
+msgid "e.g., TEST35891"
+msgstr "напр., TEST35891"
+
+#: inc/admin.php:274
+msgid "e.g., v19.0"
+msgstr "напр.,  v19.0"
+
+#: inc/admin.php:62
+msgid "Ecommerce WPAdmin options"
+msgstr "Налаштування Ecommerce WPAdmin "
+
+#: inc/admin.php:408
+msgid ""
+"Enter the name of the Brand you wish to use if Brand was not specified in "
+"product data"
+msgstr ""
+"Введіть бренд за замовчуванням, буде використано, якщо на продукті не задано "
+"бренд"
+
+#: inc/admin.php:212
+msgid "Enter your plugin key"
+msgstr "Введіть ліцензійний код"
+
+#: inc/admin.php:279
+msgid "FB API Test code"
+msgstr "Тестовий код для FB API"
+
+#: inc/admin.php:265
+msgid "FB API token"
+msgstr "Токен для FB API "
+
+#: inc/admin.php:268
+msgid ""
+"FB API token you can take <a href='https://developers.facebook."
+"com/docs/marketing-api/conversions-api/get-started/#access-token' "
+"target='_blank'>here</a>"
+msgstr ""
+"як знайти цей Токен для FB API  - детальніше <a href='https://developers."
+"facebook.com/docs/marketing-api/conversions-api/get-started/#access-token' "
+"target='_blank'>тут</a>"
+
+#: inc/admin.php:272
+msgid "FB API version"
+msgstr "Версія FB API "
+
+#: inc/admin.php:304
+msgid "FB Feed"
+msgstr "Фід FB "
+
+#: inc/admin.php:258
+msgid "FB Pixel ID"
+msgstr "FB Pixel ID"
+
+#: inc/admin.php:261
+msgid ""
+"FB Pixel ID you can take <a href='https://developers.facebook."
+"com/docs/marketing-api/conversions-api/get-started/#pixel-id' "
+"target='_blank'>here</a>"
+msgstr ""
+"як знайти ID вашого FB Pixel - детальніше <a href='https://developers."
+"facebook.com/docs/marketing-api/conversions-api/get-started/#pixel-id' "
+"target='_blank'>тут</a>"
+
+#: inc/admin.php:244
+msgid "GA4 API secret"
+msgstr "GA4 ключ API "
+
+#: inc/admin.php:247
+msgid ""
+"GA4 API secret you can take <a href='https://developers.google."
+"com/analytics/devguides/collection/protocol/ga4/reference#api_secret' "
+"target='_blank'>here</a>"
+msgstr ""
+"як знайти API secret для Measurement Protocol - детальніше <a href='https:"
+"//developers.google."
+"com/analytics/devguides/collection/protocol/ga4/reference#api_secret' "
+"target='_blank'>тут</a>"
+
+#: inc/admin.php:237
+msgid "GA4 Measurement ID"
+msgstr "GA4 Ідентифікатор потоку даних "
+
+#: inc/admin.php:240
+msgid ""
+"GA4 Measurement ID you can take  <a href='https://support.google."
+"com/analytics/answer/9539598?sjid=9720146569662259092-EU#find-G-ID' "
+"target='_blank'>here</a>"
+msgstr ""
+"як знайти GA4 Measurement ID - детальніше <a href='https://support.google."
+"com/analytics/answer/9539598?sjid=9720146569662259092-EU#find-G-ID' "
+"target='_blank'>тут</a>"
+
+#: inc/admin.php:233
+msgid "GA4 options"
+msgstr "Налаштування для Google Analytics 4"
+
+#: inc/admin.php:208
+msgid "General options"
+msgstr "Загальні налаштування"
+
+#: inc/admin.php:254
+msgid "General options FB"
+msgstr "Налаштування для Facebook"
+
+#: inc/admin.php:369
+msgid "General options for Google Ads"
+msgstr "Налаштування для Google Ads"
+
+#: inc/admin.php:496
+msgid "Go to update page"
+msgstr "Перейти до оновлення"
+
+#: inc/admin.php:383
+#| msgid "Google Ads conversion ID"
+msgid "Google Ads conversion Label"
+msgstr "Мітка події конверсії"
+
+#: inc/admin.php:373
+msgid "Google Ads tag ID"
+msgstr "Google Ads tag ID"
+
+#: inc/admin.php:376
+msgid ""
+"Google Ads tag ID you can take <a href='https://support.google.com/google-"
+"ads/answer/12326985?hl=en' target='_blank'>here</a>"
+msgstr ""
+"як знайти ID вашого Google Ads - детальніше <a href='https://support.google."
+"com/google-ads/answer/12326985?hl=en' target='_blank'>тут</a>"
+
+#. Description of the plugin
+msgid "Google and FB feeds, analytics code integration with order process"
+msgstr ""
+"Плагін інтеграції процесу покупки з Google Analytics, вивантаження товарних "
+"фідів для Google та FB"
+
+#: inc/admin.php:292
+msgid "Google Feed"
+msgstr "Фід Google"
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://wpadmin.pro/"
+msgstr "http://wpadmin.pro/"
+
+#: inc/admin.php:356
+msgid "Include OUT of Stock products in feed or not? Check to include."
+msgstr ""
+"Включати товари, яких немає на складі (OUT of Stock) в фід чи ні? Поставте "
+"пташку, щоб включати"
+
+#: inc/admin.php:407
+msgid "My own Brand"
+msgstr "Мій бренд"
+
+#: inc/admin.php:222 inc/admin.php:359 inc/admin.php:390 inc/admin.php:434
+#: inc/admin.php:445 inc/admin.php:456 inc/admin.php:467
+msgid "No"
+msgstr "Ні"
+
+#: inc/admin.php:288
+msgid "Product feeds options"
+msgstr "Налаштування фіду продуктів"
+
+#: inc/admin.php:491
+msgid "Save changes"
+msgstr "Зберегти налаштування"
+
+#: inc/admin.php:34 inc/admin.php:191
+msgid "Settings"
+msgstr "Налаштування Ecommerce events&feeds for Google&Facebook"
+
+#: inc/admin.php:219
+msgid "Show advanced options? Check to show."
+msgstr "Показати додаткові (продвинуті) налаштування?"
+
+#: inc/admin.php:424
+msgid "TAG Manager ID"
+msgstr "TAG Manager ID"
+
+#: inc/admin.php:482
+msgid "Text for Advertising with guarantee"
+msgstr ""
+"<h4>\n"
+"  <strong>Google та Facebook реклама інтернет-магазину з гарантією за "
+"результат (тримісячний контракт)</strong>\n"
+"</h4>\n"
+"<p>Компанія “К2-реклама інтернет-магазинів”, яка є автором даного модуля, "
+"збільшує кількість ваших клієнтів завдяки ефективній рекламі інтернет-"
+"магазинів.</p>\n"
+"<p>\n"
+"  <strong>К2 на ринку з 2019 року. І за цей час:</strong>\n"
+"</p>\n"
+"<blockquote>\n"
+"<ul class=\"browser-default\">\n"
+"  <li>- налаштували рекламу для понад 500 інтернет-магазинів</li>\n"
+"  <li>- отримали статус Google Partner</li>\n"
+"  <li>- відзначені нагородами Ecommerce.Кращі 2020 та 2021</li>\n"
+"</ul>\n"
+"</blockquote>\n"
+"<h4>\n"
+"  <strong>Опис</strong>\n"
+"</h4>\n"
+"<p>За час діяльності компанії ми помітили, що кращих результатів вдається "
+"досягти, коли ми укладаємо тримісячний контракт з налаштування і супроводу "
+"рекламних кампаній. Більше того, статистика результатів реклами наших "
+"клієнтів говорить про те, що нам вдається забезпечити їм з реклами більше "
+"замовлень, коли ми працюємо з ними більш тривалий період.</p>\n"
+"<p>Ми настільки впевнені у якості нашої роботи, що пропонуємо налаштування "
+"та супровід реклами з <strong>гарантією за результат</strong> —&nbsp; "
+"збільшимо продажі або повернемо гроші. </p>\n"
+"<p>\n"
+"  <br>\n"
+"  <strong>Тариф “Налаштування реклами з гарантією за результат” включає:"
+"</strong>\n"
+"</p>\n"
+"<blockquote>\n"
+"<ul>\n"
+"  <li>- Створення акаунтів (+ первинне налаштування) та передача доступів "
+"адміністратора на сторону клієнта;</li>\n"
+"  <li>- Рекомендації щодо оформлення товарів (заголовки, описи, фото);</li>\n"
+"  <li>- Розробка рекламних стратегій на основі специфіки бізнесу, сезонності "
+"та пріоритетності товарів;</li>\n"
+"  <li>- Пошук рекламних рішень для вашого бізнесу, які справді працюють;</li>"
+"\n"
+"  <li>- Поглиблена оптимізація (набір методів для покращення результату при "
+"тому самому бюджеті);</li>\n"
+"  <li>- Масштабування (набір методів для збільшення продажів з реклами);</li>"
+"\n"
+"  <li>- Щотижневі звіти;</li>\n"
+"  <li>- Регулярна консультативна підтримка в робочому чаті.</li>\n"
+"</ul>\n"
+"\n"
+"</blockquote>\n"
+"<br>\n"
+"<p>\n"
+"  <strong>Вартість послуги:</strong>\n"
+"</p>\n"
+"<p>Тільки Google або тільки Facebook – 60 000 грн (за три місяці) <br>"
+"Комплекс (і Google, і Facebook) – 80 000 грн (за три місяці) </p>\n"
+"<p>\n"
+"  <strong>Контакти:</strong>\n"
+"</p>\n"
+"<p>+38 (093) 170-79-26</p>\n"
+"<p>\n"
+"  <a href=\"mailto:info@yupi.company\">info@k2-promo.company</a>&nbsp; <a "
+"href=\"https://k2-promo.company/\" target=\"_blank\">https://k2-promo."
+"company</a>\n"
+"</p>"
+
+#. Plugin Name: WPadmin E-commerce integration v2
+#. Plugin URI: http://wpadmin.pro
+#. Description: Google and FB feeds, analytics code integration with order process
+#. Version: 2.2
+#. Text Domain: wpadminpro
+#. Domain Path: /languages
+#. Author: Dmytro Kondriuk
+#. Author URI: http://wpadmin.pro
+#. Update URI: https://wordpress.co.ua/plugins-update
+#. License: GPL12
+#. Name of the plugin
+#: e-commerce-wpadmin-v2.php:14 inc/admin.php:90
+#| msgid "WPadmin E-commerce integration"
+msgid "WPadmin E-commerce integration v2"
+msgstr "Ecommerce events&feeds for Google&Facebook"
+
+#: inc/admin.php:225 inc/admin.php:362 inc/admin.php:393 inc/admin.php:437
+#: inc/admin.php:448 inc/admin.php:459 inc/admin.php:470
+msgid "Yes"
+msgstr "Так"
+
+#: inc/admin.php:215
+msgid ""
+"You'll get your key after purchase <a href='https://wordpress.co.ua/wpadmin-"
+"ecommerce' target='_blank'>here</a>"
+msgstr ""
+"Код надається одразу після покупки, купити можна <a href='https://wordpress."
+"co.ua/wpadmin-ecommerce' target='_blank'>тут</a>"

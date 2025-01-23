@@ -1,0 +1,197 @@
+********************************************************************************
+********************************************************************************
+DUPLICATOR PRO PACKAGE-LOG: 2023-03-23 19:23:38
+NOTICE: Do NOT post to public sites or forums 
+PACKAGE CREATION START
+********************************************************************************
+********************************************************************************
+VERSION:	4.5.10
+WORDPRESS:	6.1.1
+PHP INFO:	7.4.33 | SAPI: litespeed
+SERVER:		Apache 
+ARCHITECTURE:	64-bit 
+CLIENT KICKOFF: off 
+PHP TIME LIMIT: [7200] not allowed 
+PHP MAX MEMORY: 4294967296 (1024M default) 
+RUN TYPE:	Manual
+MEMORY STACK:	119MB
+ARCHIVE ENGINE: Shell Zip
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP + CHUNKING (query size limit - 131072 )
+
+TABLES: total: 83 | filtered:0 | create:83
+REWIND DATABASE ITERATOR
+INSERT ROWS TABLE[INDEX:0] wp_users NUM ROWS: 5
+REWIND DATABASE ITERATOR
+INSERT ROWS TABLE[INDEX:0] wp_users NUM ROWS: 5
+INSERT ROWS TABLE[INDEX:1] wp_usermeta NUM ROWS: 169
+INSERT ROWS TABLE[INDEX:2] wc_ukr_shipping_logs NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:3] wc_ukr_shipping_np_api_cache NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:4] wc_ukr_shipping_np_areas NUM ROWS: 25
+INSERT ROWS TABLE[INDEX:5] wc_ukr_shipping_np_cities NUM ROWS: 8465
+INSERT ROWS TABLE[INDEX:6] wc_ukr_shipping_np_ttn NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:7] wc_ukr_shipping_np_warehouses NUM ROWS: 22895
+INSERT ROWS TABLE[INDEX:8] wp_actionscheduler_actions NUM ROWS: 1354
+INSERT ROWS TABLE[INDEX:9] wp_actionscheduler_claims NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:10] wp_actionscheduler_groups NUM ROWS: 4
+INSERT ROWS TABLE[INDEX:11] wp_actionscheduler_logs NUM ROWS: 4060
+INSERT ROWS TABLE[INDEX:12] wp_arcontactus NUM ROWS: 9
+INSERT ROWS TABLE[INDEX:13] wp_arcontactus_callback NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:14] wp_arcontactus_lang NUM ROWS: 9
+INSERT ROWS TABLE[INDEX:15] wp_arcontactus_prompt NUM ROWS: 3
+INSERT ROWS TABLE[INDEX:16] wp_arcontactus_prompt_lang NUM ROWS: 3
+INSERT ROWS TABLE[INDEX:17] wp_cn_social_icon NUM ROWS: 4
+INSERT ROWS TABLE[INDEX:18] wp_commentmeta NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:19] wp_comments NUM ROWS: 4
+INSERT ROWS TABLE[INDEX:20] wp_duplicator_pro_entities NUM ROWS: 5
+INSERT ROWS TABLE[INDEX:21] wp_duplicator_pro_packages NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:22] wp_e_events NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:23] wp_links NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:24] wp_options NUM ROWS: 1264
+INSERT ROWS TABLE[INDEX:25] wp_pimwick_gift_card NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:26] wp_pimwick_gift_card_activity NUM ROWS: 2
+INSERT ROWS TABLE[INDEX:27] wp_postmeta NUM ROWS: 6518
+INSERT ROWS TABLE[INDEX:28] wp_posts NUM ROWS: 896
+INSERT ROWS TABLE[INDEX:29] wp_revslider_css NUM ROWS: 109
+INSERT ROWS TABLE[INDEX:30] wp_revslider_css_bkp NUM ROWS: 47
+INSERT ROWS TABLE[INDEX:31] wp_revslider_layer_animations NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:32] wp_revslider_layer_animations_bkp NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:33] wp_revslider_navigations NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:34] wp_revslider_navigations_bkp NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:35] wp_revslider_sliders NUM ROWS: 4
+INSERT ROWS TABLE[INDEX:36] wp_revslider_sliders_bkp NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:37] wp_revslider_slides NUM ROWS: 14
+INSERT ROWS TABLE[INDEX:38] wp_revslider_slides_bkp NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:39] wp_revslider_static_slides NUM ROWS: 4
+INSERT ROWS TABLE[INDEX:40] wp_revslider_static_slides_bkp NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:41] wp_termmeta NUM ROWS: 134
+INSERT ROWS TABLE[INDEX:42] wp_terms NUM ROWS: 79
+INSERT ROWS TABLE[INDEX:43] wp_term_relationships NUM ROWS: 311
+INSERT ROWS TABLE[INDEX:44] wp_term_taxonomy NUM ROWS: 79
+INSERT ROWS TABLE[INDEX:45] wp_trustindex_google_reviews NUM ROWS: 10
+INSERT ROWS TABLE[INDEX:46] wp_wc_admin_notes NUM ROWS: 39
+INSERT ROWS TABLE[INDEX:47] wp_wc_admin_note_actions NUM ROWS: 47
+INSERT ROWS TABLE[INDEX:48] wp_wc_category_lookup NUM ROWS: 60
+INSERT ROWS TABLE[INDEX:49] wp_wc_customer_lookup NUM ROWS: 4
+INSERT ROWS TABLE[INDEX:50] wp_wc_download_log NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:51] wp_wc_order_coupon_lookup NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:52] wp_wc_order_product_lookup NUM ROWS: 2
+INSERT ROWS TABLE[INDEX:53] wp_wc_order_stats NUM ROWS: 2
+INSERT ROWS TABLE[INDEX:54] wp_wc_order_tax_lookup NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:55] wp_wc_product_attributes_lookup NUM ROWS: 398
+INSERT ROWS TABLE[INDEX:56] wp_wc_product_download_directories NUM ROWS: 2
+INSERT ROWS TABLE[INDEX:57] wp_wc_product_meta_lookup NUM ROWS: 179
+INSERT ROWS TABLE[INDEX:58] wp_wc_rate_limits NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:59] wp_wc_reserved_stock NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:60] wp_wc_tax_rate_classes NUM ROWS: 2
+INSERT ROWS TABLE[INDEX:61] wp_wc_webhooks NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:62] wp_woocommerce_api_keys NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:63] wp_woocommerce_attribute_taxonomies NUM ROWS: 3
+INSERT ROWS TABLE[INDEX:64] wp_woocommerce_downloadable_product_permissions NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:65] wp_woocommerce_log NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:66] wp_woocommerce_order_itemmeta NUM ROWS: 40
+INSERT ROWS TABLE[INDEX:67] wp_woocommerce_order_items NUM ROWS: 4
+INSERT ROWS TABLE[INDEX:68] wp_woocommerce_payment_tokenmeta NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:69] wp_woocommerce_payment_tokens NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:70] wp_woocommerce_sessions NUM ROWS: 2
+INSERT ROWS TABLE[INDEX:71] wp_woocommerce_shipping_zones NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:72] wp_woocommerce_shipping_zone_locations NUM ROWS: 1
+INSERT ROWS TABLE[INDEX:73] wp_woocommerce_shipping_zone_methods NUM ROWS: 2
+INSERT ROWS TABLE[INDEX:74] wp_woocommerce_tax_rates NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:75] wp_woocommerce_tax_rate_locations NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:76] wp_wpfm_backup NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:77] wp_yoast_indexable NUM ROWS: 88
+INSERT ROWS TABLE[INDEX:78] wp_yoast_indexable_hierarchy NUM ROWS: 86
+INSERT ROWS TABLE[INDEX:79] wp_yoast_migrations NUM ROWS: 25
+INSERT ROWS TABLE[INDEX:80] wp_yoast_primary_term NUM ROWS: 29
+INSERT ROWS TABLE[INDEX:81] wp_yoast_prominent_words NUM ROWS: 0
+INSERT ROWS TABLE[INDEX:82] wp_yoast_seo_links NUM ROWS: 0
+SQL FILE SIZE CHECK OK, SIZE: 17102545
+SQL CREATED: 20230323_327c3c7b7f724b341098_20230323192320_database.sql
+SQL FILE SIZE: 16.31MB
+SQL FILE TIME: 2023-03-23 19:23:43
+SQL RUNTIME: 5.082 sec.
+MEMORY STACK: 119MB
+
+********************************************************************************
+ARCHIVE  Type=ZIP Mode=Shell
+********************************************************************************
+ARCHIVE DIR:  /home/joys2021/joys.net.ua/testovi
+ARCHIVE FILE: 20230323_327c3c7b7f724b341098_20230323192320_archive.zip
+FILTERS: *OFF*
+DIRS:  not set
+EXTS:  not set
+FILES:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	654.51MB
+STATS:	Dirs 2,630 | Files 26,584 | Total 29,214
+SHELL COMMAND: cd '/home/joys2021/joys.net.ua/testovi' && zip -6 -rq '/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/tmp/20230323_327c3c7b7f724b341098_20230323192320_archive.zip' ./ -x .opcache**\* .opcache .tmb/**\* .tmb/ wp\-content/ai1wm\-backups**\* wp\-content/ai1wm\-backups wp\-content/backups\-dup\-lite**\* wp\-content/backups\-dup\-lite wp\-content/backups\-dup\-pro/**\* wp\-content/backups\-dup\-pro/ wp\-content/backups\-dup\-pro/**\* wp\-content/backups\-dup\-pro/ wp\-content/backupwordpress**\* wp\-content/backupwordpress wp\-content/bps\-backup**\* wp\-content/bps\-backup wp\-content/cache**\* wp\-content/cache wp\-content/content/cache**\* wp\-content/content/cache wp\-content/contents/cache**\* wp\-content/contents/cache wp\-content/infinitewp/backups**\* wp\-content/infinitewp/backups wp\-content/managewp/backups**\* wp\-content/managewp/backups wp\-content/old\-cache**\* wp\-content/old\-cache wp\-content/plugins/all\-in\-one\-wp\-migration/storage**\* wp\-content/plugins/all\-in\-one\-wp\-migration/storage wp\-content/plugins/really\-simple\-captcha/tmp**\* wp\-content/plugins/really\-simple\-captcha/tmp wp\-content/plugins/wordfence/tmp**\* wp\-content/plugins/wordfence/tmp wp\-content/updraft**\* wp\-content/updraft wp\-content/uploads/aiowps_backups**\* wp\-content/uploads/aiowps_backups wp\-content/uploads/backup\-guard**\* wp\-content/uploads/backup\-guard wp\-content/uploads/backupbuddy_backups**\* wp\-content/uploads/backupbuddy_backups wp\-content/uploads/backupbuddy_temp**\* wp\-content/uploads/backupbuddy_temp wp\-content/uploads/ithemes\-security/backups**\* wp\-content/uploads/ithemes\-security/backups wp\-content/uploads/mainwp/backup**\* wp\-content/uploads/mainwp/backup wp\-content/uploads/pb_backupbuddy**\* wp\-content/uploads/pb_backupbuddy wp\-content/uploads/snapshots**\* wp\-content/uploads/snapshots wp\-content/uploads/sucuri**\* wp\-content/uploads/sucuri wp\-content/uploads/wp\-clone**\* wp\-content/uploads/wp\-clone wp\-content/uploads/wp_all_backup**\* wp\-content/uploads/wp_all_backup wp\-content/uploads/wpbackitup_backups**\* wp\-content/uploads/wpbackitup_backups wp\-content/wfcache**\* wp\-content/wfcache wp\-content/wishlist\-backup**\* wp\-content/wishlist\-backup wp\-content/wpvividbackups**\* wp\-content/wpvividbackups wp\-snapshots**\* wp\-snapshots "../../../../../.DS_Store" ".htaccess" ".user.ini" "php.ini" "web.config" "wp-config.php" "../../../../../dbcache" "../../../../../debug_log" "../../../../../error_log" "../../../../../objectcache" "../../../../../pgcache" "../../../../../ws_ftp.log" wp-content/backups-dup-pro/**\*  2>&1
+COMPRESSED SIZE: 506.62MB
+ARCHIVE RUNTIME: 51.708 sec.
+MEMORY STACK: 19MB
+EXECUTING SHELL COMMAND
+CHECK FILES Array
+(
+    [0] => dup-installer/api/class.api.php
+    [1] => dup-installer/assets/index.php
+    [2] => dup-installer/classes/index.php
+    [3] => dup-installer/ctrls/index.php
+    [4] => dup-installer/src/Utils/Autoloader.php
+    [5] => dup-installer/templates/default/page-help.php
+    [6] => dup-installer/main.installer.php
+    [7] => 20230323_327c3c7b7f724b341098_20230323192320_installer-backup.php
+    [8] => dup-installer/index.php
+    [9] => dup-installer/libs/Snap/index.php
+    [10] => dup-installer/assets/js/duplicator-tooltip.js
+    [11] => dup-installer/assets/js/tippy/index.php
+    [12] => dup-installer/dup-archive__327c3c7-23192320.txt
+    [13] => dup-installer/dup-scan__327c3c7-23192320.json
+    [14] => dup-installer/dup-scanned-files__327c3c7-23192320.txt
+    [15] => dup-installer/dup-scanned-dirs__327c3c7-23192320.txt
+    [16] => dup-installer/dup-manual-extract__327c3c7-23192320
+    [17] => dup-installer/dup-database__327c3c7-23192320.sql
+)
+
+Executing extra count string unzip -Z1 '/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/tmp/20230323_327c3c7b7f724b341098_20230323192320_archive.zip' | grep '^\(dup-installer/api/class.api.php\|dup-installer/assets/index.php\|dup-installer/classes/index.php\|dup-installer/ctrls/index.php\|dup-installer/src/Utils/Autoloader.php\|dup-installer/templates/default/page-help.php\|dup-installer/main.installer.php\|20230323_327c3c7b7f724b341098_20230323192320_installer-backup.php\|dup-installer/index.php\|dup-installer/libs/Snap/index.php\|dup-installer/assets/js/duplicator-tooltip.js\|dup-installer/assets/js/tippy/index.php\|dup-installer/dup-archive__327c3c7-23192320.txt\|dup-installer/dup-scan__327c3c7-23192320.json\|dup-installer/dup-scanned-files__327c3c7-23192320.txt\|dup-installer/dup-scanned-dirs__327c3c7-23192320.txt\|dup-installer/dup-manual-extract__327c3c7-23192320\|dup-installer/dup-database__327c3c7-23192320.sql\)' | wc -l
+
+********************************************************************************
+STORAGE:
+********************************************************************************
+LOCAL: Default, /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 16.31MB
+INSTALLER FILE: 129.45KB
+ARCHIVE FILE: 510.92MB 
+EXPECTED FILE/DIRECTORY COUNT: 29,214
+ACTUAL FILE/DIRECTORY COUNT: 29,223
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 61.979 sec.
+PEAK PHP MEMORY USED: 65MB
+DONE PROCESSING => 20230323 2023-03-23 19:24:40
+
+-----------------------------------------
+STORAGE PROCESSING THREAD INITIATED
+** LOCAL [Name: Default] [ID: -2] **
+SUCCESS: copied to default location: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro
+-----------------------------------------
+STORAGE PROCESSING THREAD INITIATED
+STORAGE PROCESSING COMPLETED
+
+********************************************************************************
+********************************************************************************
+DUPLICATOR PRO PACKAGE CREATION OR MANUAL STORAGE TRANSFER END: 2023-03-23 19:24:41
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+********************************************************************************
+
+[PHP ERR][ISSUE] MSG:Array and string offset access syntax with curly braces is deprecated [CODE:8192|FILE:/home/joys2021/joys.net.ua/testovi/wp-content/plugins/wp-translitera/wp-translitera.php|LINE:124]
+[PHP ERR][ISSUE] MSG:Array and string offset access syntax with curly braces is deprecated [CODE:8192|FILE:/home/joys2021/joys.net.ua/testovi/wp-content/plugins/wp-translitera/wp-translitera.php|LINE:124]

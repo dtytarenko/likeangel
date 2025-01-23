@@ -1,0 +1,338 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WPadmin E-commerce integration\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-23 10:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.4; wp-5.5.3"
+
+#: wp_autoupdate.php:132
+msgid ""
+" Please renew your license to update. You can change your license key in <a "
+"href=\"/wp-admin/admin.php?page=wpadmin_settings\">E-commerce integration v2 "
+"> General options</a>"
+msgstr ""
+
+#: inc/admin.php:442
+msgid "Add analytics code?"
+msgstr ""
+
+#: inc/admin.php:387
+msgid "Add Dynamic Remarketing code?"
+msgstr ""
+
+#: inc/admin.php:453
+msgid "Add FB pixel code?"
+msgstr ""
+
+#: inc/admin.php:464
+msgid "Add Google ADS code?"
+msgstr ""
+
+#: inc/admin.php:431
+msgid "Add TAG Manager code?"
+msgstr ""
+
+#: inc/admin.php:401
+msgid "Additional codes settings"
+msgstr ""
+
+#: inc/admin.php:427
+msgid ""
+"Additional information you can find <a href='https://support.google."
+"com/tagmanager/answer/11994839?"
+"hl=en&ref_topic=12403939&sjid=9720146569662259092-EU' target='_blank'>"
+"here</a>"
+msgstr ""
+
+#: inc/admin.php:478
+msgid "Advertising with guarantee"
+msgstr ""
+
+#: inc/admin.php:275
+msgid ""
+"Avaliable API versions you can find <a href='https://developers.facebook."
+"com/docs/graph-api/changelog/#available-marketing-api-versions' "
+"target='_blank'>here</a>"
+msgstr ""
+
+#: inc/functions.php:232 inc/gen_feed.php:86
+msgid "BRAND NAME"
+msgstr ""
+
+#: inc/admin.php:295 inc/admin.php:307
+msgid ""
+"Change uk to ru or en for additional language if WPML or Polylang is used "
+"(optional)"
+msgstr ""
+
+#: inc/admin.php:336 inc/admin.php:346
+msgid "Choose attribute for custom_label"
+msgstr ""
+
+#: inc/admin.php:322
+msgid "Choose attribute wich is used as color on product if exists."
+msgstr ""
+
+#: inc/admin.php:332
+msgid "Choose attribute wich is used as size on product if exists."
+msgstr ""
+
+#: inc/admin.php:412
+msgid "Choose brand taxonomy"
+msgstr ""
+
+#: inc/admin.php:316
+msgid "Choose color attribute"
+msgstr ""
+
+#: inc/admin.php:326
+msgid "Choose size attribute"
+msgstr ""
+
+#: inc/admin.php:418
+msgid "Choose taxonomy wich is used as brand on product."
+msgstr ""
+
+#: inc/admin.php:282
+msgid "Code to test server events using the test events tool"
+msgstr ""
+
+#: inc/admin.php:380
+msgid "Conversion Label"
+msgstr ""
+
+#: inc/admin.php:342 inc/admin.php:352
+msgid ""
+"Custom attribute custom_label_X , details <a href='https://support.google."
+"com/merchants/answer/6324473?hl=uk' target='_blank'>here</a>"
+msgstr ""
+
+#: inc/admin.php:405
+msgid "Default brand name"
+msgstr ""
+
+#. Author of the plugin
+msgid "Dmytro Kondriuk"
+msgstr ""
+
+#: inc/admin.php:67 inc/admin.php:90 inc/admin.php:90
+msgid "E-commerce integration v2"
+msgstr ""
+
+#: inc/admin.php:260
+msgid "e.g., 1230975293864912321387"
+msgstr ""
+
+#: inc/admin.php:382
+msgid "e.g., 6c0C1_11FCOzR3e4"
+msgstr ""
+
+#: inc/admin.php:375
+msgid "e.g., AW-XXXXXXXXX"
+msgstr ""
+
+#: inc/admin.php:246 inc/admin.php:267
+msgid "e.g., Ev7Zcg5Ln4"
+msgstr ""
+
+#: inc/admin.php:426
+msgid "e.g., G-XXXXXXXXX"
+msgstr ""
+
+#: inc/admin.php:281
+msgid "e.g., TEST35891"
+msgstr ""
+
+#: inc/admin.php:274
+msgid "e.g., v19.0"
+msgstr ""
+
+#: inc/admin.php:62
+msgid "Ecommerce WPAdmin options"
+msgstr ""
+
+#: inc/admin.php:408
+msgid ""
+"Enter the name of the Brand you wish to use if Brand was not specified in "
+"product data"
+msgstr ""
+
+#: inc/admin.php:212
+msgid "Enter your plugin key"
+msgstr ""
+
+#: inc/admin.php:279
+msgid "FB API Test code"
+msgstr ""
+
+#: inc/admin.php:265
+msgid "FB API token"
+msgstr ""
+
+#: inc/admin.php:268
+msgid ""
+"FB API token you can take <a href='https://developers.facebook."
+"com/docs/marketing-api/conversions-api/get-started/#access-token' "
+"target='_blank'>here</a>"
+msgstr ""
+
+#: inc/admin.php:272
+msgid "FB API version"
+msgstr ""
+
+#: inc/admin.php:304
+msgid "FB Feed"
+msgstr ""
+
+#: inc/admin.php:258
+msgid "FB Pixel ID"
+msgstr ""
+
+#: inc/admin.php:261
+msgid ""
+"FB Pixel ID you can take <a href='https://developers.facebook."
+"com/docs/marketing-api/conversions-api/get-started/#pixel-id' "
+"target='_blank'>here</a>"
+msgstr ""
+
+#: inc/admin.php:244
+msgid "GA4 API secret"
+msgstr ""
+
+#: inc/admin.php:247
+msgid ""
+"GA4 API secret you can take <a href='https://developers.google."
+"com/analytics/devguides/collection/protocol/ga4/reference#api_secret' "
+"target='_blank'>here</a>"
+msgstr ""
+
+#: inc/admin.php:237
+msgid "GA4 Measurement ID"
+msgstr ""
+
+#: inc/admin.php:240
+msgid ""
+"GA4 Measurement ID you can take  <a href='https://support.google."
+"com/analytics/answer/9539598?sjid=9720146569662259092-EU#find-G-ID' "
+"target='_blank'>here</a>"
+msgstr ""
+
+#: inc/admin.php:233
+msgid "GA4 options"
+msgstr ""
+
+#: inc/admin.php:208
+msgid "General options"
+msgstr ""
+
+#: inc/admin.php:254
+msgid "General options FB"
+msgstr ""
+
+#: inc/admin.php:369
+msgid "General options for Google Ads"
+msgstr ""
+
+#: inc/admin.php:496
+msgid "Go to update page"
+msgstr ""
+
+#: inc/admin.php:383
+msgid "Google Ads conversion Label"
+msgstr ""
+
+#: inc/admin.php:373
+msgid "Google Ads tag ID"
+msgstr ""
+
+#: inc/admin.php:376
+msgid ""
+"Google Ads tag ID you can take <a href='https://support.google.com/google-"
+"ads/answer/12326985?hl=en' target='_blank'>here</a>"
+msgstr ""
+
+#. Description of the plugin
+msgid "Google and FB feeds, analytics code integration with order process"
+msgstr ""
+
+#: inc/admin.php:292
+msgid "Google Feed"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://wpadmin.pro/"
+msgstr ""
+
+#: inc/admin.php:356
+msgid "Include OUT of Stock products in feed or not? Check to include."
+msgstr ""
+
+#: inc/admin.php:407
+msgid "My own Brand"
+msgstr ""
+
+#: inc/admin.php:222 inc/admin.php:359 inc/admin.php:390 inc/admin.php:434
+#: inc/admin.php:445 inc/admin.php:456 inc/admin.php:467
+msgid "No"
+msgstr ""
+
+#: inc/admin.php:288
+msgid "Product feeds options"
+msgstr ""
+
+#: inc/admin.php:491
+msgid "Save changes"
+msgstr ""
+
+#: inc/admin.php:34 inc/admin.php:191
+msgid "Settings"
+msgstr ""
+
+#: inc/admin.php:219
+msgid "Show advanced options? Check to show."
+msgstr ""
+
+#: inc/admin.php:424
+msgid "TAG Manager ID"
+msgstr ""
+
+#: inc/admin.php:482
+msgid "Text for Advertising with guarantee"
+msgstr ""
+
+#. Plugin Name: WPadmin E-commerce integration v2
+#. Plugin URI: http://wpadmin.pro
+#. Description: Google and FB feeds, analytics code integration with order process
+#. Version: 2.2
+#. Text Domain: wpadminpro
+#. Domain Path: /languages
+#. Author: Dmytro Kondriuk
+#. Author URI: http://wpadmin.pro
+#. Update URI: https://wordpress.co.ua/plugins-update
+#. License: GPL12
+#. Name of the plugin
+#: e-commerce-wpadmin-v2.php:14 inc/admin.php:90
+msgid "WPadmin E-commerce integration v2"
+msgstr ""
+
+#: inc/admin.php:225 inc/admin.php:362 inc/admin.php:393 inc/admin.php:437
+#: inc/admin.php:448 inc/admin.php:459 inc/admin.php:470
+msgid "Yes"
+msgstr ""
+
+#: inc/admin.php:215
+msgid ""
+"You'll get your key after purchase <a href='https://wordpress.co.ua/wpadmin-"
+"ecommerce' target='_blank'>here</a>"
+msgstr ""

@@ -1,0 +1,193 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Payment Gateway for LiqPay for Woocommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-20 21:02+0000\n"
+"PO-Revision-Date: 2022-09-20 21:21+0000\n"
+"Last-Translator: \n"
+"Language-Team: Українська\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.5; wp-6.0.2\n"
+"X-Domain: wc-liqpay"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:172
+msgid "Button"
+msgstr "Кнопка"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:116
+msgid "Description"
+msgstr "Опис"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:118
+msgid "Description that appears on the checkout page"
+msgstr "Опис, який відображається на сторінці оформлення замовлення"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:175
+msgid "Full path to the image of the button to go to LiqPay"
+msgstr "Повний шлях до зображення кнопки переходу в LiqPay"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:167
+msgid "Full path to the logo, located on the order page"
+msgstr "Повний шлях до логотипу, розташований на сторінці замовлення"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:85
+msgid "Gateway disabled"
+msgstr "Шлюз вимкнено"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:108
+msgid "Heading"
+msgstr "Заголовок"
+
+#. Author URI of the plugin
+msgid "https://komanda.dev/"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:150
+msgid ""
+"Interface language (For uk + en install multi-language plugin. Separating "
+"languages ​​with :: .)"
+msgstr ""
+"Мова інтерфейсу (Для uk + en встановити багатомовний плагін. Розділення мов "
+"за допомогою ::.)"
+
+#. Author of the plugin
+msgid "komanda.dev"
+msgstr ""
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:146
+msgid "Language"
+msgstr "Мова"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:155
+msgid "Language detection function"
+msgstr "Функція визначення мови"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:71
+msgid "Last returned result is liqpay:"
+msgstr "Останній повернутий результат liqpay:"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:86
+msgid "Liqpay does not support your stores currencies ."
+msgstr "Liqpay не підтримує валюти ваших магазинів."
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:164
+msgid "Logotype"
+msgstr "Логотип"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:124
+#: includes/WC_Gateway_kmnd_Liqpay.php:126
+msgid "Message before payment"
+msgstr "Повідомлення перед оплатою"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:308
+msgid "Order has been paid (payment received)"
+msgstr "Замовлення оплачено (платіж отримано)"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:180
+msgid "Order status"
+msgstr "Статус замовлення"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:183
+msgid "Order status after successful payment"
+msgstr "Статус замовлення після успішної оплати"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:119
+msgid "Pay using the payment system LiqPay::Pay with LiqPay payment system"
+msgstr ""
+"Оплата за допомогою платіжної системи LiqPay::Оплата за допомогою платіжної "
+"системи LiqPay"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:262
+msgid "Payment for order -"
+msgstr "Оплата замовлення -"
+
+#. Name of the plugin
+msgid "Payment Gateway for LiqPay for Woocommerce"
+msgstr "Платіжний шлюз для LiqPay для Woocommerce"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:313
+msgid "Payment has not been received"
+msgstr "Оплата не надійшла"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:18
+#: includes/WC_Gateway_kmnd_Liqpay.php:68
+msgid "Payment system LiqPay"
+msgstr "Платіжна система LiqPay"
+
+#. Description of the plugin
+msgid ""
+"Plugin for paying for products through the LiqPay service. Works in "
+"conjunction with the Woocommerce plugin"
+msgstr ""
+"Плагін для оплати товарів через сервіс LiqPay. Працює в поєднанні з плагіном "
+"Woocommerce"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:139
+msgid "Private key"
+msgstr "Приватний ключ"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:141
+msgid "Private key LiqPay. Required parameter"
+msgstr "Приватний ключ LiqPay. Обов'язковий параметр"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:132
+msgid "Public key"
+msgstr "Публічний ключ"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:134
+msgid "Public key LiqPay. Required parameter"
+msgstr "Публічний ключ. Обовязково"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:196
+msgid "Redirect page URL"
+msgstr "URL сторінки перенаправлення"
+
+#: wc-liqpay.php:60
+msgid "Settings"
+msgstr "Налаштування"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:188
+msgid "Test mode"
+msgstr "Тестовий режим"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:309
+msgid "The client paid for his order"
+msgstr "Клієнт оплатив своє замовлення"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:158
+msgid "The function of determining the language of your plugin"
+msgstr "Функція визначення мови вашого плагіна"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:191
+msgid ""
+"This mode will help to test the payment without withdrawing funds from the "
+"cards"
+msgstr "Цей режим допоможе перевірити оплату без зняття коштів з карт"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:110
+msgid "Title that appears on the checkout page"
+msgstr "Назва, яка відображається на сторінці оформлення замовлення"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:103
+#: includes/WC_Gateway_kmnd_Liqpay.php:189
+msgid "Turn on"
+msgstr "Ввімкнути"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:101
+msgid "Turn on/Switch off"
+msgstr "Увімкнути/Вимкнути"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:204
+msgid "URL error Payment page"
+msgstr "Помилка URL Сторінка оплати"
+
+#: includes/WC_Gateway_kmnd_Liqpay.php:199
+#: includes/WC_Gateway_kmnd_Liqpay.php:207
+msgid "URL page to go to after gateway LiqPay"
+msgstr "URL-сторінка для переходу після шлюзу LiqPay"

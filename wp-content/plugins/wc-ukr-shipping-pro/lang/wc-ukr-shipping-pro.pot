@@ -1,0 +1,712 @@
+# Copyright (C) 2024 Qodax Software
+# This file is distributed under the same license as the WC Ukraine Shipping PRO plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Ukraine Shipping PRO 1.17.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wc-ukr-shipping-pro\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-08-05T14:49:07+03:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: wc-ukr-shipping-pro\n"
+
+#. Plugin Name of the plugin
+msgid "WC Ukraine Shipping PRO"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://kirillbdev.pro/wc-ukr-shipping-pro/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Integration of Nova Poshta delivery service for WooCommerce"
+msgstr ""
+
+#. Author of the plugin
+msgid "Qodax Software"
+msgstr ""
+
+#: src/Component/ListTable/AutomationListTable.php:56
+#: views/automation.php:27
+msgid "Name"
+msgstr ""
+
+#: src/Component/ListTable/AutomationListTable.php:57
+msgid "Event"
+msgstr ""
+
+#: src/Component/ListTable/AutomationListTable.php:58
+msgid "Event data"
+msgstr ""
+
+#: src/Component/ListTable/AutomationListTable.php:59
+#: views/automation.php:33
+msgid "Active"
+msgstr ""
+
+#: src/Component/ListTable/AutomationListTable.php:60
+msgid "Created At"
+msgstr ""
+
+#: src/Component/ListTable/AutomationListTable.php:92
+#: src/Modules/Backend/EditOrder.php:106
+#: src/Modules/Backend/OptionsPage.php:120
+#: src/Modules/Backend/OptionsPage.php:121
+msgid "Edit"
+msgstr ""
+
+#: src/Component/ListTable/AutomationListTable.php:97
+msgid "Confirm action"
+msgstr ""
+
+#: src/Component/ListTable/AutomationListTable.php:98
+#: src/Modules/Backend/AssetLoader.php:224
+#: src/Modules/Backend/Orders.php:174
+#: views/order/edit_order_metabox.php:19
+msgid "Delete"
+msgstr ""
+
+#: src/Http/Controllers/OptionsController.php:72
+msgid "This feature works only with new UI"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:190
+msgid "Warehouses data of Nova Poshta"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:191
+msgid "Last update date"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:192
+msgid "Status"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:193
+msgid "Continue update"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:194
+msgid "Update warehouses"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:195
+msgid "Not completed"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:196
+msgid "Completed"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:197
+msgid "Unknown"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:198
+msgid "Load areas"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:199
+msgid "Load cities"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:200
+msgid "Load warehouses"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:201
+msgid "Warehouses db updated successfully"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:202
+#: src/Modules/Frontend/AssetLoader.php:126
+msgid "City"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:203
+#: src/Modules/Frontend/AssetLoader.php:127
+#: views/settings.php:242
+msgid "Warehouse"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:204
+#: src/Modules/Frontend/AssetLoader.php:129
+#: src/Services/TranslateService.php:107
+msgid "Settlement"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:205
+#: src/Modules/Frontend/AssetLoader.php:130
+#: src/Services/TranslateService.php:109
+msgid "Street"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:206
+#: src/Modules/Frontend/AssetLoader.php:131
+#: src/Services/TranslateService.php:111
+msgid "House"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:207
+#: src/Modules/Frontend/AssetLoader.php:132
+#: src/Services/TranslateService.php:113
+msgid "Flat"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:208
+msgid "Shipping cost"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:209
+msgid "Shipping cost type"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:210
+msgid "Fixed"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:211
+msgid "From order amount"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:212
+msgid "Nova Poshta API"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:213
+msgid "Cargo type"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:214
+msgid "Cargo"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:215
+msgid "Documents"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:216
+msgid "TiresWheels"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:217
+msgid "Pallet"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:218
+msgid "Parcel"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:219
+msgid "Address shipping cost"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:220
+msgid "Enable separated cost"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:221
+msgid "Fixed cost"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:222
+msgid "Order amount"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:223
+msgid "Add"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:225
+msgid "COD"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:226
+msgid "COD method"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:227
+msgid "Take COD into account when calculating shipping cost"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:228
+msgid "Separate name for free shipping"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:229
+msgid "Enable separate name"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:230
+msgid "Free shipping name"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:231
+msgid "Default sender warehouse"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:232
+msgid "Default sender address"
+msgstr ""
+
+#: src/Modules/Backend/AssetLoader.php:233
+#: views/partial/options_license.php:4
+msgid "License key"
+msgstr ""
+
+#: src/Modules/Backend/EditOrder.php:61
+#: src/Modules/Backend/Orders.php:67
+#: views/settings.php:26
+msgid "Invoice"
+msgstr ""
+
+#: src/Modules/Backend/EditOrder.php:78
+msgid "Invoice creation is unavailable for this order"
+msgstr ""
+
+#: src/Modules/Backend/OptionsPage.php:70
+#: src/Modules/Core/PluginInfo.php:42
+#: views/settings.php:9
+msgid "Settings"
+msgstr ""
+
+#: src/Modules/Backend/OptionsPage.php:81
+#: src/Modules/Backend/OptionsPage.php:82
+msgid "Create TTN"
+msgstr ""
+
+#: src/Modules/Backend/OptionsPage.php:90
+#: src/Modules/Backend/OptionsPage.php:91
+msgid "Orders"
+msgstr ""
+
+#: src/Modules/Backend/OptionsPage.php:99
+#: src/Modules/Backend/OptionsPage.php:100
+msgid "Automation"
+msgstr ""
+
+#: src/Modules/Backend/OptionsPage.php:111
+#: src/Modules/Backend/OptionsPage.php:112
+#: src/Modules/Backend/Orders.php:183
+#: views/order/edit_order_metabox.php:26
+msgid "Create"
+msgstr ""
+
+#: src/Modules/Backend/OptionsPage.php:216
+msgid "Add rule"
+msgstr ""
+
+#: src/Modules/Backend/OptionsPage.php:234
+msgid "Rule not found"
+msgstr ""
+
+#: src/Modules/Backend/OptionsPage.php:244
+msgid "Rule saved successfully"
+msgstr ""
+
+#: src/Modules/Backend/Orders.php:68
+#: src/Modules/Backend/Orders.php:117
+msgid "Invoice number"
+msgstr ""
+
+#: src/Modules/Backend/Orders.php:170
+#: views/order/edit_order_metabox.php:15
+msgid "Print"
+msgstr ""
+
+#: src/Modules/Backend/Orders.php:186
+#: views/order/edit_order_metabox.php:29
+msgid "Attach"
+msgstr ""
+
+#: src/Modules/Frontend/AssetLoader.php:121
+#: src/Services/TranslateService.php:101
+msgid "Shipping address"
+msgstr ""
+
+#: src/Modules/Frontend/AssetLoader.php:122
+msgid "to the warehouse"
+msgstr ""
+
+#: src/Modules/Frontend/AssetLoader.php:123
+msgid "to the doors"
+msgstr ""
+
+#: src/Modules/Frontend/AssetLoader.php:124
+msgid "to the poshtomat"
+msgstr ""
+
+#: src/Modules/Frontend/AssetLoader.php:128
+msgid "Poshtomat"
+msgstr ""
+
+#: src/Modules/Frontend/AssetLoader.php:133
+msgid "Enter value for search"
+msgstr ""
+
+#: src/Modules/Frontend/AssetLoader.php:134
+msgid "Loading..."
+msgstr ""
+
+#: src/Modules/Frontend/AssetLoader.php:135
+msgid "Load more..."
+msgstr ""
+
+#: src/Modules/Frontend/AssetLoader.php:136
+#: src/Services/TranslateService.php:115
+msgid "Nothing found"
+msgstr ""
+
+#: src/Modules/Frontend/AssetLoader.php:137
+msgid "Enter more chars"
+msgstr ""
+
+#: src/Modules/Frontend/AssetLoader.php:138
+msgid "Enter full address"
+msgstr ""
+
+#: src/Modules/Frontend/Checkout.php:64
+msgid "Middle name"
+msgstr ""
+
+#: src/Services/TranslateService.php:99
+msgid "Nova Poshta"
+msgstr ""
+
+#: src/Services/TranslateService.php:100
+msgid "Nova Poshta (COD)"
+msgstr ""
+
+#: src/Services/TranslateService.php:102
+msgid "Select area"
+msgstr ""
+
+#: src/Services/TranslateService.php:103
+msgid "Select city"
+msgstr ""
+
+#: src/Services/TranslateService.php:104
+msgid "Select warehouse"
+msgstr ""
+
+#: src/Services/TranslateService.php:105
+msgid "Need address shipping"
+msgstr ""
+
+#: src/Services/TranslateService.php:106
+msgid "Enter address"
+msgstr ""
+
+#: src/Services/TranslateService.php:108
+#: src/Services/TranslateService.php:110
+msgid "Start typing a word or part of a word"
+msgstr ""
+
+#: src/Services/TranslateService.php:116
+msgid "Select warehouse of <strong>Nova Poshta</strong>"
+msgstr ""
+
+#: src/Services/TranslateService.php:117
+msgid "Select settlement"
+msgstr ""
+
+#: src/Services/TranslateService.php:118
+msgid "Select street"
+msgstr ""
+
+#: src/Services/TranslateService.php:119
+msgid "Enter house number"
+msgstr ""
+
+#: views/automation.php:15
+msgid "Rule constructor"
+msgstr ""
+
+#: views/automation.php:20
+#: views/settings.php:11
+msgid "Save"
+msgstr ""
+
+#: views/partial/options_sender_default.php:2
+msgid "Default sender"
+msgstr ""
+
+#: views/partial/options_sender_default.php:10
+msgid "Sender identifier"
+msgstr ""
+
+#: views/partial/options_sender_default.php:12
+msgid "Select sender"
+msgstr ""
+
+#: views/partial/options_sender_default.php:19
+msgid "Sender contact"
+msgstr ""
+
+#: views/partial/options_sender_default.php:21
+msgid "Select contact"
+msgstr ""
+
+#: views/partial/options_shipping.php:12
+msgid "Enable address shipping"
+msgstr ""
+
+#: views/partial/options_shipping.php:21
+msgid "Calculate shipping cost for view only"
+msgstr ""
+
+#: views/partial/options_shipping.php:27
+msgid "Consider dimensions when calculating shipping cost"
+msgstr ""
+
+#: views/partial/options_shipping.php:41
+msgid "Display language of cities and departments"
+msgstr ""
+
+#: views/partial/options_shipping.php:43
+msgid "Russian"
+msgstr ""
+
+#: views/partial/options_shipping.php:44
+msgid "Ukrainian"
+msgstr ""
+
+#: views/partial/options_shipping.php:53
+msgid "Shipping block position on checkout page"
+msgstr ""
+
+#: views/partial/options_shipping.php:55
+msgid "Default section"
+msgstr ""
+
+#: views/partial/options_shipping.php:56
+msgid "Additional section"
+msgstr ""
+
+#: views/partial/options_shipping.php:69
+msgid "Save last customer address"
+msgstr ""
+
+#: views/partial/options_shipping.php:79
+msgid "Use Nova Poshta API for address shipping"
+msgstr ""
+
+#: views/partial/options_shipping.php:89
+msgid "Inject additional shipping fields"
+msgstr ""
+
+#: views/partial/options_shipping.php:91
+msgid "This option allows you to inject Middle name and Phone fields for delivery to another address."
+msgstr ""
+
+#: views/partial/top_panel.php:12
+msgid "Our site"
+msgstr ""
+
+#: views/partial/top_panel.php:16
+msgid "Documentation"
+msgstr ""
+
+#: views/settings.php:15
+msgid "Settings saved successfully"
+msgstr ""
+
+#: views/settings.php:23
+msgid "General"
+msgstr ""
+
+#: views/settings.php:24
+msgid "Shipping"
+msgstr ""
+
+#: views/settings.php:25
+msgid "Translates"
+msgstr ""
+
+#: views/settings.php:27
+msgid "Updates"
+msgstr ""
+
+#: views/settings.php:33
+msgid "API key of Nova Poshta"
+msgstr ""
+
+#: views/settings.php:39
+msgid "Color of spinner in frontend"
+msgstr ""
+
+#: views/settings.php:50
+msgid "Use new UI"
+msgstr ""
+
+#: views/settings.php:59
+msgid "Show only cargo warehouses"
+msgstr ""
+
+#: views/settings.php:68
+msgid "Show poshtomats"
+msgstr ""
+
+#: views/settings.php:72
+msgid "Load translates from"
+msgstr ""
+
+#: views/settings.php:76
+msgid "Plugin settings"
+msgstr ""
+
+#: views/settings.php:77
+msgid "Wordpress localization files"
+msgstr ""
+
+#: views/settings.php:80
+msgid "If you are using language plugins such as WPML or Polylang - select \"Wordpress localization files\" option"
+msgstr ""
+
+#: views/settings.php:97
+msgid "Shipping method name"
+msgstr ""
+
+#: views/settings.php:103
+msgid "Shipping block title"
+msgstr ""
+
+#: views/settings.php:109
+msgid "Placeholder of select area field"
+msgstr ""
+
+#: views/settings.php:115
+msgid "Placeholder of select city field"
+msgstr ""
+
+#: views/settings.php:121
+msgid "Placeholder of select warehouse field"
+msgstr ""
+
+#: views/settings.php:127
+msgid "Label of address shipping"
+msgstr ""
+
+#: views/settings.php:133
+msgid "Placeholder of address shipping"
+msgstr ""
+
+#: views/settings.php:139
+msgid "Label of settlement field"
+msgstr ""
+
+#: views/settings.php:145
+msgid "Placeholder of settlement field"
+msgstr ""
+
+#: views/settings.php:151
+msgid "Label of street field"
+msgstr ""
+
+#: views/settings.php:157
+msgid "Placeholder of street field"
+msgstr ""
+
+#: views/settings.php:163
+msgid "Label of house field"
+msgstr ""
+
+#: views/settings.php:169
+msgid "Placeholder of house field"
+msgstr ""
+
+#: views/settings.php:175
+msgid "Label of flat field"
+msgstr ""
+
+#: views/settings.php:181
+msgid "Placeholder of flat field"
+msgstr ""
+
+#: views/settings.php:187
+msgid "Empty result text"
+msgstr ""
+
+#: views/settings.php:193
+msgid "Validation error text"
+msgstr ""
+
+#: views/settings.php:199
+msgid "Settlement Validation error text"
+msgstr ""
+
+#: views/settings.php:205
+msgid "Street Validation error text"
+msgstr ""
+
+#: views/settings.php:211
+msgid "House Validation error text"
+msgstr ""
+
+#: views/settings.php:232
+msgid "Default payer"
+msgstr ""
+
+#: views/settings.php:234
+msgid "Sender"
+msgstr ""
+
+#: views/settings.php:235
+msgid "Recipient"
+msgstr ""
+
+#: views/settings.php:240
+msgid "Send as default from"
+msgstr ""
+
+#: views/settings.php:243
+msgid "Address"
+msgstr ""
+
+#: views/settings.php:248
+msgid "Default shipment description"
+msgstr ""
+
+#: views/settings.php:256
+msgid "Default weight (kg)"
+msgstr ""
+
+#: views/settings.php:262
+msgid "To disable this feature set value to 0"
+msgstr ""
+
+#: views/settings.php:269
+msgid "Payment control"
+msgstr ""
+
+#: views/settings.php:275
+msgid "Allow create invoice for any shipping methods"
+msgstr ""
+
+#: views/settings.php:281
+msgid "Mail subject"
+msgstr ""
+
+#: views/settings.php:287
+msgid "Mail template"
+msgstr ""
+
+#: views/settings.php:301
+msgid "Automatically send an email when creating an invoice"
+msgstr ""
+
+#: views/settings.php:314
+msgid "Enable cloud address API"
+msgstr ""
+
+#: views/settings.php:320
+msgid "Automatically add invoices to tracking"
+msgstr ""
+
+#: wc-ukr-shipping-pro.php:27
+msgid "Lite version was deactivated"
+msgstr ""

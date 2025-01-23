@@ -1,0 +1,1734 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-0 START @ 09:31:37
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ ORIGINAL SERVER                        |CURRENT SERVER
+OS__________________: Linux                                 |Linux
+PHP VERSION_________: 7.4.33                                |7.4.33
+********************************************************************************
+CURRENT SERVER INFO
+PHP_________________: 7.4.33 | SAPI: litespeed
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+ARCHITECTURE________: 64-bit
+SERVER______________: Apache
+DOC ROOT____________: "/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports"
+REQUEST URL_________: "https://testovi.joys.net.ua/wp-content/backups-dup-pro/imports"
+********************************************************************************
+OVERWRITE PARAMS
+ *** FROM PACKAGE
+PARAM SET KEY[cpnl-dbaction]
+ *** FROM LOCAL FILE
+PARAM SET KEY[template]
+PARAM SET KEY[valid-act]
+PARAM SET KEY[recovery-link]
+PARAM SET KEY[import-info]
+PARAM SET KEY[db-display-overwarn]
+PARAM SET KEY[cpnl-can-sel]
+PARAM SET KEY[view_mode]
+PARAM SET KEY[url_new]
+PARAM SET KEY[path_new]
+PARAM SET KEY[archive_action]
+PARAM SET KEY[archive_engine]
+PARAM SET KEY[dbaction]
+PARAM SET KEY[dbhost]
+PARAM SET KEY[dbname]
+PARAM SET KEY[dbuser]
+PARAM SET KEY[dbpass]
+PARAM SET KEY[dbcharset]
+PARAM SET KEY[dbcollate]
+PARAM SET KEY[ovr_site_data]
+********************************************************************************
+MAINTENANCE MODE DISABLE
+INSTALLER INFO
+
+INSTALL MODES_______: IMPORT, OVERWRITE, RESTORE BACKUP
+TEMPLATE____________: "import-base"
+VALIDATE ON START___: "auto"
+PATH_NEW____________: "/home/joys2021/joys.net.ua/testovi"
+URL_NEW_____________: "https://testovi.joys.net.ua"
+********************************************************************************
+IMPORTER INFO
+
+WP VERSION _________: 6.1.1
+DUP VERSION ________: 4.5.10
+LICENSE_____________: Business
+********************************************************************************
+ARCHIVE INFO
+
+ARCHIVE NAME________: "/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/20230323_[HASH]_20230323192320_archive.zip"
+ARCHIVE SIZE________: 510.92MB
+CREATED_____________: 2023-03-23 19:23:20
+WP VERSION__________: 6.1.1
+DUP VERSION_________: 4.5.10
+LICENSE_____________: Business
+DB VERSION__________: 5.7.33
+DB FILE SIZE________: 34.02MB
+DB TABLES___________: 83
+DB ROWS_____________: 45330
+URL HOME____________: https://testovi.joys.net.ua
+URL CORE____________: https://testovi.joys.net.ua
+URL CONTENT_________: https://testovi.joys.net.ua/wp-content
+URL UPLOAD__________: https://testovi.joys.net.ua/wp-content/uploads
+URL PLUGINS_________: https://testovi.joys.net.ua/wp-content/plugins
+URL MU PLUGINS______: https://testovi.joys.net.ua/wp-content/mu-plugins
+URL THEMES__________: https://testovi.joys.net.ua/wp-content/themes
+PATH HOME___________: /home/joys2021/joys.net.ua/testovi
+PATH ABS____________: /home/joys2021/joys.net.ua/testovi
+PATH WPCONFIG_______: /home/joys2021/joys.net.ua/testovi
+PATH WPCONTENT______: /home/joys2021/joys.net.ua/testovi/wp-content
+PATH UPLOADS________: /home/joys2021/joys.net.ua/testovi/wp-content/uploads
+PATH PLUGINS________: /home/joys2021/joys.net.ua/testovi/wp-content/plugins
+PATH MUPLUGINS______: /home/joys2021/joys.net.ua/testovi/wp-content/mu-plugins
+PATH THEMES_________: /home/joys2021/joys.net.ua/testovi/wp-content/themes
+
+SUBSITES
+SUBSITE [ID:   1] "testovi.joys.net.ua/"
+
+PLUGINS
+PLUGIN [SLUG:woo-variation-gallery/woo-variation-gallery.php   ][ON:true ]  Additional Variation Images Gallery for WooCommerce
+PLUGIN [SLUG:contact-form-7/wp-contact-form-7.php              ][ON:true ]  Contact Form 7
+PLUGIN [SLUG:ar-contactus/ar-contactus.php                     ][ON:true ]  Contact Us all-in-one button
+PLUGIN [SLUG:duplicator-pro/duplicator-pro.php                 ][ON:true ]  Duplicator Pro
+PLUGIN [SLUG:easy-social-icons/easy-social-icons.php           ][ON:true ]  Easy Social Icons
+PLUGIN [SLUG:force-regenerate-thumbnails/force-regenerate-thumbnails.php][ON:true ]  Force Regenerate Thumbnails
+PLUGIN [SLUG:loco-translate/loco.php                           ][ON:true ]  Loco Translate
+PLUGIN [SLUG:pw-gift-cards/pw-gift-cards.php                   ][ON:true ]  PW WooCommerce Gift Cards Pro
+PLUGIN [SLUG:revslider/revslider.php                           ][ON:true ]  Slider Revolution
+PLUGIN [SLUG:wc-ukr-shipping-pro/wc-ukr-shipping-pro.php       ][ON:true ]  WC Ukr Shipping PRO
+PLUGIN [SLUG:wp-reviews-plugin-for-google/wp-reviews-plugin-for-google.php][ON:true ]  Widgets for Google Reviews
+PLUGIN [SLUG:woocommerce/woocommerce.php                       ][ON:true ]  WooCommerce
+PLUGIN [SLUG:woo-keycrm/keycrm.php                             ][ON:true ]  WooCommerce Keycrm.app
+PLUGIN [SLUG:Word-Press-Woocommerce-master/woocommerce-gateway-wayforpay.php][ON:true ]  WooCommerce WayForPay Payments
+PLUGIN [SLUG:wp-file-manager/file_folder_manager.php           ][ON:true ]  WP File Manager
+PLUGIN [SLUG:wp-translitera/wp-translitera.php                 ][ON:true ]  WP Translitera
+PLUGIN [SLUG:duplicate-post/duplicate-post.php                 ][ON:true ]  Yoast Duplicate Post
+PLUGIN [SLUG:wordpress-seo/wp-seo.php                          ][ON:true ]  Yoast SEO
+PLUGIN [SLUG:wordpress-seo-premium/wp-seo-premium.php          ][ON:true ]  Yoast SEO Premium
+
+********************************************************************************
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/ctrls/ctrl.base.php:166][DELTA:   0.02501]  MESSAGE:END RENDER PAGE
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [validate] START
+START TEST "Archive Check" [CLASS: DUPX_Validation_test_archive_check]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Archive Check" RESULT: passed
+
+START TEST "Duplicator importer version" [CLASS: DUPX_Validation_test_importer_version]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Duplicator importer version" RESULT: passed
+
+START TEST "Overwrite Install" [CLASS: DUPX_Validation_test_owrinstall]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Overwrite Install" RESULT: skip
+
+START TEST "Recovery Point" [CLASS: DUPX_Validation_test_recovery]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Recovery Point" RESULT: hard warning
+
+START TEST "Package is Importable" [CLASS: DUPX_Validation_test_importable]
+LOG-TIME[DELTA:   0.00017]  MESSAGE:TEST "Package is Importable" RESULT: passed
+
+START TEST "REST API test" [CLASS: DUPX_Validation_test_rest_api]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "REST API test" RESULT: skip
+
+START TEST "Manual extraction detected" [CLASS: DUPX_Validation_test_manual_extraction]
+LOG-TIME[DELTA:   0.00000]  MESSAGE:TEST "Manual extraction detected" RESULT: good
+
+START TEST "Database Only" [CLASS: DUPX_Validation_test_dbonly_iswordpress]
+LOG-TIME[DELTA:   0.00000]  MESSAGE:TEST "Database Only" RESULT: skip
+
+START TEST "Package Age" [CLASS: DUPX_Validation_test_package_age]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Package Age" RESULT: good
+
+START TEST "Replace PATHs in database" [CLASS: DUPX_Validation_test_replace_paths]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Replace PATHs in database" RESULT: skip
+
+START TEST "Managed hosting supported" [CLASS: DUPX_Validation_test_managed_supported]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Managed hosting supported" RESULT: skip
+
+START TEST "Siteground" [CLASS: DUPX_Validation_test_siteground]
+LOG-TIME[DELTA:   0.00005]  MESSAGE:TEST "Siteground" RESULT: skip
+
+START TEST "Subomain multisite installation in subfolder" [CLASS: DUPX_Validation_test_multisite_subfolder]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Subomain multisite installation in subfolder" RESULT: skip
+
+START TEST "Addon Sites" [CLASS: DUPX_Validation_test_addon_sites]
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+LOG-TIME[DELTA:   0.22759]  MESSAGE:TEST "Addon Sites" RESULT: good
+
+START TEST "Wordfence" [CLASS: DUPX_Validation_test_wordfence]
+LOG-TIME[DELTA:   0.00009]  MESSAGE:TEST "Wordfence" RESULT: good
+
+START TEST "Table prefix of managed hosting" [CLASS: DUPX_Validation_test_managed_tprefix]
+LOG-TIME[DELTA:   0.00006]  MESSAGE:TEST "Table prefix of managed hosting" RESULT: skip
+
+START TEST "Wordpress Configuration" [CLASS: DUPX_Validation_test_wp_config]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Wordpress Configuration" RESULT: skip
+
+START TEST "PHP Version Mismatch" [CLASS: DUPX_Validation_test_php_version]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Version Mismatch" RESULT: good
+
+START TEST "PHP Open Base" [CLASS: DUPX_Validation_test_open_basedir]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Open Base" RESULT: good
+
+START TEST "PHP Memory Limit" [CLASS: DUPX_Validation_test_memory_limit]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Memory Limit" RESULT: good
+
+START TEST "PHP Extensions" [CLASS: DUPX_Validation_test_extensions]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Extensions" RESULT: good
+
+START TEST "PHP Mysqli" [CLASS: DUPX_Validation_test_mysql_connect]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Mysqli" RESULT: passed
+
+START TEST "PHP Functions and Classes" [CLASS: DUPX_Validation_test_php_functionalities]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Functions and Classes" RESULT: passed
+
+START TEST "PHP Timeout" [CLASS: DUPX_Validation_test_timeout]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Timeout" RESULT: good
+
+START TEST "Disk Space" [CLASS: DUPX_Validation_test_disk_space]
+LOG-TIME[DELTA:   0.00005]  MESSAGE:TEST "Disk Space" RESULT: good
+
+START TEST "Permissions: General" [CLASS: DUPX_Validation_test_iswritable]
+LOG-TIME[DELTA:   0.02573]  MESSAGE:TEST "Permissions: General" RESULT: passed
+
+START TEST "Permissions: Configs Files " [CLASS: DUPX_Validation_test_iswritable_configs]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Permissions: Configs Files " RESULT: passed
+
+START TEST "Cpanel connection" [CLASS: DUPX_Validation_test_cpnl_connection]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Cpanel connection" RESULT: skip
+
+START TEST "Create Database User" [CLASS: DUPX_Validation_test_cpnl_new_user]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Create Database User" RESULT: skip
+
+START TEST "Host Name" [CLASS: DUPX_Validation_test_db_host_name]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Host Name" RESULT: passed
+
+START TEST "Host Connection" [CLASS: DUPX_Validation_test_db_connection]
+LOG-TIME[DELTA:   0.00063]  MESSAGE:TEST "Host Connection" RESULT: passed
+
+START TEST "Database Version" [CLASS: DUPX_Validation_test_db_version]
+LOG-TIME[DELTA:   0.00189]  MESSAGE:TEST "Database Version" RESULT: passed
+
+START TEST "Create New Database" [CLASS: DUPX_Validation_test_db_create]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Create New Database" RESULT: skip
+
+START TEST "Database Engine Support" [CLASS: DUPX_Validation_test_db_supported_engine]
+LOG-TIME[DELTA:   0.00011]  MESSAGE:TEST "Database Engine Support" RESULT: passed
+
+START TEST "Database GTID Mode" [CLASS: DUPX_Validation_test_db_gtid_mode]
+LOG-TIME[DELTA:   0.00067]  MESSAGE:TEST "Database GTID Mode" RESULT: passed
+
+START TEST "Privileges: User Visibility" [CLASS: DUPX_Validation_test_db_visibility]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Privileges: User Visibility" RESULT: passed
+
+START TEST "Manual Table Check" [CLASS: DUPX_Validation_test_db_manual_tabels_count]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Manual Table Check" RESULT: skip
+
+START TEST "Multiple WP Installs" [CLASS: DUPX_Validation_test_db_multiple_wp_installs]
+LOG-TIME[DELTA:   0.00069]  MESSAGE:TEST "Multiple WP Installs" RESULT: passed
+
+START TEST "Privileges: User Resources" [CLASS: DUPX_Validation_test_db_user_resources]
+DB QUERY [ERROR][/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/classes/database/class.db.php:678] MSG: SELECT command denied to user 'joys2021_testovi'@'91.206.201.119' for table 'user'
+	SQL: SELECT max_questions, max_updates, max_connections FROM mysql.user WHERE user = 'joys2021_testovi' AND host = 'joys2021.mysql.tools'
+TRACE[1] CLASS___: DUPX_DB::mysqli_query      FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/classes/validation/class.validation.database.service.php[983]
+TRACE[2] CLASS___: DUPX_Validation_database_service->getUserResources FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/classes/validation/database-tests/class.validation.test.db.user.resources.php[28]
+TRACE[3] CLASS___: DUPX_Validation_test_db_user_resources->runTest FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/classes/validation/class.validation.abstract.item.php[46]
+TRACE[4] CLASS___: DUPX_Validation_abstract_item->test FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/classes/validation/class.validation.manager.php[228]
+TRACE[5] CLASS___: DUPX_Validation_manager->runTests FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/classes/validation/class.validation.manager.php[201]
+TRACE[6] CLASS___: DUPX_Validation_manager->getValidateData FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/ctrls/classes/class.ctrl.ajax.php[171]
+TRACE[7] CLASS___: DUPX_Ctrl_ajax::actions    FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/ctrls/classes/class.ctrl.ajax.php[96]
+TRACE[8] CLASS___: DUPX_Ctrl_ajax::controller FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/main.installer.php[47]
+
+LOG-TIME[DELTA:   0.00018]  MESSAGE:TEST "Privileges: User Resources" RESULT: passed
+
+START TEST "Privileges: User Table Access" [CLASS: DUPX_Validation_test_db_user_perms]
+LOG-TIME[DELTA:   0.00596]  MESSAGE:TEST "Privileges: User Table Access" RESULT: passed
+
+START TEST "Privileges: 'Show Variables' Query" [CLASS: DUPX_Validation_test_db_custom_queries]
+LOG-TIME[DELTA:   0.00080]  MESSAGE:TEST "Privileges: 'Show Variables' Query" RESULT: passed
+
+START TEST "Source Database Triggers" [CLASS: DUPX_Validation_test_db_triggers]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Source Database Triggers" RESULT: passed
+
+START TEST "Character Set and Collation Support" [CLASS: DUPX_Validation_test_db_supported_default_charset]
+LOG-TIME[DELTA:   0.00044]  MESSAGE:TEST "Character Set and Collation Support" RESULT: passed
+
+START TEST "Character Set and  Collation Capability" [CLASS: DUPX_Validation_test_db_supported_charset]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Character Set and  Collation Capability" RESULT: passed
+
+START TEST "Tables Case Sensitivity" [CLASS: DUPX_Validation_test_db_case_sensitive_tables]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Tables Case Sensitivity" RESULT: skip
+
+START TEST "Tables Flagged for Removal or Backup" [CLASS: DUPX_Validation_test_db_affected_tables]
+LOG-TIME[DELTA:   0.00053]  MESSAGE:TEST "Tables Flagged for Removal or Backup" RESULT: soft warning
+
+START TEST "Prefix too long" [CLASS: DUPX_Validation_test_db_prefix_too_long]
+LOG-TIME[DELTA:   0.00016]  MESSAGE:TEST "Prefix too long" RESULT: passed
+
+START TEST "Database cleanup" [CLASS: DUPX_Validation_test_db_cleanup]
+LOG-TIME[DELTA:   0.00000]  MESSAGE:TEST "Database cleanup" RESULT: skip
+
+START TEST "User created cleanup" [CLASS: DUPX_Validation_test_db_user_cleanup]
+LOG-TIME[DELTA:   0.00000]  MESSAGE:TEST "User created cleanup" RESULT: skip
+
+
+CTRL PARAMS AFTER VALIDATION
+AJAX ACTION [validate] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+SET VALUE install-type
+SET VALUE path_new
+SET VALUE url_new
+SET VALUE path_core_new
+SET VALUE siteurl
+SET VALUE path_cont_new
+SET VALUE url_cont_new
+SET VALUE path_upl_new
+SET VALUE url_upl_new
+SET VALUE path_plug_new
+SET VALUE url_plug_new
+SET VALUE path_muplug_new
+SET VALUE url_muplug_new
+SET VALUE subsite_id
+SET VALUE subsite_owr_mapping
+SET VALUE archive_action
+SET VALUE archive_engine
+SET VALUE archive_engine_wpskip
+SET VALUE db-engine
+SET VALUE mode_chunking
+SET VALUE users_mode
+SET VALUE mu_replace
+SET VALUE subsite_users_mode
+SET VALUE set_file_perms
+SET VALUE set_dir_perms
+SET VALUE file_perms_value
+SET VALUE dir_perms_value
+SET VALUE exe_safe_mode
+SET VALUE wp_config
+SET VALUE ht_config
+SET VALUE other_config
+SET VALUE zip_filetime
+SET VALUE remove-redundant
+SET VALUE remove-users-without-permissions
+SET VALUE blogname
+SET VALUE accept-warnings
+SET VALUE zip_throttling
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+STEP ACTION: "on-validate"
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/ctrls/ctrl.base.php:166][DELTA:   0.02069]  MESSAGE:END RENDER PAGE
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [validate] START
+START TEST "Archive Check" [CLASS: DUPX_Validation_test_archive_check]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Archive Check" RESULT: passed
+
+START TEST "Duplicator importer version" [CLASS: DUPX_Validation_test_importer_version]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Duplicator importer version" RESULT: passed
+
+START TEST "Overwrite Install" [CLASS: DUPX_Validation_test_owrinstall]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Overwrite Install" RESULT: skip
+
+START TEST "Recovery Point" [CLASS: DUPX_Validation_test_recovery]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Recovery Point" RESULT: hard warning
+
+START TEST "Package is Importable" [CLASS: DUPX_Validation_test_importable]
+LOG-TIME[DELTA:   0.00017]  MESSAGE:TEST "Package is Importable" RESULT: passed
+
+START TEST "REST API test" [CLASS: DUPX_Validation_test_rest_api]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "REST API test" RESULT: skip
+
+START TEST "Manual extraction detected" [CLASS: DUPX_Validation_test_manual_extraction]
+LOG-TIME[DELTA:   0.00000]  MESSAGE:TEST "Manual extraction detected" RESULT: good
+
+START TEST "Database Only" [CLASS: DUPX_Validation_test_dbonly_iswordpress]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database Only" RESULT: skip
+
+START TEST "Package Age" [CLASS: DUPX_Validation_test_package_age]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Package Age" RESULT: good
+
+START TEST "Replace PATHs in database" [CLASS: DUPX_Validation_test_replace_paths]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Replace PATHs in database" RESULT: skip
+
+START TEST "Managed hosting supported" [CLASS: DUPX_Validation_test_managed_supported]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Managed hosting supported" RESULT: skip
+
+START TEST "Siteground" [CLASS: DUPX_Validation_test_siteground]
+LOG-TIME[DELTA:   0.00005]  MESSAGE:TEST "Siteground" RESULT: skip
+
+START TEST "Subomain multisite installation in subfolder" [CLASS: DUPX_Validation_test_multisite_subfolder]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Subomain multisite installation in subfolder" RESULT: skip
+
+START TEST "Addon Sites" [CLASS: DUPX_Validation_test_addon_sites]
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+LOG-TIME[DELTA:   0.10308]  MESSAGE:TEST "Addon Sites" RESULT: good
+
+START TEST "Wordfence" [CLASS: DUPX_Validation_test_wordfence]
+LOG-TIME[DELTA:   0.00008]  MESSAGE:TEST "Wordfence" RESULT: good
+
+START TEST "Table prefix of managed hosting" [CLASS: DUPX_Validation_test_managed_tprefix]
+LOG-TIME[DELTA:   0.00005]  MESSAGE:TEST "Table prefix of managed hosting" RESULT: skip
+
+START TEST "Wordpress Configuration" [CLASS: DUPX_Validation_test_wp_config]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Wordpress Configuration" RESULT: skip
+
+START TEST "PHP Version Mismatch" [CLASS: DUPX_Validation_test_php_version]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Version Mismatch" RESULT: good
+
+START TEST "PHP Open Base" [CLASS: DUPX_Validation_test_open_basedir]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Open Base" RESULT: good
+
+START TEST "PHP Memory Limit" [CLASS: DUPX_Validation_test_memory_limit]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Memory Limit" RESULT: good
+
+START TEST "PHP Extensions" [CLASS: DUPX_Validation_test_extensions]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Extensions" RESULT: good
+
+START TEST "PHP Mysqli" [CLASS: DUPX_Validation_test_mysql_connect]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Mysqli" RESULT: passed
+
+START TEST "PHP Functions and Classes" [CLASS: DUPX_Validation_test_php_functionalities]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Functions and Classes" RESULT: passed
+
+START TEST "PHP Timeout" [CLASS: DUPX_Validation_test_timeout]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "PHP Timeout" RESULT: good
+
+START TEST "Disk Space" [CLASS: DUPX_Validation_test_disk_space]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Disk Space" RESULT: good
+
+START TEST "Permissions: General" [CLASS: DUPX_Validation_test_iswritable]
+LOG-TIME[DELTA:   0.02521]  MESSAGE:TEST "Permissions: General" RESULT: passed
+
+START TEST "Permissions: Configs Files " [CLASS: DUPX_Validation_test_iswritable_configs]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Permissions: Configs Files " RESULT: passed
+
+START TEST "Cpanel connection" [CLASS: DUPX_Validation_test_cpnl_connection]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Cpanel connection" RESULT: skip
+
+START TEST "Create Database User" [CLASS: DUPX_Validation_test_cpnl_new_user]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Create Database User" RESULT: skip
+
+START TEST "Host Name" [CLASS: DUPX_Validation_test_db_host_name]
+LOG-TIME[DELTA:   0.00002]  MESSAGE:TEST "Host Name" RESULT: passed
+
+START TEST "Host Connection" [CLASS: DUPX_Validation_test_db_connection]
+LOG-TIME[DELTA:   0.00030]  MESSAGE:TEST "Host Connection" RESULT: passed
+
+START TEST "Database Version" [CLASS: DUPX_Validation_test_db_version]
+LOG-TIME[DELTA:   0.00166]  MESSAGE:TEST "Database Version" RESULT: passed
+
+START TEST "Create New Database" [CLASS: DUPX_Validation_test_db_create]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Create New Database" RESULT: skip
+
+START TEST "Database Engine Support" [CLASS: DUPX_Validation_test_db_supported_engine]
+LOG-TIME[DELTA:   0.00012]  MESSAGE:TEST "Database Engine Support" RESULT: passed
+
+START TEST "Database GTID Mode" [CLASS: DUPX_Validation_test_db_gtid_mode]
+LOG-TIME[DELTA:   0.00065]  MESSAGE:TEST "Database GTID Mode" RESULT: passed
+
+START TEST "Privileges: User Visibility" [CLASS: DUPX_Validation_test_db_visibility]
+LOG-TIME[DELTA:   0.00004]  MESSAGE:TEST "Privileges: User Visibility" RESULT: passed
+
+START TEST "Manual Table Check" [CLASS: DUPX_Validation_test_db_manual_tabels_count]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Manual Table Check" RESULT: skip
+
+START TEST "Multiple WP Installs" [CLASS: DUPX_Validation_test_db_multiple_wp_installs]
+LOG-TIME[DELTA:   0.00065]  MESSAGE:TEST "Multiple WP Installs" RESULT: passed
+
+START TEST "Privileges: User Resources" [CLASS: DUPX_Validation_test_db_user_resources]
+DB QUERY [ERROR][/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/classes/database/class.db.php:678] MSG: SELECT command denied to user 'joys2021_testovi'@'91.206.201.119' for table 'user'
+	SQL: SELECT max_questions, max_updates, max_connections FROM mysql.user WHERE user = 'joys2021_testovi' AND host = 'joys2021.mysql.tools'
+TRACE[1] CLASS___: DUPX_DB::mysqli_query      FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/classes/validation/class.validation.database.service.php[983]
+TRACE[2] CLASS___: DUPX_Validation_database_service->getUserResources FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/classes/validation/database-tests/class.validation.test.db.user.resources.php[28]
+TRACE[3] CLASS___: DUPX_Validation_test_db_user_resources->runTest FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/classes/validation/class.validation.abstract.item.php[46]
+TRACE[4] CLASS___: DUPX_Validation_abstract_item->test FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/classes/validation/class.validation.manager.php[228]
+TRACE[5] CLASS___: DUPX_Validation_manager->runTests FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/classes/validation/class.validation.manager.php[201]
+TRACE[6] CLASS___: DUPX_Validation_manager->getValidateData FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/ctrls/classes/class.ctrl.ajax.php[171]
+TRACE[7] CLASS___: DUPX_Ctrl_ajax::actions    FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/ctrls/classes/class.ctrl.ajax.php[96]
+TRACE[8] CLASS___: DUPX_Ctrl_ajax::controller FILE: /home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/main.installer.php[47]
+
+LOG-TIME[DELTA:   0.00008]  MESSAGE:TEST "Privileges: User Resources" RESULT: passed
+
+START TEST "Privileges: User Table Access" [CLASS: DUPX_Validation_test_db_user_perms]
+LOG-TIME[DELTA:   0.00529]  MESSAGE:TEST "Privileges: User Table Access" RESULT: passed
+
+START TEST "Privileges: 'Show Variables' Query" [CLASS: DUPX_Validation_test_db_custom_queries]
+LOG-TIME[DELTA:   0.00098]  MESSAGE:TEST "Privileges: 'Show Variables' Query" RESULT: passed
+
+START TEST "Source Database Triggers" [CLASS: DUPX_Validation_test_db_triggers]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Source Database Triggers" RESULT: passed
+
+START TEST "Character Set and Collation Support" [CLASS: DUPX_Validation_test_db_supported_default_charset]
+LOG-TIME[DELTA:   0.00046]  MESSAGE:TEST "Character Set and Collation Support" RESULT: passed
+
+START TEST "Character Set and  Collation Capability" [CLASS: DUPX_Validation_test_db_supported_charset]
+LOG-TIME[DELTA:   0.00003]  MESSAGE:TEST "Character Set and  Collation Capability" RESULT: passed
+
+START TEST "Tables Case Sensitivity" [CLASS: DUPX_Validation_test_db_case_sensitive_tables]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Tables Case Sensitivity" RESULT: skip
+
+START TEST "Tables Flagged for Removal or Backup" [CLASS: DUPX_Validation_test_db_affected_tables]
+LOG-TIME[DELTA:   0.00060]  MESSAGE:TEST "Tables Flagged for Removal or Backup" RESULT: soft warning
+
+START TEST "Prefix too long" [CLASS: DUPX_Validation_test_db_prefix_too_long]
+LOG-TIME[DELTA:   0.00016]  MESSAGE:TEST "Prefix too long" RESULT: passed
+
+START TEST "Database cleanup" [CLASS: DUPX_Validation_test_db_cleanup]
+LOG-TIME[DELTA:   0.00001]  MESSAGE:TEST "Database cleanup" RESULT: skip
+
+START TEST "User created cleanup" [CLASS: DUPX_Validation_test_db_user_cleanup]
+LOG-TIME[DELTA:   0.00000]  MESSAGE:TEST "User created cleanup" RESULT: skip
+
+
+CTRL PARAMS AFTER VALIDATION
+AJAX ACTION [validate] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [proceed_confirm_dialog] START
+AJAX ACTION [proceed_confirm_dialog] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [sparam_s1] START
+SET VALUE install-type
+SET VALUE path_new
+SET VALUE url_new
+SET VALUE path_core_new
+SET VALUE siteurl
+SET VALUE path_cont_new
+SET VALUE url_cont_new
+SET VALUE path_upl_new
+SET VALUE url_upl_new
+SET VALUE path_plug_new
+SET VALUE url_plug_new
+SET VALUE path_muplug_new
+SET VALUE url_muplug_new
+SET VALUE subsite_id
+SET VALUE subsite_owr_mapping
+SET VALUE archive_action
+SET VALUE archive_engine
+SET VALUE archive_engine_wpskip
+SET VALUE db-engine
+SET VALUE mode_chunking
+SET VALUE users_mode
+SET VALUE mu_replace
+SET VALUE subsite_users_mode
+SET VALUE set_file_perms
+SET VALUE set_dir_perms
+SET VALUE file_perms_value
+SET VALUE dir_perms_value
+SET VALUE exe_safe_mode
+SET VALUE wp_config
+SET VALUE ht_config
+SET VALUE other_config
+SET VALUE zip_filetime
+SET VALUE remove-redundant
+SET VALUE remove-users-without-permissions
+SET VALUE blogname
+SET VALUE accept-warnings
+SET VALUE zip_throttling
+AJAX ACTION [sparam_s1] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+INITIALIZE FILTERS
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 09:37:12
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+INSTALL TYPE________: single site
+BLOG NAME___________: "No Blog Title Set"
+HOME URL NEW________: "https://testovi.joys.net.ua"
+SITE URL NEW________: "https://testovi.joys.net.ua"
+CONTENT URL NEW_____: "https://testovi.joys.net.ua/wp-content"
+UPLOAD URL NEW______: "https://testovi.joys.net.ua/wp-content/uploads"
+PLUGINS URL NEW_____: "https://testovi.joys.net.ua/wp-content/plugins"
+MUPLUGINS URL NEW___: "https://testovi.joys.net.ua/wp-content/mu-plugins"
+HOME PATH NEW_______: "/home/joys2021/joys.net.ua/testovi"
+SITE PATH NEW_______: "/home/joys2021/joys.net.ua/testovi"
+CONTENT PATH NEW____: "/home/joys2021/joys.net.ua/testovi/wp-content"
+UPLOAD PATH NEW_____: "/home/joys2021/joys.net.ua/testovi/wp-content/uploads"
+PLUGINS PATH NEW____: "/home/joys2021/joys.net.ua/testovi/wp-content/plugins"
+MUPLUGINS PATH NEW__: "/home/joys2021/joys.net.ua/testovi/wp-content/mu-plugins"
+ARCHIVE ACTION______: "donothing"
+SKIP WP FILES_______: "none"
+ARCHIVE ENGINE______: "ziparchivechunking"
+SET DIR PERMS_______: true
+DIR PERMS VALUE_____: 0755
+SET FILE PERMS______: true
+FILE PERMS VALUE____: 0644
+SAFE MODE___________: 0
+LOGGING_____________: 1
+ZIP THROTTLING______: false
+WP CONFIG___________: "modify"
+HTACCESS CONFIG_____: "original"
+OTHER CONFIG________: "original"
+FILE TIME___________: "current"
+REMOVE RENDUNDANT___: false
+********************************************************************************
+
+REMOVE FILTERS
+	DIR : "/home/joys2021/joys.net.ua/testovi/dup-installer"
+	DIR : "/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320"
+	FILE: "/home/joys2021/joys.net.ua/testovi/20230323_[HASH]_20230323192320_installer-backup.php"
+	FILE: "/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/20230323_[HASH]_20230323192320_archive.zip"
+	FILE: "/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/20230323_[HASH]_20230323192320_installer-backup.php"
+	FILE: "/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-bootlog__7c4e398-23192320.txt"
+EXTRACTION FILTERS
+	DIR : "dup-installer"
+	FILE: "20230323_[HASH]_20230323192320_installer-backup.php"
+--------------------------------------
+
+
+EXTRACTION: ZIP CHUNKING >>> START
+BEFORE EXTRACION ACTIONS
+
+*** RESET CONFIG FILES IN CURRENT HOSTING
+RESET CONFIG FILES: I'M GOING TO MOVE CONFIG FILE "wp-config.php" IN ORIGINAL FOLDER
+	CONFIG FILE HAS BEEN RESET
+RESET CONFIG FILES: I'M GOING TO MOVE CONFIG FILE ".htaccess" IN ORIGINAL FOLDER
+	CONFIG FILE HAS BEEN RESET
+*** RESET CONFIG FILES END
+MAINTENANCE MODE ENABLE
+
+*** CREATE FOLDER AND PERMISSION PREPARE
+FOLDER PREPARE DONE
+ARCHIVE OFFSET 0
+CHUNK COMPLETE - RUNTIME: 5.0076 sec. - Files processed: 1,950 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 1950
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0306 sec. - Files processed: 4,858 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 4858
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0058 sec. - Files processed: 8,260 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 8260
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0135 sec. - Files processed: 14,825 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 14825
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0135 sec. - Files processed: 17,871 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 17871
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0177 sec. - Files processed: 20,305 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 20305
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0270 sec. - Files processed: 21,269 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 21269
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0069 sec. - Files processed: 22,237 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 22237
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0086 sec. - Files processed: 23,252 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 23252
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0170 sec. - Files processed: 24,067 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 24067
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0122 sec. - Files processed: 24,539 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 24539
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0179 sec. - Files processed: 25,110 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 25110
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0060 sec. - Files processed: 25,662 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 25662
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0204 sec. - Files processed: 26,184 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 26184
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0104 sec. - Files processed: 26,725 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 26725
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0095 sec. - Files processed: 27,255 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 27255
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0152 sec. - Files processed: 27,813 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 27813
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0084 sec. - Files processed: 28,336 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 28336
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+CHUNK COMPLETE - RUNTIME: 5.0145 sec. - Files processed: 28,819 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [extract] START
+ARCHIVE OFFSET 28819
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+FILE EXTRACTION: done processing last file in list of 30050
+
+EXTRACTION: ZIP CHUNKING >>> DONE
+
+EXTRACTION COMPLETE @ 09:38:51 - RUNTIME: 99.7141 sec. - Files processed: 29,214 of 29,214
+AJAX ACTION [extract] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [dbinstall] START
+ADD PREFIX META MAP ID 0 wp_
+
+
+
+********************************************************************************
+* DUPLICATOR PRO INSTALL-LOG
+* STEP-2 START @ 09:38:51
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+DB ENGINE___________: "chunk"
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+USER MODE___________: "overwrite"
+TABLE PREFIX________: "wp_"
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8mb4"
+COLLATE_____________: ""
+CUNKING_____________: true
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+FUNCTIONS___________: true
+REMOVE DEFINER______: false
+SPLIT CREATES_______: true
+--------------------------------------
+TABLES
+--------------------------------------
+TABLE "wc_ukr_shipping_logs"____________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wc_ukr_shipping_logs]
+TABLE "wc_ukr_shipping_np_api_cache"____________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wc_ukr_shipping_np_api_cache]
+TABLE "wc_ukr_shipping_np_areas"________________________[ROWS:      25] [EXTRACT|REPLACE] [INST NAME: wc_ukr_shipping_np_areas]
+TABLE "wc_ukr_shipping_np_cities"_______________________[ROWS:    8465] [EXTRACT|REPLACE] [INST NAME: wc_ukr_shipping_np_cities]
+TABLE "wc_ukr_shipping_np_ttn"__________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wc_ukr_shipping_np_ttn]
+TABLE "wc_ukr_shipping_np_warehouses"___________________[ROWS:   22895] [EXTRACT|REPLACE] [INST NAME: wc_ukr_shipping_np_warehouses]
+TABLE "wp_actionscheduler_actions"______________________[ROWS:    1354] [EXTRACT|REPLACE] [INST NAME: wp_actionscheduler_actions]
+TABLE "wp_actionscheduler_claims"_______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_actionscheduler_claims]
+TABLE "wp_actionscheduler_groups"_______________________[ROWS:       4] [EXTRACT|REPLACE] [INST NAME: wp_actionscheduler_groups]
+TABLE "wp_actionscheduler_logs"_________________________[ROWS:    4060] [EXTRACT|REPLACE] [INST NAME: wp_actionscheduler_logs]
+TABLE "wp_arcontactus"__________________________________[ROWS:       9] [EXTRACT|REPLACE] [INST NAME: wp_arcontactus]
+TABLE "wp_arcontactus_callback"_________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_arcontactus_callback]
+TABLE "wp_arcontactus_lang"_____________________________[ROWS:       9] [EXTRACT|REPLACE] [INST NAME: wp_arcontactus_lang]
+TABLE "wp_arcontactus_prompt"___________________________[ROWS:       3] [EXTRACT|REPLACE] [INST NAME: wp_arcontactus_prompt]
+TABLE "wp_arcontactus_prompt_lang"______________________[ROWS:       3] [EXTRACT|REPLACE] [INST NAME: wp_arcontactus_prompt_lang]
+TABLE "wp_cn_social_icon"_______________________________[ROWS:       4] [EXTRACT|REPLACE] [INST NAME: wp_cn_social_icon]
+TABLE "wp_commentmeta"__________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_commentmeta]
+TABLE "wp_comments"_____________________________________[ROWS:       4] [EXTRACT|REPLACE] [INST NAME: wp_comments]
+TABLE "wp_duplicator_pro_entities"______________________[ROWS:       5] [EXTRACT|REPLACE] [INST NAME: wp_duplicator_pro_entities]
+TABLE "wp_duplicator_pro_packages"______________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: wp_duplicator_pro_packages]
+TABLE "wp_e_events"_____________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_e_events]
+TABLE "wp_links"________________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_links]
+TABLE "wp_options"______________________________________[ROWS:    1264] [EXTRACT|REPLACE] [INST NAME: wp_options]
+TABLE "wp_pimwick_gift_card"____________________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: wp_pimwick_gift_card]
+TABLE "wp_pimwick_gift_card_activity"___________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: wp_pimwick_gift_card_activity]
+TABLE "wp_postmeta"_____________________________________[ROWS:    6518] [EXTRACT|REPLACE] [INST NAME: wp_postmeta]
+TABLE "wp_posts"________________________________________[ROWS:     896] [EXTRACT|REPLACE] [INST NAME: wp_posts]
+TABLE "wp_revslider_css"________________________________[ROWS:     109] [EXTRACT|REPLACE] [INST NAME: wp_revslider_css]
+TABLE "wp_revslider_css_bkp"____________________________[ROWS:      47] [EXTRACT|REPLACE] [INST NAME: wp_revslider_css_bkp]
+TABLE "wp_revslider_layer_animations"___________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_revslider_layer_animations]
+TABLE "wp_revslider_layer_animations_bkp"_______________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_revslider_layer_animations_bkp]
+TABLE "wp_revslider_navigations"________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_revslider_navigations]
+TABLE "wp_revslider_navigations_bkp"____________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_revslider_navigations_bkp]
+TABLE "wp_revslider_sliders"____________________________[ROWS:       4] [EXTRACT|REPLACE] [INST NAME: wp_revslider_sliders]
+TABLE "wp_revslider_sliders_bkp"________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_revslider_sliders_bkp]
+TABLE "wp_revslider_slides"_____________________________[ROWS:      14] [EXTRACT|REPLACE] [INST NAME: wp_revslider_slides]
+TABLE "wp_revslider_slides_bkp"_________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_revslider_slides_bkp]
+TABLE "wp_revslider_static_slides"______________________[ROWS:       4] [EXTRACT|REPLACE] [INST NAME: wp_revslider_static_slides]
+TABLE "wp_revslider_static_slides_bkp"__________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_revslider_static_slides_bkp]
+TABLE "wp_termmeta"_____________________________________[ROWS:     134] [EXTRACT|REPLACE] [INST NAME: wp_termmeta]
+TABLE "wp_terms"________________________________________[ROWS:      79] [EXTRACT|REPLACE] [INST NAME: wp_terms]
+TABLE "wp_term_relationships"___________________________[ROWS:     311] [EXTRACT|REPLACE] [INST NAME: wp_term_relationships]
+TABLE "wp_term_taxonomy"________________________________[ROWS:      79] [EXTRACT|REPLACE] [INST NAME: wp_term_taxonomy]
+TABLE "wp_trustindex_google_reviews"____________________[ROWS:      10] [EXTRACT|REPLACE] [INST NAME: wp_trustindex_google_reviews]
+TABLE "wp_usermeta"_____________________________________[ROWS:     169] [EXTRACT|REPLACE] [INST NAME: wp_usermeta]
+TABLE "wp_users"________________________________________[ROWS:       5] [EXTRACT|REPLACE] [INST NAME: wp_users]
+TABLE "wp_wc_admin_notes"_______________________________[ROWS:      39] [EXTRACT|REPLACE] [INST NAME: wp_wc_admin_notes]
+TABLE "wp_wc_admin_note_actions"________________________[ROWS:      47] [EXTRACT|REPLACE] [INST NAME: wp_wc_admin_note_actions]
+TABLE "wp_wc_category_lookup"___________________________[ROWS:      60] [EXTRACT|REPLACE] [INST NAME: wp_wc_category_lookup]
+TABLE "wp_wc_customer_lookup"___________________________[ROWS:       4] [EXTRACT|REPLACE] [INST NAME: wp_wc_customer_lookup]
+TABLE "wp_wc_download_log"______________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wc_download_log]
+TABLE "wp_wc_order_coupon_lookup"_______________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wc_order_coupon_lookup]
+TABLE "wp_wc_order_product_lookup"______________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: wp_wc_order_product_lookup]
+TABLE "wp_wc_order_stats"_______________________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: wp_wc_order_stats]
+TABLE "wp_wc_order_tax_lookup"__________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wc_order_tax_lookup]
+TABLE "wp_wc_product_attributes_lookup"_________________[ROWS:     398] [EXTRACT|REPLACE] [INST NAME: wp_wc_product_attributes_lookup]
+TABLE "wp_wc_product_download_directories"______________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: wp_wc_product_download_directories]
+TABLE "wp_wc_product_meta_lookup"_______________________[ROWS:     179] [EXTRACT|REPLACE] [INST NAME: wp_wc_product_meta_lookup]
+TABLE "wp_wc_rate_limits"_______________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wc_rate_limits]
+TABLE "wp_wc_reserved_stock"____________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wc_reserved_stock]
+TABLE "wp_wc_tax_rate_classes"__________________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: wp_wc_tax_rate_classes]
+TABLE "wp_wc_webhooks"__________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wc_webhooks]
+TABLE "wp_woocommerce_api_keys"_________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_api_keys]
+TABLE "wp_woocommerce_attribute_taxonomies"_____________[ROWS:       3] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_attribute_taxonomies]
+TABLE "wp_woocommerce_downloadable_product_permissions"_[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_downloadable_product_permissions]
+TABLE "wp_woocommerce_log"______________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_log]
+TABLE "wp_woocommerce_order_itemmeta"___________________[ROWS:      40] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_order_itemmeta]
+TABLE "wp_woocommerce_order_items"______________________[ROWS:       4] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_order_items]
+TABLE "wp_woocommerce_payment_tokenmeta"________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_payment_tokenmeta]
+TABLE "wp_woocommerce_payment_tokens"___________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_payment_tokens]
+TABLE "wp_woocommerce_sessions"_________________________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_sessions]
+TABLE "wp_woocommerce_shipping_zones"___________________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_shipping_zones]
+TABLE "wp_woocommerce_shipping_zone_locations"__________[ROWS:       1] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_shipping_zone_locations]
+TABLE "wp_woocommerce_shipping_zone_methods"____________[ROWS:       2] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_shipping_zone_methods]
+TABLE "wp_woocommerce_tax_rates"________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_tax_rates]
+TABLE "wp_woocommerce_tax_rate_locations"_______________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_woocommerce_tax_rate_locations]
+TABLE "wp_wpfm_backup"__________________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_wpfm_backup]
+TABLE "wp_yoast_indexable"______________________________[ROWS:      88] [EXTRACT|REPLACE] [INST NAME: wp_yoast_indexable]
+TABLE "wp_yoast_indexable_hierarchy"____________________[ROWS:      86] [EXTRACT|REPLACE] [INST NAME: wp_yoast_indexable_hierarchy]
+TABLE "wp_yoast_migrations"_____________________________[ROWS:      25] [EXTRACT|REPLACE] [INST NAME: wp_yoast_migrations]
+TABLE "wp_yoast_primary_term"___________________________[ROWS:      29] [EXTRACT|REPLACE] [INST NAME: wp_yoast_primary_term]
+TABLE "wp_yoast_prominent_words"________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_yoast_prominent_words]
+TABLE "wp_yoast_seo_links"______________________________[ROWS:       0] [EXTRACT|REPLACE] [INST NAME: wp_yoast_seo_links]
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 5.7.33 -- Build Server: 5.7.33
+FILE SIZE:	dup-database__[HASH].sql (16.31MB)
+TIMEOUT:	5000
+MAXPACK:	16777216
+SQLMODE-GLOBAL:	NO_DIR_IN_CREATE
+SQLMODE-SESSION:NO_AUTO_VALUE_ON_ZERO
+DROP ALL TABLES
+DROP TABLE wc_ukr_shipping_logs
+DROP TABLE wc_ukr_shipping_np_api_cache
+DROP TABLE wc_ukr_shipping_np_areas
+DROP TABLE wc_ukr_shipping_np_cities
+DROP TABLE wc_ukr_shipping_np_ttn
+DROP TABLE wc_ukr_shipping_np_warehouses
+DROP TABLE wp_actionscheduler_actions
+DROP TABLE wp_actionscheduler_claims
+DROP TABLE wp_actionscheduler_groups
+DROP TABLE wp_actionscheduler_logs
+DROP TABLE wp_arcontactus
+DROP TABLE wp_arcontactus_callback
+DROP TABLE wp_arcontactus_lang
+DROP TABLE wp_arcontactus_prompt
+DROP TABLE wp_arcontactus_prompt_lang
+DROP TABLE wp_cn_social_icon
+DROP TABLE wp_commentmeta
+DROP TABLE wp_comments
+DROP TABLE wp_duplicator_pro_entities
+DROP TABLE wp_duplicator_pro_packages
+DROP TABLE wp_e_events
+DROP TABLE wp_links
+DROP TABLE wp_options
+DROP TABLE wp_pimwick_gift_card
+DROP TABLE wp_pimwick_gift_card_activity
+DROP TABLE wp_postmeta
+DROP TABLE wp_posts
+DROP TABLE wp_revslider_css
+DROP TABLE wp_revslider_css_bkp
+DROP TABLE wp_revslider_layer_animations
+DROP TABLE wp_revslider_layer_animations_bkp
+DROP TABLE wp_revslider_navigations
+DROP TABLE wp_revslider_navigations_bkp
+DROP TABLE wp_revslider_sliders
+DROP TABLE wp_revslider_sliders_bkp
+DROP TABLE wp_revslider_slides
+DROP TABLE wp_revslider_slides_bkp
+DROP TABLE wp_revslider_static_slides
+DROP TABLE wp_revslider_static_slides_bkp
+DROP TABLE wp_term_relationships
+DROP TABLE wp_term_taxonomy
+DROP TABLE wp_termmeta
+DROP TABLE wp_terms
+DROP TABLE wp_trustindex_google_reviews
+DROP TABLE wp_usermeta
+DROP TABLE wp_users
+DROP TABLE wp_wc_admin_note_actions
+DROP TABLE wp_wc_admin_notes
+DROP TABLE wp_wc_category_lookup
+DROP TABLE wp_wc_customer_lookup
+DROP TABLE wp_wc_download_log
+DROP TABLE wp_wc_order_coupon_lookup
+DROP TABLE wp_wc_order_product_lookup
+DROP TABLE wp_wc_order_stats
+DROP TABLE wp_wc_order_tax_lookup
+DROP TABLE wp_wc_product_attributes_lookup
+DROP TABLE wp_wc_product_download_directories
+DROP TABLE wp_wc_product_meta_lookup
+DROP TABLE wp_wc_rate_limits
+DROP TABLE wp_wc_reserved_stock
+DROP TABLE wp_wc_tax_rate_classes
+DROP TABLE wp_wc_webhooks
+DROP TABLE wp_woocommerce_api_keys
+DROP TABLE wp_woocommerce_attribute_taxonomies
+DROP TABLE wp_woocommerce_downloadable_product_permissions
+DROP TABLE wp_woocommerce_log
+DROP TABLE wp_woocommerce_order_itemmeta
+DROP TABLE wp_woocommerce_order_items
+DROP TABLE wp_woocommerce_payment_tokenmeta
+DROP TABLE wp_woocommerce_payment_tokens
+DROP TABLE wp_woocommerce_sessions
+DROP TABLE wp_woocommerce_shipping_zone_locations
+DROP TABLE wp_woocommerce_shipping_zone_methods
+DROP TABLE wp_woocommerce_shipping_zones
+DROP TABLE wp_woocommerce_tax_rate_locations
+DROP TABLE wp_woocommerce_tax_rates
+DROP TABLE wp_wpfm_backup
+DROP TABLE wp_yoast_indexable
+DROP TABLE wp_yoast_indexable_hierarchy
+DROP TABLE wp_yoast_migrations
+DROP TABLE wp_yoast_primary_term
+DROP TABLE wp_yoast_prominent_words
+DROP TABLE wp_yoast_seo_links
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+QUERY FIXES
+GLOBAL RULES ADDED: PROC AND VIEWS
+
+QUERY FIXES GLOBAL RULES
+	SEARCH  => /^(\s*(?:\/\*!\d+\s)?\s*(?:CREATE.+)?DEFINER\s*=)([^\*\s]+)(.*)$/m
+	REPLACE => $1`joys2021_testovi`@`%`$3
+
+	SEARCH  => /^(\s*CREATE.+(?:PROCEDURE|FUNCTION)[\s\S]*)(BEGIN)([\s\S]*)$/
+	REPLACE => $1SQL SECURITY INVOKER
+$2$3
+
+--------------------------------------
+** DATABASE CHUNK install start
+--------------------------------------
+DATABASE CHUNK SEEK POSITION: 0
+Auto Commit set to false successfully
+NO TABLE TO SKIP
+DATABASE CHUNK: CREATION TABLE MARKER FOUND
+Auto Commit set to true successfully
+--------------------------------------
+** DATABASE CHUNK install end
+--------------------------------------
+ERRORS FOUND:	0
+DROPPED TABLES:	83
+RENAMED TABLES:	0
+QUERIES RAN:	250
+
+TABLES ROWS IN DATABASE AFTER EXTRACTION
+
+TABLE "wc_ukr_shipping_logs"____________________________[ROWS:     0]
+TABLE "wc_ukr_shipping_np_api_cache"____________________[ROWS:     0]
+TABLE "wc_ukr_shipping_np_areas"________________________[ROWS:    25]
+TABLE "wc_ukr_shipping_np_cities"_______________________[ROWS:  8465]
+TABLE "wc_ukr_shipping_np_ttn"__________________________[ROWS:     0]
+TABLE "wc_ukr_shipping_np_warehouses"___________________[ROWS: 22895]
+TABLE "wp_actionscheduler_actions"______________________[ROWS:  1354]
+TABLE "wp_actionscheduler_claims"_______________________[ROWS:     0]
+TABLE "wp_actionscheduler_groups"_______________________[ROWS:     4]
+TABLE "wp_actionscheduler_logs"_________________________[ROWS:  4060]
+TABLE "wp_arcontactus"__________________________________[ROWS:     9]
+TABLE "wp_arcontactus_callback"_________________________[ROWS:     0]
+TABLE "wp_arcontactus_lang"_____________________________[ROWS:     9]
+TABLE "wp_arcontactus_prompt"___________________________[ROWS:     3]
+TABLE "wp_arcontactus_prompt_lang"______________________[ROWS:     3]
+TABLE "wp_cn_social_icon"_______________________________[ROWS:     4]
+TABLE "wp_commentmeta"__________________________________[ROWS:     0]
+TABLE "wp_comments"_____________________________________[ROWS:     4]
+TABLE "wp_duplicator_pro_entities"______________________[ROWS:     5]
+TABLE "wp_duplicator_pro_packages"______________________[ROWS:     1]
+TABLE "wp_e_events"_____________________________________[ROWS:     0]
+TABLE "wp_links"________________________________________[ROWS:     0]
+TABLE "wp_options"______________________________________[ROWS:  1264]
+TABLE "wp_pimwick_gift_card"____________________________[ROWS:     1]
+TABLE "wp_pimwick_gift_card_activity"___________________[ROWS:     2]
+TABLE "wp_postmeta"_____________________________________[ROWS:  6518]
+TABLE "wp_posts"________________________________________[ROWS:   896]
+TABLE "wp_revslider_css"________________________________[ROWS:   109]
+TABLE "wp_revslider_css_bkp"____________________________[ROWS:    47]
+TABLE "wp_revslider_layer_animations"___________________[ROWS:     0]
+TABLE "wp_revslider_layer_animations_bkp"_______________[ROWS:     0]
+TABLE "wp_revslider_navigations"________________________[ROWS:     0]
+TABLE "wp_revslider_navigations_bkp"____________________[ROWS:     0]
+TABLE "wp_revslider_sliders"____________________________[ROWS:     4]
+TABLE "wp_revslider_sliders_bkp"________________________[ROWS:     0]
+TABLE "wp_revslider_slides"_____________________________[ROWS:    14]
+TABLE "wp_revslider_slides_bkp"_________________________[ROWS:     0]
+TABLE "wp_revslider_static_slides"______________________[ROWS:     4]
+TABLE "wp_revslider_static_slides_bkp"__________________[ROWS:     0]
+TABLE "wp_term_relationships"___________________________[ROWS:   311]
+TABLE "wp_term_taxonomy"________________________________[ROWS:    79]
+TABLE "wp_termmeta"_____________________________________[ROWS:   134]
+TABLE "wp_terms"________________________________________[ROWS:    79]
+TABLE "wp_trustindex_google_reviews"____________________[ROWS:    10]
+TABLE "wp_usermeta"_____________________________________[ROWS:   169]
+TABLE "wp_users"________________________________________[ROWS:     5]
+TABLE "wp_wc_admin_note_actions"________________________[ROWS:    47]
+TABLE "wp_wc_admin_notes"_______________________________[ROWS:    39]
+TABLE "wp_wc_category_lookup"___________________________[ROWS:    60]
+TABLE "wp_wc_customer_lookup"___________________________[ROWS:     4]
+TABLE "wp_wc_download_log"______________________________[ROWS:     0]
+TABLE "wp_wc_order_coupon_lookup"_______________________[ROWS:     0]
+TABLE "wp_wc_order_product_lookup"______________________[ROWS:     2]
+TABLE "wp_wc_order_stats"_______________________________[ROWS:     2]
+TABLE "wp_wc_order_tax_lookup"__________________________[ROWS:     0]
+TABLE "wp_wc_product_attributes_lookup"_________________[ROWS:   398]
+TABLE "wp_wc_product_download_directories"______________[ROWS:     2]
+TABLE "wp_wc_product_meta_lookup"_______________________[ROWS:   179]
+TABLE "wp_wc_rate_limits"_______________________________[ROWS:     0]
+TABLE "wp_wc_reserved_stock"____________________________[ROWS:     0]
+TABLE "wp_wc_tax_rate_classes"__________________________[ROWS:     2]
+TABLE "wp_wc_webhooks"__________________________________[ROWS:     0]
+TABLE "wp_woocommerce_api_keys"_________________________[ROWS:     0]
+TABLE "wp_woocommerce_attribute_taxonomies"_____________[ROWS:     3]
+TABLE "wp_woocommerce_downloadable_product_permissions"_[ROWS:     0]
+TABLE "wp_woocommerce_log"______________________________[ROWS:     0]
+TABLE "wp_woocommerce_order_itemmeta"___________________[ROWS:    40]
+TABLE "wp_woocommerce_order_items"______________________[ROWS:     4]
+TABLE "wp_woocommerce_payment_tokenmeta"________________[ROWS:     0]
+TABLE "wp_woocommerce_payment_tokens"___________________[ROWS:     0]
+TABLE "wp_woocommerce_sessions"_________________________[ROWS:     2]
+TABLE "wp_woocommerce_shipping_zone_locations"__________[ROWS:     1]
+TABLE "wp_woocommerce_shipping_zone_methods"____________[ROWS:     2]
+TABLE "wp_woocommerce_shipping_zones"___________________[ROWS:     1]
+TABLE "wp_woocommerce_tax_rate_locations"_______________[ROWS:     0]
+TABLE "wp_woocommerce_tax_rates"________________________[ROWS:     0]
+TABLE "wp_wpfm_backup"__________________________________[ROWS:     0]
+TABLE "wp_yoast_indexable"______________________________[ROWS:    88]
+TABLE "wp_yoast_indexable_hierarchy"____________________[ROWS:    86]
+TABLE "wp_yoast_migrations"_____________________________[ROWS:    25]
+TABLE "wp_yoast_primary_term"___________________________[ROWS:    29]
+TABLE "wp_yoast_prominent_words"________________________[ROWS:     0]
+TABLE "wp_yoast_seo_links"______________________________[ROWS:     0]
+
+INSERT DATA RUNTIME: 1.1078 sec.
+STEP-2 COMPLETE @ 09:38:52 - RUNTIME: 1.1079 sec.
+AJAX ACTION [dbinstall] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [webupdate] START
+
+====================================
+SET SEARCH AND REPLACE LIST INSTALL TYPE single site
+====================================
+CHUNK LOAD DATA: IS NULL 
+CHUNK ACTION: CURRENT [start][][]
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 09:38:53
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8mb4"
+CHARSET CLIENT:	"utf8mb4"
+********************************************************************************
+OPTIONS:
+SKIP PATH REPLACE_____: false
+DISALLOW_FILE_EDIT____: [value = ], [inWpConfig = ]
+DISALLOW_FILE_MODS____: [value = ], [inWpConfig = ]
+AUTOSAVE_INTERVAL_____: [value = 60], [inWpConfig = ]
+WP_POST_REVISIONS_____: [value = 9223372036854775807], [inWpConfig = ]
+FORCE_SSL_ADMIN_______: [value = 1], [inWpConfig = ]
+WP_AUTO_UPDATE_CORE___: [value = false], [inWpConfig = ]
+WP_CACHE______________: [value = ], [inWpConfig = ]
+WPCACHEHOME___________: [value = /], [inWpConfig = ]
+WP_DEBUG______________: [value = ], [inWpConfig = 1]
+WP_DEBUG_LOG__________: [value = ], [inWpConfig = ]
+WP_DEBUG_DISPLAY______: [value = 1], [inWpConfig = ]
+WP_DISABLE_FATAL_ERROR_HANDLER: [value = ], [inWpConfig = ]
+SCRIPT_DEBUG__________: [value = ], [inWpConfig = ]
+CONCATENATE_SCRIPTS___: [value = ], [inWpConfig = ]
+SAVEQUERIES___________: [value = ], [inWpConfig = ]
+ALTERNATE_WP_CRON_____: [value = ], [inWpConfig = ]
+DISABLE_WP_CRON_______: [value = ], [inWpConfig = ]
+WP_CRON_LOCK_TIMEOUT__: [value = 60], [inWpConfig = ]
+COOKIE_DOMAIN_________: [value = ], [inWpConfig = ]
+WP_MEMORY_LIMIT_______: [value = 40M], [inWpConfig = ]
+WP_MAX_MEMORY_LIMIT___: [value = 1024M], [inWpConfig = ]
+WP_TEMP_DIR___________: [value = ], [inWpConfig = ]
+********************************************************************************
+
+********************************************************************************
+CHUNK PARAMS:
+maxIteration__________: 0
+timeOut_______________: 5000
+throttling____________: 2
+rowsPerPage___________: 1000
+********************************************************************************
+
+CHUNK ACTION: CURRENT [cleanup_trans][][]
+CLEAN OPTIONS [wp_options]
+	`option_name` LIKE "\_transient%"
+	`option_name` LIKE "\_site\_transient%"
+	`option_name` IN ("duplicator_pro_ui_view_state","duplicator_pro_package_active","duplicator_pro_settings")
+DATABASE OPTIONS DELETED [ROWS:   410]
+CHUNK ACTION: CURRENT [cleanup_extra][][]
+CLEANUP EXTRA
+	- SKIP DROP VIEWS
+	- SKIP DROP PROCS
+	- SKIP DROP FUNCS
+CHUNK ACTION: CURRENT [cleanup_packages][][]
+EMPTY PACKAGES TABLE
+CLEAN PACKAGES
+DATABASE PACKAGE DELETED [ROWS:     1]
+CHUNK ACTION: CURRENT [init][][]
+
+EVALUATE TABLE: "wc_ukr_shipping_logs"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wc_ukr_shipping_np_api_cache"____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wc_ukr_shipping_np_areas"________________________[ROWS:    25][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_areas][0]
+
+EVALUATE TABLE: "wc_ukr_shipping_np_cities"_______________________[ROWS:  8465][PG:   9][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_cities][0]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_cities][1]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_cities][2]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_cities][3]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_cities][4]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_cities][5]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_cities][6]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_cities][7]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_cities][8]
+
+EVALUATE TABLE: "wc_ukr_shipping_np_ttn"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wc_ukr_shipping_np_warehouses"___________________[ROWS: 22895][PG:  23][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][0]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][1]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][2]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][3]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][4]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][5]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][6]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][7]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][8]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][9]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][10]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][11]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][12]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][13]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][14]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][15]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][16]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][17]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][18]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][19]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][20]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][21]
+	CHUNK ACTION: CURRENT [search_replace][wc_ukr_shipping_np_warehouses][22]
+
+EVALUATE TABLE: "wp_actionscheduler_actions"______________________[ROWS:  1354][PG:   2][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_actionscheduler_actions][0]
+	CHUNK ACTION: CURRENT [search_replace][wp_actionscheduler_actions][1]
+
+EVALUATE TABLE: "wp_actionscheduler_claims"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_actionscheduler_groups"_______________________[ROWS:     4][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_actionscheduler_groups][0]
+
+EVALUATE TABLE: "wp_actionscheduler_logs"_________________________[ROWS:  4060][PG:   5][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_actionscheduler_logs][0]
+	CHUNK ACTION: CURRENT [search_replace][wp_actionscheduler_logs][1]
+	CHUNK ACTION: CURRENT [search_replace][wp_actionscheduler_logs][2]
+	CHUNK ACTION: CURRENT [search_replace][wp_actionscheduler_logs][3]
+	CHUNK ACTION: CURRENT [search_replace][wp_actionscheduler_logs][4]
+
+EVALUATE TABLE: "wp_arcontactus"__________________________________[ROWS:     9][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_arcontactus][0]
+
+EVALUATE TABLE: "wp_arcontactus_callback"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_arcontactus_lang"_____________________________[ROWS:     9][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_arcontactus_lang][0]
+
+EVALUATE TABLE: "wp_arcontactus_prompt"___________________________[ROWS:     3][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_arcontactus_prompt][0]
+
+EVALUATE TABLE: "wp_arcontactus_prompt_lang"______________________[ROWS:     3][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_arcontactus_prompt_lang][0]
+
+EVALUATE TABLE: "wp_cn_social_icon"_______________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_cn_social_icon][0]
+
+EVALUATE TABLE: "wp_commentmeta"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_comments"_____________________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_comments][0]
+
+EVALUATE TABLE: "wp_duplicator_pro_entities"______________________[ROWS:     5][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_duplicator_pro_entities][0]
+
+EVALUATE TABLE: "wp_duplicator_pro_packages"______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_e_events"_____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_links"________________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_options"______________________________________[ROWS:   854][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_options][0]
+
+EVALUATE TABLE: "wp_pimwick_gift_card"____________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_pimwick_gift_card][0]
+
+EVALUATE TABLE: "wp_pimwick_gift_card_activity"___________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_pimwick_gift_card_activity][0]
+
+EVALUATE TABLE: "wp_postmeta"_____________________________________[ROWS:  6518][PG:   7][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][0]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][1]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][2]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][3]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][4]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][5]
+	CHUNK ACTION: CURRENT [search_replace][wp_postmeta][6]
+
+EVALUATE TABLE: "wp_posts"________________________________________[ROWS:   896][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_posts][0]
+
+EVALUATE TABLE: "wp_revslider_css"________________________________[ROWS:   109][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_revslider_css][0]
+
+EVALUATE TABLE: "wp_revslider_css_bkp"____________________________[ROWS:    47][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_revslider_css_bkp][0]
+
+EVALUATE TABLE: "wp_revslider_layer_animations"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_layer_animations_bkp"_______________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_navigations"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_navigations_bkp"____________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_sliders"____________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_revslider_sliders][0]
+
+EVALUATE TABLE: "wp_revslider_sliders_bkp"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_slides"_____________________________[ROWS:    14][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_revslider_slides][0]
+
+EVALUATE TABLE: "wp_revslider_slides_bkp"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_revslider_static_slides"______________________[ROWS:     4][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_revslider_static_slides][0]
+
+EVALUATE TABLE: "wp_revslider_static_slides_bkp"__________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_termmeta"_____________________________________[ROWS:   134][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_termmeta][0]
+
+EVALUATE TABLE: "wp_terms"________________________________________[ROWS:    79][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_terms][0]
+
+EVALUATE TABLE: "wp_term_relationships"___________________________[ROWS:   311][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_term_taxonomy"________________________________[ROWS:    79][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_term_taxonomy][0]
+
+EVALUATE TABLE: "wp_trustindex_google_reviews"____________________[ROWS:    10][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_trustindex_google_reviews][0]
+
+EVALUATE TABLE: "wp_usermeta"_____________________________________[ROWS:   169][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_usermeta][0]
+
+EVALUATE TABLE: "wp_users"________________________________________[ROWS:     5][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_users][0]
+
+EVALUATE TABLE: "wp_wc_admin_notes"_______________________________[ROWS:    39][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_wc_admin_notes][0]
+
+EVALUATE TABLE: "wp_wc_admin_note_actions"________________________[ROWS:    47][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_wc_admin_note_actions][0]
+
+EVALUATE TABLE: "wp_wc_category_lookup"___________________________[ROWS:    60][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_customer_lookup"___________________________[ROWS:     4][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_wc_customer_lookup][0]
+
+EVALUATE TABLE: "wp_wc_download_log"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_order_coupon_lookup"_______________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_order_product_lookup"______________________[ROWS:     2][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_order_stats"_______________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_wc_order_stats][0]
+
+EVALUATE TABLE: "wp_wc_order_tax_lookup"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_product_attributes_lookup"_________________[ROWS:   398][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_wc_product_attributes_lookup][0]
+
+EVALUATE TABLE: "wp_wc_product_download_directories"______________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_wc_product_download_directories][0]
+
+EVALUATE TABLE: "wp_wc_product_meta_lookup"_______________________[ROWS:   179][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_wc_product_meta_lookup][0]
+
+EVALUATE TABLE: "wp_wc_rate_limits"_______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_reserved_stock"____________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wc_tax_rate_classes"__________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_wc_tax_rate_classes][0]
+
+EVALUATE TABLE: "wp_wc_webhooks"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_api_keys"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_attribute_taxonomies"_____________[ROWS:     3][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_woocommerce_attribute_taxonomies][0]
+
+EVALUATE TABLE: "wp_woocommerce_downloadable_product_permissions"_[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_log"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_order_itemmeta"___________________[ROWS:    40][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_woocommerce_order_itemmeta][0]
+
+EVALUATE TABLE: "wp_woocommerce_order_items"______________________[ROWS:     4][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_woocommerce_order_items][0]
+
+EVALUATE TABLE: "wp_woocommerce_payment_tokenmeta"________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_payment_tokens"___________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_sessions"_________________________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_woocommerce_sessions][0]
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zones"___________________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_woocommerce_shipping_zones][0]
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zone_locations"__________[ROWS:     1][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_woocommerce_shipping_zone_locations][0]
+
+EVALUATE TABLE: "wp_woocommerce_shipping_zone_methods"____________[ROWS:     2][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_woocommerce_shipping_zone_methods][0]
+
+EVALUATE TABLE: "wp_woocommerce_tax_rates"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_woocommerce_tax_rate_locations"_______________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_wpfm_backup"__________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_yoast_indexable"______________________________[ROWS:    88][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_yoast_indexable][0]
+
+EVALUATE TABLE: "wp_yoast_indexable_hierarchy"____________________[ROWS:    86][PG:   1][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_yoast_migrations"_____________________________[ROWS:    25][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_yoast_migrations][0]
+
+EVALUATE TABLE: "wp_yoast_primary_term"___________________________[ROWS:    29][PG:   1][SCAN:text columns]
+	--- BASE STRINGS ---
+	CHUNK ACTION: CURRENT [search_replace][wp_yoast_primary_term][0]
+
+EVALUATE TABLE: "wp_yoast_prominent_words"________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "wp_yoast_seo_links"______________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+--------------------------------------
+SCANNED:	Tables:83 	|	 Rows:46633 	|	 Cells:251042 
+UPDATED:	Tables:0 	|	 Rows:0 	|	 Cells:0 
+ERRORS:		0 
+RUNTIME:	0.483200 sec
+CHUNK ACTION: CURRENT [rem_maintenance][][]
+
+====================================
+REMOVE MAINTENANCE MODE
+====================================
+MAINTENANCE MODE DISABLE
+CHUNK ACTION: CURRENT [rem_licenze_key][][]
+
+====================================
+REMOVE LICENSE KEY
+====================================
+CHUNK ACTION: CURRENT [config_update][][]
+SET CONFIG FILES
+Retained original entry wpconfig target:/home/joys2021/joys.net.ua/testovi/wp-config.php
+Retained original entry htaccess target:/home/joys2021/joys.net.ua/testovi/.htaccess
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE ABSPATH "dirname(__FILE__) . '/'"
+	UPDATE DB_NAME ""joys2021_testovi""
+	UPDATE DB_USER "** OBSCURED **"
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""joys2021.mysql.tools""
+	UPDATE DB_CHARSET "utf8mb4"
+	UPDATE DB_COLLATE ""
+	WP CONFIG UPDATE WP_DEBUG "false"
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE
+====================================
+
+WEB SERVER CONFIGURATION FILE UPDATED:
+
+====================================
+INDEX.PHP UPDATE
+====================================
+INDEX.PHP updated with new blog header "dirname(__FILE__) . '/wp-blog-header.php'"
+
+CHUNK ACTION: CURRENT [gen_update][][]
+
+====================================
+GENERAL UPDATES
+====================================
+UPDATE OPTION home ON TABLE wp_options
+UPDATE OPTION siteurl ON TABLE wp_options
+UPDATE OPTION duplicator_pro_exe_safe_mode ON TABLE wp_options
+
+====================================
+MANAGE PLUGINS
+====================================
+CHUNK ACTION: CURRENT [gen_clean][][]
+
+====================================
+GENERAL CLEANUP
+====================================
+RESET ALL USERS SESSION TOKENS
+MIGRATION INFO SET
+CHUNK ACTION: CURRENT [create_admin][][]
+
+====================================
+RESET USERS PASSWORD
+====================================
+CHUNK ACTION: CURRENT [notice_test][][]
+
+====================================
+CHECK FOR INDEX.HTML
+====================================
+NO INDEX.HTML WAS FOUND
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+CHUNK ACTION: CURRENT [cleanup_tmp_files][][]
+
+====================================
+CLEANUP TMP FILES
+====================================
+CHUNK ACTION: CURRENT [set_files_perms][][]
+
+====================================
+SET PARAMS PERMISSION
+====================================
+
+*** SET FOLDER PERMISSION AFTER EXTRACTION
+--------------------------------------
+PATHS MAPPING : "/home/joys2021/joys.net.ua/testovi"
+--------------------------------------
+SET FOLDER PERMISSION DONE
+CHUNK ACTION: CURRENT [final_report][][]
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 09:38:53 - RUNTIME: 0.5598 sec. 
+
+
+AJAX ACTION [webupdate] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [finalpre] START
+AJAX ACTION [finalpre] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+
+-------------------------
+AJAX ACTION [finalafter] START
+AJAX ACTION [finalafter] SUCCESS
+-------------------------
+
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/src/Core/Bootstrap.php:75] RESET TIME
+STEP ACTION: "on-validate"
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[NOTICE] Can't update new .htaccess file
+	SECTIONS: general
+	LONG MSG: Retaining the original .htaccess files may cause issues with the initial setup of your site. If you encounter any problems, check the contents of the configuration files manually or reinstall the site again by changing the configuration file settings.
+
+-----------------------
+[NOTICE] Warnings or notices on WordPress front-end tests!
+	SECTIONS: general
+	LONG MSG: SCRIPT FILE TEST: /home/joys2021/joys.net.ua/testovi/index.php
+E_DEPRECATED Array and string offset access syntax with curly braces is deprecated
+	FILE: /home/joys2021/joys.net.ua/testovi/wp-content/plugins/wp-translitera/wp-translitera.php[124]
+	--- TRACE ---
+	FUNCTION: include_once                  FILE: /home/joys2021/joys.net.ua/testovi/wp-settings.php[447]
+	FUNCTION: require_once                  FILE: /home/joys2021/joys.net.ua/testovi/wp-config.php[97]
+	FUNCTION: require_once                  FILE: /home/joys2021/joys.net.ua/testovi/wp-load.php[50]
+	FUNCTION: require_once                  FILE: /home/joys2021/joys.net.ua/testovi/wp-blog-header.php[13]
+	FUNCTION: require                       FILE: /home/joys2021/joys.net.ua/testovi/index.php[17]
+	FUNCTION: require_once                  FILE: /home/joys2021/joys.net.ua/testovi/wp-content/wp_test_script_7c4e398-23192320.php[117]
+-----
+For solutions to these issues see the online FAQs 
+https://snapcreek.com/duplicator/docs 
+
+
+-----------------------
+[NOTICE] Warnings or notices on WordPress backend tests!
+	SECTIONS: general
+	LONG MSG: SCRIPT FILE TEST: /home/joys2021/joys.net.ua/testovi/wp-login.php
+E_DEPRECATED Array and string offset access syntax with curly braces is deprecated
+	FILE: /home/joys2021/joys.net.ua/testovi/wp-content/plugins/wp-translitera/wp-translitera.php[124]
+	--- TRACE ---
+	FUNCTION: include_once                  FILE: /home/joys2021/joys.net.ua/testovi/wp-settings.php[447]
+	FUNCTION: require_once                  FILE: /home/joys2021/joys.net.ua/testovi/wp-config.php[97]
+	FUNCTION: require_once                  FILE: /home/joys2021/joys.net.ua/testovi/wp-load.php[50]
+	FUNCTION: require                       FILE: /home/joys2021/joys.net.ua/testovi/wp-login.php[12]
+	FUNCTION: require_once                  FILE: /home/joys2021/joys.net.ua/testovi/wp-content/wp_test_script_7c4e398-23192320.php[117]
+-----
+For solutions to these issues see the online FAQs 
+https://snapcreek.com/duplicator/docs 
+
+
+====================================
+LOG-TIME[/home/joys2021/joys.net.ua/testovi/wp-content/backups-dup-pro/imports/dup-installer-088f000-23192320/ctrls/ctrl.base.php:166][DELTA:   0.02252]  MESSAGE:END RENDER PAGE

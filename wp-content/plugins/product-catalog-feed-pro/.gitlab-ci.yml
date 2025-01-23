@@ -1,0 +1,25 @@
+stages:
+  - deploy
+ 
+deploy_master:
+  stage: deploy
+  script:
+  
+  - if [ -z "$CREDENTIALS_MASTER" ] || [ -z "$DEP_FOLDER_MASTER" ] || [ -z "$DEP_FOLDER_MASTER2" ]; then echo "Need to set variables"; exit 1; fi
+  - if [ -z "$SSH_PORT_MASTER" ]; then SSH_PORT_MASTER=22; fi
+  - 
+    rsync -avz  -e 'ssh -p '$SSH_PORT_MASTER --delete --checksum  
+        --exclude "/.git/" 
+        --exclude "/.gitlab-ci.yml"
+        --exclude "/.gitignore"
+        --exclude "/.idea/"
+        ./ $CREDENTIALS_MASTER:$DEP_FOLDER_MASTER/
+  - 
+    rsync -avz  -e 'ssh -p '$SSH_PORT_MASTER --delete --checksum  
+        --exclude "/.git/" 
+        --exclude "/.gitlab-ci.yml"
+        --exclude "/.gitignore"
+        --exclude "/.idea/"
+        ./ $CREDENTIALS_MASTER:$DEP_FOLDER_MASTER2/
+  only:
+  - master

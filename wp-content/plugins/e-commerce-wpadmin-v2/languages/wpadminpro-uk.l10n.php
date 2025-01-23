@@ -1,0 +1,50 @@
+<?php
+return ['project-id-version'=>'WPadmin E-commerce integration','report-msgid-bugs-to'=>'','pot-creation-date'=>'2023-05-17 11:07+0300','po-revision-date'=>'2024-09-23 10:58+0000','last-translator'=>'','language-team'=>'Українська','language'=>'uk','mime-version'=>'1.0','content-type'=>'text/plain; charset=UTF-8','content-transfer-encoding'=>'8bit','plural-forms'=>'nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);','x-generator'=>'Loco https://localise.biz/','x-loco-version'=>'2.6.11; wp-6.6.2','x-poedit-basepath'=>'..','x-poedit-keywordslist'=>'_e;__;_x','x-poedit-searchpath-0'=>'.','x-poedit-searchpathexcluded-0'=>'cmb
+','messages'=>[' Please renew your license to update. You can change your license key in <a href="/wp-admin/admin.php?page=wpadmin_settings">E-commerce integration v2 > General options</a>'=>'. Щоб оновити, будь ласка, введіть активний ліцензійний ключ  тут - <a href="/wp-admin/admin.php?page=wpadmin_settings">E-commerce integration v2 > Головні налаштування</a>','Add analytics code?'=>'Додати код Google Analytics на сайт?','Add Dynamic Remarketing code?'=>'Додати на сайт код динамічного ремаркетингу?','Add FB pixel code?'=>'Додати на сайт код FB pixel ?','Add Google ADS code?'=>'Додати на сайт код Google ADS ?','Add TAG Manager code?'=>'Додати код  TAG Manager на сайт?','Additional codes settings'=>'Додаткові налаштування коду','Additional information you can find <a href=\'https://support.google.com/tagmanager/answer/11994839?hl=en&ref_topic=12403939&sjid=9720146569662259092-EU\' target=\'_blank\'>here</a>'=>'Заповнюйте, якщо потрібно додати на сайт код TAG Manager (Детальніше <a href=\'https://support.google.com/tagmanager/answer/11994839?hl=en&ref_topic=12403939&sjid=9720146569662259092-EU\' target=\'_blank\'>тут</a>)','Advertising with guarantee'=>'Реклама інтернет-магазинів з гарантією за результат.','Avaliable API versions you can find <a href=\'https://developers.facebook.com/docs/graph-api/changelog/#available-marketing-api-versions\' target=\'_blank\'>here</a>'=>'Доступні версії API можна побачити <a href=\'https://developers.facebook.com/docs/graph-api/changelog/#available-marketing-api-versions\' target=\'_blank\'>тут</a>','BRAND NAME'=>'Мій бренд','Change uk to ru or en for additional language if WPML or Polylang is used (optional)'=>'Змініть uk на en чи інший код мови, щоб у фід потрапила інформація з відповідного перекладу, якщо WPML чи Polylang використовується (не обов\'язково)','Choose attribute for custom_label'=>'Атрибут спеціальної мітки custom_label','Choose attribute wich is used as color on product if exists.'=>'Оберіть атрибут, в якому зберігається інформація про колір (якщо використовується)','Choose attribute wich is used as size on product if exists.'=>'Оберіть атрибут, в якому зберігається інформація про розмір (якщо використовується)','Choose brand taxonomy'=>'Атрибут бренду','Choose color attribute'=>'Атрибут кольору','Choose size attribute'=>'Атрибут розміру','Choose taxonomy wich is used as brand on product.'=>'Оберіть атрибут, в якому зберігається інформація про бренд (якщо використовується)','Code to test server events using the test events tool'=>'Код, який надає фейсбук для тестування подій (видаліть, якщо не тестуєте)','Conversion Label'=>'Мітка конверсії','Custom attribute custom_label_X , details <a href=\'https://support.google.com/merchants/answer/6324473?hl=uk\' target=\'_blank\'>here</a>'=>'Атрибут спеціальної мітки custom_label_X , детальніше<a href=\'https://support.google.com/merchants/answer/6324473?hl=uk\' target=\'_blank\'>тут</a>','Default brand name'=>'Бренд за замовчуванням','Dmytro Kondriuk'=>'Дмитро Кондрюк','E-commerce integration v2'=>'Ecommerce events&feeds for Google&Facebook','e.g., 1230975293864912321387'=>'напр.,  123097529386491232','e.g., 6c0C1_11FCOzR3e4'=>'напр., 6c0C1_11FCOzR3e4','e.g., AW-XXXXXXXXX'=>'напр., AW-XXXXXXXXX','e.g., Ev7Zcg5Ln4'=>'напр., Ev7Zcg5Ln4','e.g., G-XXXXXXXXX'=>'напр., G-XXXXXXXXX','e.g., TEST35891'=>'напр., TEST35891','e.g., v19.0'=>'напр.,  v19.0','Ecommerce WPAdmin options'=>'Налаштування Ecommerce WPAdmin ','Enter the name of the Brand you wish to use if Brand was not specified in product data'=>'Введіть бренд за замовчуванням, буде використано, якщо на продукті не задано бренд','Enter your plugin key'=>'Введіть ліцензійний код','FB API Test code'=>'Тестовий код для FB API','FB API token'=>'Токен для FB API ','FB API token you can take <a href=\'https://developers.facebook.com/docs/marketing-api/conversions-api/get-started/#access-token\' target=\'_blank\'>here</a>'=>'як знайти цей Токен для FB API  - детальніше <a href=\'https://developers.facebook.com/docs/marketing-api/conversions-api/get-started/#access-token\' target=\'_blank\'>тут</a>','FB API version'=>'Версія FB API ','FB Feed'=>'Фід FB ','FB Pixel ID'=>'FB Pixel ID','FB Pixel ID you can take <a href=\'https://developers.facebook.com/docs/marketing-api/conversions-api/get-started/#pixel-id\' target=\'_blank\'>here</a>'=>'як знайти ID вашого FB Pixel - детальніше <a href=\'https://developers.facebook.com/docs/marketing-api/conversions-api/get-started/#pixel-id\' target=\'_blank\'>тут</a>','GA4 API secret'=>'GA4 ключ API ','GA4 API secret you can take <a href=\'https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference#api_secret\' target=\'_blank\'>here</a>'=>'як знайти API secret для Measurement Protocol - детальніше <a href=\'https://developers.google.com/analytics/devguides/collection/protocol/ga4/reference#api_secret\' target=\'_blank\'>тут</a>','GA4 Measurement ID'=>'GA4 Ідентифікатор потоку даних ','GA4 Measurement ID you can take  <a href=\'https://support.google.com/analytics/answer/9539598?sjid=9720146569662259092-EU#find-G-ID\' target=\'_blank\'>here</a>'=>'як знайти GA4 Measurement ID - детальніше <a href=\'https://support.google.com/analytics/answer/9539598?sjid=9720146569662259092-EU#find-G-ID\' target=\'_blank\'>тут</a>','GA4 options'=>'Налаштування для Google Analytics 4','General options'=>'Загальні налаштування','General options FB'=>'Налаштування для Facebook','General options for Google Ads'=>'Налаштування для Google Ads','Go to update page'=>'Перейти до оновлення','Google Ads conversion Label'=>'Мітка події конверсії','Google Ads tag ID'=>'Google Ads tag ID','Google Ads tag ID you can take <a href=\'https://support.google.com/google-ads/answer/12326985?hl=en\' target=\'_blank\'>here</a>'=>'як знайти ID вашого Google Ads - детальніше <a href=\'https://support.google.com/google-ads/answer/12326985?hl=en\' target=\'_blank\'>тут</a>','Google and FB feeds, analytics code integration with order process'=>'Плагін інтеграції процесу покупки з Google Analytics, вивантаження товарних фідів для Google та FB','Google Feed'=>'Фід Google','http://wpadmin.pro/'=>'http://wpadmin.pro/','Include OUT of Stock products in feed or not? Check to include.'=>'Включати товари, яких немає на складі (OUT of Stock) в фід чи ні? Поставте пташку, щоб включати','My own Brand'=>'Мій бренд','No'=>'Ні','Product feeds options'=>'Налаштування фіду продуктів','Save changes'=>'Зберегти налаштування','Settings'=>'Налаштування Ecommerce events&feeds for Google&Facebook','Show advanced options? Check to show.'=>'Показати додаткові (продвинуті) налаштування?','TAG Manager ID'=>'TAG Manager ID','Text for Advertising with guarantee'=>'<h4>
+  <strong>Google та Facebook реклама інтернет-магазину з гарантією за результат (тримісячний контракт)</strong>
+</h4>
+<p>Компанія “К2-реклама інтернет-магазинів”, яка є автором даного модуля, збільшує кількість ваших клієнтів завдяки ефективній рекламі інтернет-магазинів.</p>
+<p>
+  <strong>К2 на ринку з 2019 року. І за цей час:</strong>
+</p>
+<blockquote>
+<ul class="browser-default">
+  <li>- налаштували рекламу для понад 500 інтернет-магазинів</li>
+  <li>- отримали статус Google Partner</li>
+  <li>- відзначені нагородами Ecommerce.Кращі 2020 та 2021</li>
+</ul>
+</blockquote>
+<h4>
+  <strong>Опис</strong>
+</h4>
+<p>За час діяльності компанії ми помітили, що кращих результатів вдається досягти, коли ми укладаємо тримісячний контракт з налаштування і супроводу рекламних кампаній. Більше того, статистика результатів реклами наших клієнтів говорить про те, що нам вдається забезпечити їм з реклами більше замовлень, коли ми працюємо з ними більш тривалий період.</p>
+<p>Ми настільки впевнені у якості нашої роботи, що пропонуємо налаштування та супровід реклами з <strong>гарантією за результат</strong> —&nbsp; збільшимо продажі або повернемо гроші. </p>
+<p>
+  <br>
+  <strong>Тариф “Налаштування реклами з гарантією за результат” включає:</strong>
+</p>
+<blockquote>
+<ul>
+  <li>- Створення акаунтів (+ первинне налаштування) та передача доступів адміністратора на сторону клієнта;</li>
+  <li>- Рекомендації щодо оформлення товарів (заголовки, описи, фото);</li>
+  <li>- Розробка рекламних стратегій на основі специфіки бізнесу, сезонності та пріоритетності товарів;</li>
+  <li>- Пошук рекламних рішень для вашого бізнесу, які справді працюють;</li>
+  <li>- Поглиблена оптимізація (набір методів для покращення результату при тому самому бюджеті);</li>
+  <li>- Масштабування (набір методів для збільшення продажів з реклами);</li>
+  <li>- Щотижневі звіти;</li>
+  <li>- Регулярна консультативна підтримка в робочому чаті.</li>
+</ul>
+
+</blockquote>
+<br>
+<p>
+  <strong>Вартість послуги:</strong>
+</p>
+<p>Тільки Google або тільки Facebook – 60 000 грн (за три місяці) <br>Комплекс (і Google, і Facebook) – 80 000 грн (за три місяці) </p>
+<p>
+  <strong>Контакти:</strong>
+</p>
+<p>+38 (093) 170-79-26</p>
+<p>
+  <a href="mailto:info@yupi.company">info@k2-promo.company</a>&nbsp; <a href="https://k2-promo.company/" target="_blank">https://k2-promo.company</a>
+</p>','WPadmin E-commerce integration v2'=>'Ecommerce events&feeds for Google&Facebook','Yes'=>'Так','You\'ll get your key after purchase <a href=\'https://wordpress.co.ua/wpadmin-ecommerce\' target=\'_blank\'>here</a>'=>'Код надається одразу після покупки, купити можна <a href=\'https://wordpress.co.ua/wpadmin-ecommerce\' target=\'_blank\'>тут</a>']];
