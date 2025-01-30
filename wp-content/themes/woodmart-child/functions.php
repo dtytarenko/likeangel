@@ -66,100 +66,6 @@ add_action('wp_footer', function() {
     }
 });
 
-/**
- * Функція для підтримки статусу "На замовлення"
- * Оновлює текст доступності та кнопки для товарів зі stock_status = onbackorder.
- */
-
-// -------------------------
-// 1) Текст доступності (Availability)
-
-add_filter( 'woocommerce_get_availability_text', 'la_backorder_availability_text', 999, 2 );
-function la_backorder_availability_text( $availability, $product ) {
-    if ( $product->get_stock_status() === 'onbackorder' ) {
-        $availability = __( 'Відправка через 10-14 днів', 'woocommerce' );
-    }
-    return $availability;
-}
-
-// -------------------------
-// 2) Текст кнопки у загальних випадках (наприклад, архіви товарів)
-
-add_filter( 'woocommerce_product_add_to_cart_text', 'la_backorder_add_to_cart_text', 999, 2 );
-function la_backorder_add_to_cart_text( $text, $product ) {
-    if ( $product->get_stock_status() === 'onbackorder' ) {
-        $text = __( 'Передзамовлення', 'woocommerce' );
-    }
-    return $text;
-}
-
-// -------------------------
-// 3) Текст кнопки на сторінці товару (Single Product Page)
-
-add_filter( 'woocommerce_product_single_add_to_cart_text', 'la_backorder_single_add_to_cart_text', 999, 2 );
-function la_backorder_single_add_to_cart_text( $text, $product ) {
-    if ( $product->get_stock_status() === 'onbackorder' ) {
-        $text = __( 'Передзамовлення', 'woocommerce' );
-    }
-    return $text;
-}
-
-// -------------------------
-// 4) Додаємо статус backorder у дані варіації
-
-add_filter( 'woocommerce_available_variation', 'la_backorder_variation_data', 999, 3 );
-function la_backorder_variation_data( $variation_data, $product, $variation ) {
-    if ( $variation->get_stock_status() === 'onbackorder' ) {
-        // Availability
-        $variation_data['availability_html'] = '<p class="stock available-on-backorder wd-style-default">'
-            . __( 'Відправка через 10-14 днів', 'woocommerce' ) . '</p>';
-
-        // Кнопка
-        $variation_data['add_to_cart_text']           = __( 'Передзамовлення', 'woocommerce' );
-        $variation_data['button_text']                = __( 'Передзамовлення', 'woocommerce' );
-        $variation_data['variation_add_to_cart_text'] = __( 'Передзамовлення', 'woocommerce' );
-
-        // Додаємо спеціальний прапорець для JS
-        $variation_data['is_on_backorder'] = true;
-    } else {
-        $variation_data['is_on_backorder'] = false;
-    }
-
-    return $variation_data;
-}
-
-// -------------------------
-// 5) Додаємо JS у footer для оновлення кнопки і доступності на сторінці товару
-
-add_action( 'wp_footer', 'la_backorder_js_override', 999 );
-function la_backorder_js_override() {
-    // Підключимо скрипт ТІЛЬКИ на сторінках товарів (is_product())
-    if ( ! is_product() ) return;
-    ?>
-    <script>
-    jQuery(function($) {
-        $(document).on('show_variation', '.variations_form', function(event, variation) {
-            // Логіка для визначення статусу "На замовлення"
-            var isOnBackorder = variation.is_on_backorder || false;
-
-            // Якщо варіація "На замовлення"
-            if (isOnBackorder) {
-                // Оновлюємо текст кнопки
-                $('.single_add_to_cart_button').text('Передзамовлення');
-
-                // Оновлюємо текст доступності
-                $('.single_variation_wrap .stock').html(variation.availability_html);
-            } else {
-                // Якщо обрана варіація не є "На замовлення"
-                $('.single_add_to_cart_button').text('Додати в кошик');
-                $('.single_variation_wrap .stock').text('Є в наявності');
-            }
-        });
-    });
-    </script>
-    <?php
-}
-
 // Прибираємо автозапонення номеру на сторінці чекаут
 add_filter( 'woocommerce_checkout_fields', 'remove_billing_phone_autocomplete' );
 function remove_billing_phone_autocomplete( $fields ) {
@@ -168,3 +74,24 @@ function remove_billing_phone_autocomplete( $fields ) {
     return $fields;
 }
 
+// Підключаємо функції backorder тільки на сторінках товарів
+function la_include_backorder_functions() {
+    if ( is_product() ) {
+        require_once get_stylesheet_directory() . '/inc/backorder-functions.php';
+    }
+}
+add_action( 'wp', 'la_include_backorder_functions' );
+
+// Підключаємо JavaScript тільки на сторінках товарів
+function la_enqueue_backorder_script() {
+    if ( is_product() ) {
+        wp_enqueue_script(
+            'backorder-script',
+            get_stylesheet_directory_uri() . '/js/backorder.js',
+            array('jquery'),
+            null,
+            true
+        );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'la_enqueue_backorder_script' );
