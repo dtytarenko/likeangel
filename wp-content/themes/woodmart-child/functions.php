@@ -95,3 +95,16 @@ function la_enqueue_backorder_script() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'la_enqueue_backorder_script' );
+
+
+// Оновлення фіду та додавання назви товару в  <g:description> XML файлу (Google feed) генерованого плагіном Product Catalog Pro
+add_filter('wpwoofeed_product_description', function($description, $product) {
+    $title = $product->get_name();
+    $attributes = explode(' - ', $description); // Розбиваємо поточний description
+    if (count($attributes) === 2) {
+        $color = trim($attributes[0]);  // Колір
+        $size = trim($attributes[1]);   // Розмір
+        return "$title $color, $size";  // Формуємо правильний порядок
+    }
+    return $description; // Якщо формат не відповідає, повертаємо як є
+}, 10, 2);
