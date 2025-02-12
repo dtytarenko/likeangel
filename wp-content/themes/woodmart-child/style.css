@@ -133,3 +133,21 @@
 
 }
 */
+
+@media (min-width: 1400px) { 
+	.home .wd-carousel-wrap .wd-carousel-item .category-image{
+		max-height: 450px;
+	}
+}
+
+@media (min-width: 1920px) { 
+	.home .wd-carousel-wrap .wd-carousel-item .category-image{
+		max-height: 612px;
+	}
+}
+
+@media (min-width: 3840px) { 
+	.home .wd-carousel-wrap .wd-carousel-item .category-image{
+		max-height: none;
+	}
+}
