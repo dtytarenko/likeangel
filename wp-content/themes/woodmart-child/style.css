@@ -151,3 +151,7 @@
 		max-height: none;
 	}
 }
+
+.woocommerce-variation-description {
+    display: none;
+}
