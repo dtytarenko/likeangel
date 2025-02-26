@@ -155,3 +155,7 @@
 .woocommerce-variation-description {
     display: none;
 }
+
+.product-labels.labels-rounded .out-of-stock.product-label {
+    max-width: none;
+}

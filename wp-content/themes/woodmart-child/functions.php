@@ -108,3 +108,16 @@ add_filter('wpwoofeed_product_description', function($description, $product) {
     }
     return $description; // Якщо формат не відповідає, повертаємо як є
 }, 10, 2);
+
+
+/**
+ * Підключаємо логіку приховування бейджа "Немає в наявності"
+ * (якщо увімкнені backorders) тільки на сторінках категорій товарів.
+ */
+function la_include_hide_out_of_stock_functions() {
+	// Перевіряємо, чи це архів категорії товарів (product_cat).
+	if ( is_product_category() || is_product_tag() || is_shop() || is_product_tag()) {
+		require_once get_stylesheet_directory() . '/inc/la_product_label_preorder.php';
+	}
+}
+add_action( 'wp', 'la_include_hide_out_of_stock_functions' );

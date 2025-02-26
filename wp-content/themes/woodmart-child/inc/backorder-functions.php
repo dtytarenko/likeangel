@@ -1,54 +1,45 @@
-<?php
-/**
- * Функції для підтримки статусу "На замовлення"
- */
+// 1) Підміняємо дані про наявність у varіаціях
+add_filter( 'woocommerce_available_variation', function( $variation_data, $variable_product, $variation ) {
+    $stock_qty   = (int) $variation->get_stock_quantity();
+    $backorders  = $variation->get_backorders(); // 'no', 'notify', 'yes'
+    
+    // Прапори (JS їх використовує для визначення стану)
+    $variation_data['is_on_backorder'] = false;
+    $variation_data['is_out_of_stock'] = false;
 
-// -------------------------
-// 1) Текст доступності (Availability)
-add_filter( 'woocommerce_get_availability_text', 'la_backorder_availability_text', 999, 2 );
-function la_backorder_availability_text( $availability, $product ) {
-    if ( $product->get_stock_status() === 'onbackorder' ) {
-        $availability = __( 'Відправка через 10-14 днів', 'woocommerce' );
-    }
-    return $availability;
-}
+    /**
+     * Тут зберігаємо "справжні" (кастомні) тексти у власному полі.
+     * Початково вважаємо, що товар у наявності:
+     */
+    $variation_data['my_custom_button_text']       = __( 'Додати в кошик', 'woocommerce' );
+    $variation_data['my_custom_availability_html'] = '<p class="stock in-stock">' . __( 'Є в наявності', 'woocommerce' ) . '</p>';
 
-// -------------------------
-// 2) Текст кнопки у загальних випадках (наприклад, архіви товарів)
-add_filter( 'woocommerce_product_add_to_cart_text', 'la_backorder_add_to_cart_text', 999, 2 );
-function la_backorder_add_to_cart_text( $text, $product ) {
-    if ( $product->get_stock_status() === 'onbackorder' ) {
-        $text = __( 'Передзамовлення', 'woocommerce' );
-    }
-    return $text;
-}
-
-// -------------------------
-// 3) Текст кнопки на сторінці товару
-add_filter( 'woocommerce_product_single_add_to_cart_text', 'la_backorder_single_add_to_cart_text', 999, 2 );
-function la_backorder_single_add_to_cart_text( $text, $product ) {
-    if ( $product->get_stock_status() === 'onbackorder' ) {
-        $text = __( 'Передзамовлення', 'woocommerce' );
-    }
-    return $text;
-}
-
-// -------------------------
-// 4) Додаємо статус backorder у дані варіації
-add_filter( 'woocommerce_available_variation', 'la_backorder_variation_data', 999, 3 );
-function la_backorder_variation_data( $variation_data, $product, $variation ) {
-    if ( $variation->get_backorders() === 'notify' ) {
-        $variation_data['availability_html'] = '<p class="stock available-on-backorder wd-style-default">'
+    /**
+     * 1) Якщо backorders = 'yes' | 'notify' і запас (stock) <= 0 => "Передзамовлення"
+     */
+    if ( in_array( $backorders, ['yes','notify'], true ) && $stock_qty <= 0 ) {
+        $variation_data['my_custom_button_text']       = __( 'Передзамовлення', 'woocommerce' );
+        $variation_data['my_custom_availability_html'] = '<p class="stock available-on-backorder">'
             . __( 'Відправка через 10-14 днів', 'woocommerce' ) . '</p>';
-
-        $variation_data['add_to_cart_text']           = __( 'Передзамовлення', 'woocommerce' );
-        $variation_data['button_text']                = __( 'Передзамовлення', 'woocommerce' );
-        $variation_data['variation_add_to_cart_text'] = __( 'Передзамовлення', 'woocommerce' );
-
-        $variation_data['is_on_backorder'] = true;
-    } else {
-        $variation_data['is_on_backorder'] = false;
+        $variation_data['is_on_backorder']             = true;
     }
+    /**
+     * 2) Якщо backorders = 'no' і stock <= 0 => "Відсутній у продажу"
+     */
+    elseif ( $backorders === 'no' && $stock_qty <= 0 ) {
+        $variation_data['my_custom_button_text']       = __( 'Відсутній у продажу', 'woocommerce' );
+        $variation_data['my_custom_availability_html'] = '<p class="stock out-of-stock">'
+            . __( 'Відсутній у продажу', 'woocommerce' ) . '</p>';
+        $variation_data['is_out_of_stock']             = true;
+    }
+
+    /**
+     * "Гасимо" стандартне availability_html і button_text,
+     * щоб WooCommerce НЕ показував нічого до вибору варіації
+     * (і не було "миготіння").
+     */
+    $variation_data['availability_html'] = '';
+    $variation_data['button_text']       = '';
 
     return $variation_data;
-}
+}, 999, 3 );
