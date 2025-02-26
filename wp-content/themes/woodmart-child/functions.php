@@ -74,17 +74,13 @@ function remove_billing_phone_autocomplete( $fields ) {
     return $fields;
 }
 
-// Підключаємо функції backorder тільки на сторінках товарів
 function la_include_backorder_functions() {
-    if ( is_product() ) {
-        require_once get_stylesheet_directory() . '/inc/backorder-functions.php';
-    }
+   require_once get_stylesheet_directory() . '/inc/backorder-functions.php';
 }
 add_action( 'wp', 'la_include_backorder_functions' );
 
 // Підключаємо JavaScript тільки на сторінках товарів
 function la_enqueue_backorder_script() {
-    if ( is_product() ) {
         wp_enqueue_script(
             'backorder-script',
             get_stylesheet_directory_uri() . '/js/backorder.js',
@@ -92,10 +88,8 @@ function la_enqueue_backorder_script() {
             null,
             true
         );
-    }
 }
 add_action( 'wp_enqueue_scripts', 'la_enqueue_backorder_script' );
-
 
 // Оновлення фіду та додавання назви товару в  <g:description> XML файлу (Google feed) генерованого плагіном Product Catalog Pro
 add_filter('wpwoofeed_product_description', function($description, $product) {

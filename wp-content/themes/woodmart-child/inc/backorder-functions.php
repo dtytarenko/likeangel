@@ -1,3 +1,5 @@
+<?php
+
 // 1) Підміняємо дані про наявність у varіаціях
 add_filter( 'woocommerce_available_variation', function( $variation_data, $variable_product, $variation ) {
     $stock_qty   = (int) $variation->get_stock_quantity();
@@ -27,9 +29,9 @@ add_filter( 'woocommerce_available_variation', function( $variation_data, $varia
      * 2) Якщо backorders = 'no' і stock <= 0 => "Відсутній у продажу"
      */
     elseif ( $backorders === 'no' && $stock_qty <= 0 ) {
-        $variation_data['my_custom_button_text']       = __( 'Відсутній у продажу', 'woocommerce' );
+        $variation_data['my_custom_button_text']       = __( 'Товар тимчасово відсутній', 'woocommerce' );
         $variation_data['my_custom_availability_html'] = '<p class="stock out-of-stock">'
-            . __( 'Відсутній у продажу', 'woocommerce' ) . '</p>';
+            . __( 'Товар тимчасово відсутній', 'woocommerce' ) . '</p>';
         $variation_data['is_out_of_stock']             = true;
     }
 

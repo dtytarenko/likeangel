@@ -1,0 +1,13 @@
+label[for="woocommerce_morkva-liqpay_liqpay_image_type_black"],
+label[for="woocommerce_morkva-liqpay_liqpay_image_type_white"],
+label[for="woocommerce_morkva-liqpay_liqpay_image_type_mini"],
+label[for="woocommerce_morkva-liqpay-payparts_liqpay_image_type_black"],
+label[for="woocommerce_morkva-liqpay-payparts_liqpay_image_type_white"],
+label[for="woocommerce_morkva-liqpay-payparts_liqpay_image_type_mini"],
+label[for="woocommerce_morkva-liqpay-prepay_liqpay_image_type_black"],
+label[for="woocommerce_morkva-liqpay-prepay_liqpay_image_type_white"],
+label[for="woocommerce_morkva-liqpay-prepay_liqpay_image_type_mini"],{
+	display: flex !important;
+    align-items: center;
+    gap: 10px;
+}
