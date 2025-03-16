@@ -3,6 +3,8 @@
  * Enqueue script and styles for child theme
  */
 require_once get_stylesheet_directory() . '/inc/la_404_redirect.php';
+require_once get_theme_file_path( 'inc/la_sort_instock_first.php' );
+
 
 function woodmart_child_enqueue_styles() {
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), woodmart_get_theme_info( 'Version' ) );
