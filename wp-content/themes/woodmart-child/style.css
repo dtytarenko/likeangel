@@ -159,3 +159,8 @@
 .product-labels.labels-rounded .out-of-stock.product-label {
     max-width: none;
 }
+
+/* fix select order by width */
+.wd-shop-tools .woocommerce-ordering.wd-style-underline .orderby { 
+    max-width: 220px;
+}
