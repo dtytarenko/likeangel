@@ -118,4 +118,21 @@ function la_include_hide_out_of_stock_functions() {
 		require_once get_stylesheet_directory() . '/inc/la_product_label_preorder.php';
 	}
 }
+
+/**
+ * https://likeangel.atlassian.net/browse/SCRUM-17
+ * Додавання функції перевірки для мінікорзини та сторінки корзини щодо можливості сформування замовлення
+ */
 add_action( 'wp', 'la_include_hide_out_of_stock_functions' );
+function likeangel_enqueue_checkout_guard() {
+    if ( is_cart() || is_checkout() || wp_doing_ajax() ) return;
+
+    wp_enqueue_script(
+        'likeangel-cart-checkout-guard',
+        get_stylesheet_directory_uri() . '/js/cart-checkout-guard.js',
+        array(),
+        null,
+        true
+    );
+}
+add_action( 'wp_enqueue_scripts', 'likeangel_enqueue_checkout_guard' );
