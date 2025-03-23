@@ -83,7 +83,7 @@ if ( $has_unavailable_products ) {
                                     <?php echo wc_get_formatted_cart_item_data( $cart_item ); ?>
 
                                     <?php if ( ! $_product->is_in_stock() ) : ?>
-                                        <div class="wd-out-of-stock" style="color:red; margin-top:5px;">
+                                        <div class="wd-out-of-stock" style="color:#e98181; margin-top:5px; margin-bottom:5px;">
                                             <?php esc_html_e( 'Немає у наявності', 'woocommerce' ); ?>
                                         </div>
                                     <?php endif; ?>
