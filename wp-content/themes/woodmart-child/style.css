@@ -172,4 +172,14 @@
     75% { transform: translateX(-4px); }
     100% { transform: translateX(0); }
   }
-  
+
+.cart-widget-side .mini-cart-availability-warning {
+    color: #000 !important;
+    border-left-color: #000 !important;
+}
+
+.woocommerce-cart .woocommerce-error {
+    background-color: #fff8e5;
+    color: #000;
+    border-left: 4px solid black;
+}
