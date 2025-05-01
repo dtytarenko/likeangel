@@ -183,3 +183,11 @@
     color: #000;
     border-left: 4px solid black;
 }
+
+.wd-swatch[data-value="ajvori"] {
+    border: 1px solid #cfcfcf;
+  }
+
+.menu-item-23090.item-level-0 .woodmart-nav-link {
+    color: #e98181;
+}
