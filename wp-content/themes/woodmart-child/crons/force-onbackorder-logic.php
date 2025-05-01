@@ -4,7 +4,7 @@
  * Версія: спрощена, без перевірок складу та manage_stock
  */
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-load.php';
+ require_once dirname(__FILE__, 5) . '/wp-load.php';
 
 global $wpdb;
 
