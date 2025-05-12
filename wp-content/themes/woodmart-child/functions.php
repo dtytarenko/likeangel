@@ -139,3 +139,5 @@ add_filter( 'woocommerce_available_variation', function( $variation_data, $produ
     }
     return $variation_data;
 }, 999, 3 );
+
+require_once get_stylesheet_directory() . '/inc/la-manual-review-admin.php';
