@@ -3,7 +3,9 @@
  * Enqueue script and styles for child theme
  */
 require_once get_stylesheet_directory() . '/inc/la_404_redirect.php';
-require_once get_theme_file_path( 'inc/la_sort_instock_first.php' );
+require_once get_stylesheet_directory() . '/inc/la-login-redirect.php';
+require_once get_stylesheet_directory() . '/inc/la_sort_instock_first.php';
+require_once get_stylesheet_directory() . '/inc/la-manual-review-admin.php';
 
 add_filter( 'woocommerce_hide_invisible_variations', '__return_false' );
 
@@ -139,5 +141,3 @@ add_filter( 'woocommerce_available_variation', function( $variation_data, $produ
     }
     return $variation_data;
 }, 999, 3 );
-
-require_once get_stylesheet_directory() . '/inc/la-manual-review-admin.php';
