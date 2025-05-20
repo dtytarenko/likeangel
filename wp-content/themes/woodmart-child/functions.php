@@ -3,9 +3,10 @@
  * Enqueue script and styles for child theme
  */
 require_once get_stylesheet_directory() . '/inc/la_404_redirect.php';
-require_once get_stylesheet_directory() . '/inc/la-login-redirect.php';
+require_once get_stylesheet_directory() . '/inc/la_login_redirect.php';
 require_once get_stylesheet_directory() . '/inc/la_sort_instock_first.php';
-require_once get_stylesheet_directory() . '/inc/la-manual-review-admin.php';
+require_once get_stylesheet_directory() . '/inc/la_manual_review_admin.php';
+require_once get_stylesheet_directory() . '/inc/la_generate_payment_link.php';
 
 add_filter( 'woocommerce_hide_invisible_variations', '__return_false' );
 
@@ -72,7 +73,7 @@ function remove_billing_phone_autocomplete( $fields ) {
 }
 
 function la_include_backorder_functions() {
-   require_once get_stylesheet_directory() . '/inc/backorder-functions.php';
+   require_once get_stylesheet_directory() . '/inc/la_backorder-functions.php';
 }
 add_action( 'wp', 'la_include_backorder_functions' );
 
@@ -141,3 +142,4 @@ add_filter( 'woocommerce_available_variation', function( $variation_data, $produ
     }
     return $variation_data;
 }, 999, 3 );
+
