@@ -1,12 +1,13 @@
+<?php
 require_once dirname(__FILE__, 5) . '/wp-load.php';
 global $wpdb;
 
 // Оновлюємо stock_status
 $affected_stock = $wpdb->query("
-    UPDATE wp_postmeta AS pm1
+    UPDATE {$wpdb->prefix}postmeta AS pm1
     JOIN (
         SELECT post_id
-        FROM wp_postmeta
+        FROM {$wpdb->prefix}postmeta
         WHERE meta_key = '_backorders' AND meta_value = 'notify'
     ) AS filtered
     ON pm1.post_id = filtered.post_id
@@ -17,13 +18,13 @@ $affected_stock = $wpdb->query("
 // Отримати ID варіацій, які мають backorders = notify
 $variation_ids = $wpdb->get_col("
     SELECT post_id
-    FROM wp_postmeta
+    FROM {$wpdb->prefix}postmeta
     WHERE meta_key = '_backorders' AND meta_value = 'notify'
 ");
 
 $affected_visibility = 0;
 
-// Проходимо циклом, оновлюємо modified_date + чистимо кеші
+// Оновлюємо modified_date + чистимо кеші
 foreach ($variation_ids as $variation_id) {
     wp_update_post([
         'ID' => $variation_id,
