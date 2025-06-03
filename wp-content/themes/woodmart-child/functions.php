@@ -7,6 +7,7 @@ require_once get_stylesheet_directory() . '/inc/la_login_redirect.php';
 require_once get_stylesheet_directory() . '/inc/la_sort_instock_first.php';
 require_once get_stylesheet_directory() . '/inc/la_manual_review_admin.php';
 require_once get_stylesheet_directory() . '/inc/la_generate_payment_link.php';
+require_once get_stylesheet_directory() . '/inc/la_utm_tracking.php';
 
 add_filter( 'woocommerce_hide_invisible_variations', '__return_false' );
 
