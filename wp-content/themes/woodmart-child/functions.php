@@ -143,4 +143,3 @@ add_filter( 'woocommerce_available_variation', function( $variation_data, $produ
     }
     return $variation_data;
 }, 999, 3 );
-
