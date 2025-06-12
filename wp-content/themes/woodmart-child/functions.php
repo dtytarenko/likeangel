@@ -9,8 +9,6 @@ require_once get_stylesheet_directory() . '/inc/la_manual_review_admin.php';
 require_once get_stylesheet_directory() . '/inc/la_generate_payment_link.php';
 require_once get_stylesheet_directory() . '/inc/la_utm_tracking.php';
 
-add_filter( 'woocommerce_hide_invisible_variations', '__return_false' );
-
 function woodmart_child_enqueue_styles() {
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), woodmart_get_theme_info( 'Version' ) );
 }
