@@ -8,6 +8,7 @@ require_once get_stylesheet_directory() . '/inc/la_sort_instock_first.php';
 require_once get_stylesheet_directory() . '/inc/la_manual_review_admin.php';
 require_once get_stylesheet_directory() . '/inc/la_generate_payment_link.php';
 require_once get_stylesheet_directory() . '/inc/la_utm_tracking.php';
+require_once get_stylesheet_directory() . '/inc/la_product_label_stock.php';
 
 function woodmart_child_enqueue_styles() {
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), woodmart_get_theme_info( 'Version' ) );
@@ -98,12 +99,6 @@ add_filter('wpwoofeed_product_description', function($description, $product) {
     return $description;
 }, 10, 2);
 
-function la_include_hide_out_of_stock_functions() {
-	if ( is_product_category() || is_product_tag() || is_shop() || is_product_tag()) {
-		require_once get_stylesheet_directory() . '/inc/la_product_label_preorder.php';
-	}
-}
-add_action( 'wp', 'la_include_hide_out_of_stock_functions' );
 
 function likeangel_enqueue_checkout_guard() {
     if ( is_cart() || is_checkout() || wp_doing_ajax() ) return;
