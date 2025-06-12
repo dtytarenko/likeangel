@@ -1,57 +1,30 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const autoprefixer = require('gulp-autoprefixer');
-const cleanCSS = require('gulp-clean-css');
-const sourcemaps = require('gulp-sourcemaps');
-const uglify = require('gulp-uglify');
-const browserSync = require('browser-sync').create();
+const gulpIf     = require('gulp-if');
+const plumber    = require('gulp-plumber');
+const terser     = require('gulp-terser');
+const rename     = require('gulp-rename');
 
-const paths = {
-  styles: {
-    src: 'src/scss/**/*.scss',
-    dest: './'
-  },
-  scripts: {
-    src: 'src/js/**/*.js',
-    dest: 'js/'
-  }
-};
+const isProd = process.env.NODE_ENV === 'production';
 
 function styles() {
   return gulp.src(paths.styles.src)
-    .pipe(sourcemaps.init())
+    .pipe(plumber())
+    .pipe(gulpIf(!isProd, sourcemaps.init()))
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(cleanCSS())
-    .pipe(sourcemaps.write('.'))
+    .pipe(gulpIf(isProd, cleanCSS({level:2})))
+    .pipe(gulpIf(!isProd, sourcemaps.write('.')))
+    .pipe(rename({suffix: isProd ? '.min' : ''}))
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(browserSync.stream());
 }
 
 function scripts() {
   return gulp.src(paths.scripts.src)
-    .pipe(sourcemaps.init())
-    .pipe(uglify())
-    .pipe(sourcemaps.write('.'))
+    .pipe(plumber())
+    .pipe(gulpIf(!isProd, sourcemaps.init()))
+    .pipe(gulpIf(isProd, terser()))
+    .pipe(gulpIf(!isProd, sourcemaps.write('.')))
+    .pipe(rename({suffix: isProd ? '.min' : ''}))
     .pipe(gulp.dest(paths.scripts.dest))
     .pipe(browserSync.stream());
 }
-
-function watchFiles() {
-  browserSync.init({
-    proxy: 'http://localhost',
-    notify: false
-  });
-  gulp.watch(paths.styles.src, styles);
-  gulp.watch(paths.scripts.src, scripts);
-  gulp.watch('**/*.php').on('change', browserSync.reload);
-}
-
-const build = gulp.parallel(styles, scripts);
-const watch = gulp.series(build, watchFiles);
-
-exports.styles = styles;
-exports.scripts = scripts;
-exports.build = build;
-exports.watch = watch;
-exports.default = watch;
