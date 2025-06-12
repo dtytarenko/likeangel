@@ -143,3 +143,41 @@ add_filter( 'woocommerce_available_variation', function( $variation_data, $produ
     }
     return $variation_data;
 }, 999, 3 );
+
+add_filter( 'woodmart_product_label_output', 'la_hide_out_of_stock_label_on_single_if_variations_available', 10, 1 );
+
+function la_hide_out_of_stock_label_on_single_if_variations_available( $labels ) {
+	if ( ! is_product() ) {
+		// Категорії обробляє інший фільтр
+		return $labels;
+	}
+
+	global $product;
+
+	// Якщо варіативний товар — перевіримо всі варіації
+	if ( $product && $product->is_type('variable') ) {
+		foreach ( $product->get_children() as $variation_id ) {
+			$variation = wc_get_product( $variation_id );
+
+			if ( $variation && ( $variation->is_in_stock() || $variation->backorders_allowed() ) ) {
+				// Хоч одна варіація доступна — ховаємо бейдж
+				foreach ( $labels as $index => $label_html ) {
+					if ( strpos( $label_html, 'out-of-stock product-label' ) !== false ) {
+						unset( $labels[ $index ] );
+					}
+				}
+				break;
+			}
+		}
+	}
+	// Для простих товарів: якщо є backorder — також приховуємо
+	elseif ( $product && ! $product->is_in_stock() && $product->backorders_allowed() ) {
+		foreach ( $labels as $index => $label_html ) {
+			if ( strpos( $label_html, 'out-of-stock product-label' ) !== false ) {
+				unset( $labels[ $index ] );
+			}
+		}
+	}
+
+	return $labels;
+}
