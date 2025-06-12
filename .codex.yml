@@ -1,0 +1,3 @@
+commitMessage:
+  template: "[${issueKey}] ${summary}"
+  fallback:  "[NO-KEY] ${summary}"
