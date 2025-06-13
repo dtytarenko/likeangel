@@ -181,3 +181,39 @@
 .menu-item-23090.item-level-0 .woodmart-nav-link {
     color: #e98181;
 }
+
+/* ===== 2-й рівень, що розкривається збоку ===== */
+#menu-menu-glavn ul.sub-sub-menu.wd-dropdown{
+	/* обрізаємо висоту під екран, за мінусом шапки  */
+	min-height: 40vh;
+	max-height: 40vh;
+	overflow-y: auto;                           /* увімкнути скрол */
+	overscroll-behavior: contain;               /* колесо не «пробиває» body */
+	padding-right: .5rem;                       /* трошки місця під скролбар */
+	padding-bottom: 70px;
+}
+
+/* «подушка» внизу, щоб останній <li> не ховався */
+#menu-menu-glavn ul.sub-sub-menu.wd-dropdown > li:last-child{
+	margin-bottom: 1.6rem;
+}
+
+/* базовий пункт, у якого є ще й бокове підменю */
+#menu-menu-glavn li.menu-item-has-children{
+	position: relative;                         /* потрібен контекст для ::after */
+}
+
+#menu-menu-glavn li.item-level-1 {
+    margin-bottom: 3px;
+}
+
+/* прозора смуга 18 px між рядком меню та підменю  */
+#menu-menu-glavn li.menu-item-has-children::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -35px;                               /* якщо підменю ліворуч — left */
+	width: 35px;
+	height: 100%;
+	/* без background — елемент невидимий, лиш ловить курсор */
+}
