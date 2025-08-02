@@ -131,12 +131,10 @@ function likeangel_enqueue_checkout_guard() {
 }
 add_action( 'wp_enqueue_scripts', 'likeangel_enqueue_checkout_guard' );
 
-// Дозволяємо показувати всі варіації незалежно від "Показати варіант 
-продукту"
+// Дозволяємо показувати всі варіації незалежно від "Показати варіант продукту"
 add_filter( 'woocommerce_hide_invisible_variations', '__return_false' );
 
-// Фікс: робимо варіацію доступною до покупки навіть якщо вона без запасу, 
-але дозволене резервування
+// Фікс: робимо варіацію доступною до покупки навіть якщо вона без запасу, але дозволене резервування
 add_filter( 'woocommerce_variation_is_purchasable', function( $purchasable, 
 $variation ) {
     if ( $variation->managing_stock() && $variation->get_stock_quantity() <= 
