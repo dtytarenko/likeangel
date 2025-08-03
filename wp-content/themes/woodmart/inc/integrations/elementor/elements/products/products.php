@@ -266,16 +266,31 @@ if ( ! function_exists( 'woodmart_elementor_products_template' ) ) {
 			}
 		}
 
-		if ( 'related' === $settings['post_type'] ) {
-			if ( $product && is_object( $product ) ) {
-				$query_args['post__in']  = array_merge( array( 0 ), wc_get_related_products( $product->get_id(), $query_args['posts_per_page'], $product->get_upsell_ids() ) );
-				$query_args['post_type'] = array( 'product', 'product_variation' );
+                if ( 'related' === $settings['post_type'] ) {
+                        if ( $product && is_object( $product ) ) {
+                                $query_args['post__in']  = array_merge( array( 0 ), wc_get_related_products( $product->get_id(), $query_args['posts_per_page'], $product->get_upsell_ids() ) );
+                                $query_args['post_type'] = array( 'product', 'product_variation' );
 
-				if ( ! isset( $query_args['post__in'][1] ) && 0 === $query_args['post__in'][0] ) {
-					return false;
-				}
-			}
-		}
+                                if ( ! isset( $query_args['post__in'][1] ) && 0 === $query_args['post__in'][0] ) {
+                                        return false;
+                                }
+                        }
+                }
+
+                if ( 'complete_look' === $settings['post_type'] ) {
+                        if ( $product && is_object( $product ) ) {
+                                $look_ids = get_post_meta( $product->get_id(), 'look_products', true );
+                                $look_ids = is_array( $look_ids ) ? array_filter( array_map( 'intval', $look_ids ) ) : array();
+
+                                if ( $look_ids ) {
+                                        $query_args['post__in']  = $look_ids;
+                                        $query_args['orderby']   = 'post__in';
+                                        $query_args['post_type'] = array( 'product', 'product_variation' );
+                                } else {
+                                        return false;
+                                }
+                        }
+                }
 
 		if ( 'cross-sells' === $settings['post_type'] ) {
 			if ( is_object( WC()->cart )  ) {
