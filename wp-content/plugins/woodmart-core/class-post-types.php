@@ -111,27 +111,27 @@ class Post_Types {
 			return;
 		}
 
-		register_post_type(
-			'woodmart_woo_fbt',
-			array(
-				'label'              => esc_html__( 'Frequently Bought Together', 'woodmart' ),
-				'labels'             => array(
-					'name'          => esc_html__( 'Frequently Bought Together', 'woodmart' ),
-					'singular_name' => esc_html__( 'Frequently Bought Together', 'woodmart' ),
-					'menu_name'     => esc_html__( 'Frequently Bought Together', 'woodmart' ),
-					'add_new'       => esc_html__( 'Add New', 'woodmart' ),
-					'add_new_item'  => esc_html__( 'Add New', 'woodmart' ),
-				),
-				'supports'           => array( 'title' ),
-				'hierarchical'       => false,
-				'public'             => true,
-				'show_in_menu'       => 'edit.php?post_type=product',
-				'publicly_queryable' => false,
-				'show_in_rest'       => true,
-				'capability_type'    => 'product',
-			)
-		);
-	}
+               register_post_type(
+                       'woodmart_woo_fbt',
+                       array(
+                               'label'              => esc_html__( 'Looks', 'woodmart' ),
+                               'labels'             => array(
+                                       'name'          => esc_html__( 'Looks', 'woodmart' ),
+                                       'singular_name' => esc_html__( 'Look', 'woodmart' ),
+                                       'menu_name'     => esc_html__( 'Looks', 'woodmart' ),
+                                       'add_new'       => esc_html__( 'Add New', 'woodmart' ),
+                                       'add_new_item'  => esc_html__( 'Add New', 'woodmart' ),
+                               ),
+                               'supports'           => array( 'title' ),
+                               'hierarchical'       => false,
+                               'public'             => true,
+                               'show_in_menu'       => 'edit.php?post_type=product',
+                               'publicly_queryable' => false,
+                               'show_in_rest'       => true,
+                               'capability_type'    => 'product',
+                       )
+               );
+       }
 
 	/**
 	 * Register Dynamic Pricing & Discounts post type.

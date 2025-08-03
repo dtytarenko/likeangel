@@ -185,11 +185,11 @@ class Controls extends Singleton {
 	 * @return array
 	 */
 	public function product_data_tabs( $tabs ) {
-		$tabs['woodmart_bought_together'] = array(
-			'label'    => esc_html__( 'Frequently Bought Together', 'woodmart' ),
-			'target'   => 'woodmart_bought_together',
-			'priority' => 80,
-		);
+               $tabs['woodmart_bought_together'] = array(
+                       'label'    => esc_html__( 'Look', 'woodmart' ),
+                       'target'   => 'woodmart_bought_together',
+                       'priority' => 80,
+               );
 
 		return $tabs;
 	}
@@ -232,9 +232,9 @@ class Controls extends Singleton {
 						<input type="hidden" class="xts-product-bundles-id" name="xts_product_bundles_id" value="<?php echo esc_attr( implode( ',', $bundles_id ) ); ?>" data-product-id="<?php the_ID(); ?>" data-nonce="<?php echo esc_attr( wp_create_nonce( 'woodmart_product_bundles_settings' ) ); ?>">
 					</p>
 				</div>
-				<a href="<?php echo esc_url( admin_url( 'edit.php?post_type=woodmart_woo_fbt' ) ); ?>">
-					<?php esc_html_e( 'Open bundles manager', 'woodmart' ); ?>
-				</a>
+                               <a href="<?php echo esc_url( admin_url( 'edit.php?post_type=woodmart_woo_fbt' ) ); ?>">
+                                       <?php esc_html_e( 'Open Looks manager', 'woodmart' ); ?>
+                               </a>
 			</div>
 		</div>
 		<?php
@@ -248,13 +248,13 @@ class Controls extends Singleton {
 	 * @return array
 	 */
 	public function edit_columns( $columns ) {
-		return array(
-			'cb'               => '<input type="checkbox" />',
-			'title'            => esc_html__( 'Title', 'woodmart' ),
-			'primary_products' => esc_html__( 'Products containing this bundle', 'woodmart' ),
-			'bundle_products'  => esc_html__( 'Bundle includes', 'woodmart' ),
-			'date'             => esc_html__( 'Date', 'woodmart' ),
-		);
+               return array(
+                       'cb'               => '<input type="checkbox" />',
+                       'title'            => esc_html__( 'Title', 'woodmart' ),
+                       'primary_products' => esc_html__( 'Products containing this look', 'woodmart' ),
+                       'bundle_products'  => esc_html__( 'Look includes', 'woodmart' ),
+                       'date'             => esc_html__( 'Date', 'woodmart' ),
+               );
 	}
 
 	/**
