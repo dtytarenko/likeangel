@@ -183,3 +183,84 @@ function la_hide_out_of_stock_label_on_single_if_variations_available( $labels )
     }
     return $labels;
 }
+add_action('save_post_woodmart_woo_fbt', function($post_id) {
+    // 1. Назва тегу = назва комплекту
+    $bundle_title = get_the_title($post_id);
+    $tag_slug = sanitize_title($bundle_title);
+
+    // 2. Створити тег, якщо не існує
+    if (!term_exists($tag_slug, 'product_tag')) {
+        wp_insert_term($bundle_title, 'product_tag', ['slug' => $tag_slug]);
+    }
+
+    // 3. Витягнути всі ID продуктів, які мають цей тег (по всьому магазину)
+    $args = array(
+        'post_type' => 'product',
+        'posts_per_page' => -1,
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'product_tag',
+                'field' => 'slug',
+                'terms' => $tag_slug,
+            ),
+        ),
+        'fields' => 'ids'
+    );
+    $products_with_tag = get_posts($args);
+
+    // 4. Товари, які зараз у комплекті
+    $products_raw = get_post_meta($post_id, '_woodmart_fbt_products', true);
+    $products = maybe_unserialize($products_raw);
+    $ids = [];
+    if (is_array($products)) {
+        foreach ($products as $item) {
+            if (is_array($item) && !empty($item['id'])) {
+                $ids[] = intval($item['id']);
+            }
+        }
+    }
+
+    // 5. Видалити тег у всіх, хто його мав, але тепер не в комплекті
+    $to_remove = array_diff($products_with_tag, $ids);
+    foreach ($to_remove as $prod_id) {
+        $current_tags = wp_get_post_terms($prod_id, 'product_tag', array('fields' => 'slugs'));
+        $current_tags = array_diff($current_tags, array($tag_slug));
+        wp_set_post_terms($prod_id, $current_tags, 'product_tag', false);
+    }
+
+    // 6. Додати тег тільки актуальним продуктам комплекту
+    foreach ($ids as $product_id) {
+        $current_tags = wp_get_post_terms($product_id, 'product_tag', array('fields' => 'slugs'));
+        if (!in_array($tag_slug, $current_tags)) {
+            $current_tags[] = $tag_slug;
+            wp_set_post_terms($product_id, $current_tags, 'product_tag', false);
+        }
+    }
+}, 20, 1);
+
+
+add_action('wp_footer', function() {
+    if (is_singular('product')) {
+        $product_id = get_the_ID();
+        $bundles = get_post_meta($product_id, 'woodmart_fbt_bundles_id', true);
+        $ids = array();
+
+        if ( ! empty($bundles) ) {
+            $bundles = maybe_unserialize($bundles);
+            foreach ((array)$bundles as $bundle_id) {
+                $products_raw = get_post_meta($bundle_id, '_woodmart_fbt_products', true);
+                $products = maybe_unserialize($products_raw);
+                if ( is_array($products) ) {
+                    foreach ( $products as $item ) {
+                        if ( is_array($item) && !empty($item['id']) ) {
+                            $ids[] = intval($item['id']);
+                        }
+                    }
+                }
+            }
+        }
+        $ids = array_unique($ids);
+        $ids = array_diff($ids, array($product_id));
+        echo '<pre style="background:#fff;color:#222">Product IDs to show in block: '.print_r($ids,1).'</pre>';
+    }
+});
