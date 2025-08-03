@@ -238,29 +238,48 @@ add_action('save_post_woodmart_woo_fbt', function($post_id) {
     }
 }, 20, 1);
 
+add_action( 'save_post_woodmart_woo_fbt', 'la_sync_product_looks', 100 );
+function la_sync_product_looks( $post_id ) {
+    if ( wp_is_post_revision( $post_id ) ) {
+        return;
+    }
 
-add_action('wp_footer', function() {
-    if (is_singular('product')) {
-        $product_id = get_the_ID();
-        $bundles = get_post_meta($product_id, 'woodmart_fbt_bundles_id', true);
-        $ids = array();
+    $products = get_post_meta( $post_id, '_woodmart_fbt_products', true );
+    $new_ids  = array();
 
-        if ( ! empty($bundles) ) {
-            $bundles = maybe_unserialize($bundles);
-            foreach ((array)$bundles as $bundle_id) {
-                $products_raw = get_post_meta($bundle_id, '_woodmart_fbt_products', true);
-                $products = maybe_unserialize($products_raw);
-                if ( is_array($products) ) {
-                    foreach ( $products as $item ) {
-                        if ( is_array($item) && !empty($item['id']) ) {
-                            $ids[] = intval($item['id']);
-                        }
-                    }
-                }
+    if ( is_array( $products ) ) {
+        foreach ( $products as $item ) {
+            if ( ! empty( $item['id'] ) ) {
+                $new_ids[] = (int) $item['id'];
             }
         }
-        $ids = array_unique($ids);
-        $ids = array_diff($ids, array($product_id));
-        echo '<pre style="background:#fff;color:#222">Product IDs to show in block: '.print_r($ids,1).'</pre>';
     }
-});
+
+    $old_ids = get_posts( array(
+        'post_type'      => 'product',
+        'posts_per_page' => -1,
+        'fields'         => 'ids',
+        'meta_query'     => array(
+            array(
+                'key'     => 'woodmart_fbt_bundles_id',
+                'value'   => '"' . $post_id . '"',
+                'compare' => 'LIKE',
+            ),
+        ),
+    ) );
+
+    $to_remove = array_diff( $old_ids, $new_ids );
+    foreach ( $to_remove as $product_id ) {
+        $bundles = (array) get_post_meta( $product_id, 'woodmart_fbt_bundles_id', true );
+        $bundles = array_diff( $bundles, array( $post_id ) );
+        update_post_meta( $product_id, 'woodmart_fbt_bundles_id', $bundles );
+    }
+
+    foreach ( $new_ids as $product_id ) {
+        $bundles = (array) get_post_meta( $product_id, 'woodmart_fbt_bundles_id', true );
+        if ( ! in_array( $post_id, $bundles, true ) ) {
+            $bundles[] = $post_id;
+            update_post_meta( $product_id, 'woodmart_fbt_bundles_id', $bundles );
+        }
+    }
+}
