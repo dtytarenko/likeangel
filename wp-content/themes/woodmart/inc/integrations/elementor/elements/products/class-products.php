@@ -145,11 +145,12 @@ class Products extends Widget_Base {
 						'recently_viewed'    => esc_html__( 'Recently Viewed Products', 'woodmart' ),
 					),
 					array(
-						'single_product' => array(
-							'related' => esc_html__( 'Related (Single product)', 'woodmart' ),
-							'upsells' => esc_html__( 'Upsells (Single product)', 'woodmart' ),
-							'fbt'     => esc_html__( 'Frequently Bought Together', 'woodmart' ),
-						),
+                                                'single_product' => array(
+                                                        'related'       => esc_html__( 'Related (Single product)', 'woodmart' ),
+                                                        'upsells'       => esc_html__( 'Upsells (Single product)', 'woodmart' ),
+                                                        'fbt'           => esc_html__( 'Frequently Bought Together', 'woodmart' ),
+                                                        'complete_look' => esc_html__( 'Complete the Look', 'woodmart' ),
+                                                ),
 						'cart'           => array(
 							'cross-sells' => esc_html__( 'Cross Sells', 'woodmart' ),
 						),

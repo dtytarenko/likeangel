@@ -169,11 +169,12 @@ class Theme {
 			'integrations/woocommerce/modules/show-single-variations/class-main',
 			'integrations/woocommerce/modules/frequently-bought-together/class-main',
 			'integrations/woocommerce/modules/sold-counter/class-main',
-			'integrations/woocommerce/modules/dynamic-discounts/class-main',
-			'integrations/woocommerce/modules/free-gifts/class-main',
-			'integrations/woocommerce/modules/out-of-stock-manager/class-main',
-			'integrations/woocommerce/modules/waitlist/class-main',
-		);
+                        'integrations/woocommerce/modules/dynamic-discounts/class-main',
+                        'integrations/woocommerce/modules/free-gifts/class-main',
+                        'integrations/woocommerce/modules/out-of-stock-manager/class-main',
+                        'integrations/woocommerce/modules/complete-look',
+                        'integrations/woocommerce/modules/waitlist/class-main',
+                );
 
 		if ( did_action( 'elementor/loaded' ) ) {
 			$files[] = 'integrations/elementor/helpers';
