@@ -104,8 +104,8 @@ class Bundles_Table extends \WP_List_Table {
 	 * @return array
 	 */
 	public function get_columns() {
-		$data['name']     = esc_html__( 'Bundles name', 'woodmart' );
-		$data['products'] = esc_html__( 'Products', 'woodmart' );
+               $data['name']     = esc_html__( 'Look name', 'woodmart' );
+               $data['products'] = esc_html__( 'Products', 'woodmart' );
 
 		return $data;
 	}
@@ -154,6 +154,6 @@ class Bundles_Table extends \WP_List_Table {
 	 * Render if no items.
 	 */
 	public function no_items() {
-		esc_html_e( 'No bundles found.', 'woodmart' );
+               esc_html_e( 'No looks found.', 'woodmart' );
 	}
 }
