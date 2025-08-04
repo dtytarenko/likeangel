@@ -10,6 +10,11 @@ require_once get_stylesheet_directory() . '/inc/la_generate_payment_link.php';
 require_once get_stylesheet_directory() . '/inc/la_utm_tracking.php';
 require_once get_stylesheet_directory() . '/inc/la_product_label_stock.php';
 
+// Looks (Образи) functionality - repurposed from FBT
+require_once get_stylesheet_directory() . '/inc/la-looks-rename.php';
+require_once get_stylesheet_directory() . '/inc/la-looks-sync.php';
+require_once get_stylesheet_directory() . '/inc/la-looks-elementor.php';
+
 function woodmart_child_enqueue_styles() {
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), woodmart_get_theme_info( 'Version' ) );
 }
