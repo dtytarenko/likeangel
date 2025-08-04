@@ -50,9 +50,9 @@ class Main extends Singleton {
 		Options::add_field(
 			array(
 				'id'          => 'bought_together_enabled',
-				'name'        => esc_html__( 'Enable "Frequently bought together"', 'woodmart' ),
+                               'name'        => esc_html__( 'Enable "Looks"', 'woodmart' ),
 				'hint'        => wp_kses( '<img data-src="' . WOODMART_TOOLTIP_URL . 'enable-frequently-bought-together.jpg" alt="">', true ),
-				'description' => wp_kses( __( 'You can configure your bundles in Dashboard -> Products -> Frequently Bought Together. Read more information in our <a href="https://xtemos.com/docs-topic/frequently-bought-together/" target="_blank">documentation</a>.', 'woodmart' ), true ),
+                               'description' => wp_kses( __( 'You can configure your looks in Dashboard -> Products -> Looks. Read more information in our <a href="https://xtemos.com/docs-topic/frequently-bought-together/" target="_blank">documentation</a>.', 'woodmart' ), true ),
 				'type'        => 'switcher',
 				'section'     => 'bought_together_section',
 				'default'     => '1',

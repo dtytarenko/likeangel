@@ -93,7 +93,7 @@ class Controls extends Singleton {
 				'type'         => 'select_with_table',
 				'section'      => 'general',
 				'name'         => '',
-				'group'        => esc_html__( 'Bundle products', 'woodmart' ),
+                               'group'        => esc_html__( 'Look products', 'woodmart' ),
 				'select2'      => true,
 				'autocomplete' => array(
 					'type'   => 'post',
@@ -115,7 +115,7 @@ class Controls extends Singleton {
 			array(
 				'id'          => '_woodmart_show_checkbox',
 				'name'        => esc_html__( 'Allow customize', 'woodmart' ),
-				'description' => esc_html__( 'Enable this option to allow users customize the bundle and check/uncheck some products.', 'woodmart' ),
+                               'description' => esc_html__( 'Enable this option to allow users customize the look and check/uncheck some products.', 'woodmart' ),
 				'group'       => esc_html__( 'Settings', 'woodmart' ),
 				'type'        => 'switcher',
 				'section'     => 'general',
@@ -185,11 +185,11 @@ class Controls extends Singleton {
 	 * @return array
 	 */
 	public function product_data_tabs( $tabs ) {
-		$tabs['woodmart_bought_together'] = array(
-			'label'    => esc_html__( 'Frequently Bought Together', 'woodmart' ),
-			'target'   => 'woodmart_bought_together',
-			'priority' => 80,
-		);
+               $tabs['woodmart_bought_together'] = array(
+                       'label'    => esc_html__( 'Looks', 'woodmart' ),
+                       'target'   => 'woodmart_bought_together',
+                       'priority' => 80,
+               );
 
 		return $tabs;
 	}
@@ -225,15 +225,15 @@ class Controls extends Singleton {
 			<div class="xts-bought-together-controls xts-active-section">
 				<div class="options_group">
 					<p class="form-field">
-						<label><?php esc_html_e( 'Add bundles', 'woodmart' ); ?></label>
+                                               <label><?php esc_html_e( 'Add looks', 'woodmart' ); ?></label>
 						<select class="xts-select xts-select2 xts-autocomplete" name="xts_bundle" data-type="post" data-value="woodmart_woo_fbt" data-search="woodmart_get_post_by_query_autocomplete" data-security="<?php echo esc_attr( wp_create_nonce( 'woodmart_get_post_by_query_autocomplete_nonce' ) ); ?>">
 							<option value=""><?php esc_html_e( 'Select', 'woodmart' ); ?></option>
 						</select>
 						<input type="hidden" class="xts-product-bundles-id" name="xts_product_bundles_id" value="<?php echo esc_attr( implode( ',', $bundles_id ) ); ?>" data-product-id="<?php the_ID(); ?>" data-nonce="<?php echo esc_attr( wp_create_nonce( 'woodmart_product_bundles_settings' ) ); ?>">
 					</p>
 				</div>
-				<a href="<?php echo esc_url( admin_url( 'edit.php?post_type=woodmart_woo_fbt' ) ); ?>">
-					<?php esc_html_e( 'Open bundles manager', 'woodmart' ); ?>
+                               <a href="<?php echo esc_url( admin_url( 'edit.php?post_type=woodmart_woo_fbt' ) ); ?>">
+                                       <?php esc_html_e( 'Open looks manager', 'woodmart' ); ?>
 				</a>
 			</div>
 		</div>
@@ -251,8 +251,8 @@ class Controls extends Singleton {
 		return array(
 			'cb'               => '<input type="checkbox" />',
 			'title'            => esc_html__( 'Title', 'woodmart' ),
-			'primary_products' => esc_html__( 'Products containing this bundle', 'woodmart' ),
-			'bundle_products'  => esc_html__( 'Bundle includes', 'woodmart' ),
+                       'primary_products' => esc_html__( 'Products containing this look', 'woodmart' ),
+                       'bundle_products'  => esc_html__( 'Look includes', 'woodmart' ),
 			'date'             => esc_html__( 'Date', 'woodmart' ),
 		);
 	}

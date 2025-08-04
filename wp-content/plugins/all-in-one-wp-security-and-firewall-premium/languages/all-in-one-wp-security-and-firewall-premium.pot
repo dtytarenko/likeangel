@@ -1,0 +1,859 @@
+# Copyright (C) 2024 all-in-one-wp-security-and-firewall-premium
+# This file is distributed under the same license as the all-in-one-wp-security-and-firewall-premium package.
+msgid ""
+msgstr ""
+"Project-Id-Version: all-in-one-wp-security-and-firewall-premium\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Team Updraft <mail@example.com>\n"
+"Last-Translator: Team Updraft <mail@example.com>\n"
+"POT-Creation-Date: 2024-09-16 14:55+0000\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/all-in-one-wp-security-and-firewall-premium\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/aiowps-premium-core.php:221, src/templates/wp-admin/settings/maxmind-settings.php:31
+msgid "Show"
+msgstr ""
+
+#: src/aiowps-premium-core.php:222, src/templates/wp-admin/settings/maxmind-settings.php:30
+msgid "Show password"
+msgstr ""
+
+#: src/aiowps-premium-core.php:223
+msgid "Hide"
+msgstr ""
+
+#: src/aiowps-premium-core.php:224
+msgid "Hide password"
+msgstr ""
+
+#: src/aiowps-premium-core.php:256, src/aiowps-premium-free-required-notice.php:44
+msgid "Attention:"
+msgstr ""
+
+#: src/aiowps-premium-core.php:256
+msgid "You do not have the plugin %s active."
+msgstr ""
+
+#: src/aiowps-premium-core.php:256
+msgid "The %s plugin needs to be installed and active in order for the %s Premium plugin to work."
+msgstr ""
+
+#: src/aiowps-premium-core.php:262
+msgid "Please upgrade the %s Plugin."
+msgstr ""
+
+#: src/aiowps-premium-core.php:262
+msgid "You need at least version 4.0.4 in order for the %s Premium addon to work."
+msgstr ""
+
+#: src/aiowps-premium-core.php:328
+msgid "The MaxMind license key is invalid."
+msgstr ""
+
+#: src/aiowps-premium-core.php:328
+msgid "If you have recently created this key, you may need to wait for it to become active."
+msgstr ""
+
+#: src/aiowps-premium-core.php:334
+msgid "Failed to download the MaxMind database."
+msgstr ""
+
+#. translators: %s: MaxMind database download exception error
+#: src/aiowps-premium-core.php:349
+msgid "MaxMind database download error: %s"
+msgstr ""
+
+#. translators: $1: Temp MaxMind database file downloaded path, $2 MaxMind database storage file path
+#: src/aiowps-premium-core.php:359
+msgid "Move MaxMind database file from %1$s to %2$s"
+msgstr ""
+
+#. translators: %s: MaxMind Geo Database path.
+#: src/aiowps-premium-core.php:394
+msgid "The %s file is not readable, ensure that the file exists."
+msgstr ""
+
+#: src/aiowps-premium-core.php:394
+msgid "If it exists, please ensure that the file path is writable and readable."
+msgstr ""
+
+#: src/aiowps-premium-core.php:385
+msgid "Please add the MaxMind license key <a href=\"%s\">here</a> to use the Country blocking and Smart 404 features."
+msgstr ""
+
+#. translators: %s: Maxmind db download location.
+#: src/aiowps-premium-core.php:455
+msgid "The request to the filesystem failed: unable to create directory %s."
+msgstr ""
+
+#: src/aiowps-premium-core.php:455
+msgid "Please check your file permissions."
+msgstr ""
+
+#: src/aiowps-premium-core.php:553
+msgid "Attention! You do not have the %s active."
+msgstr ""
+
+#: src/aiowps-premium-core.php:553
+msgid "The %s plugin needs to be installed and active in order for the %s Premium addon to work."
+msgstr ""
+
+#: src/aiowps-premium-core.php:640
+msgid "Enable Smart 404 feature"
+msgstr ""
+
+#: src/aiowps-premium-core.php:649
+msgid "Enable Instant 404 Block Based On String Match"
+msgstr ""
+
+#: src/aiowps-premium-core.php:658
+msgid "Smart 404 Whitelist Setting"
+msgstr ""
+
+#: src/aiowps-premium-core.php:752
+msgid "Not Found"
+msgstr ""
+
+#: src/aiowps-premium-core.php:760, src/aiowps-premium-core.php:798
+msgid "Country: %s"
+msgstr ""
+
+#: src/aiowps-premium-core.php:761, src/aiowps-premium-core.php:800
+msgid "City: %s"
+msgstr ""
+
+#: src/aiowps-premium-core.php:762, src/aiowps-premium-core.php:799
+msgid "Region: %s"
+msgstr ""
+
+#: src/aiowps-premium-core.php:763
+msgid "Longitude: %s"
+msgstr ""
+
+#: src/aiowps-premium-core.php:764
+msgid "Latitude: %s"
+msgstr ""
+
+#: src/aiowps-premium-core.php:780
+msgid "Unable to lookup additional information for this IP address"
+msgstr ""
+
+#: src/aiowps-premium-core.php:836
+msgid "Error:"
+msgstr ""
+
+#: src/aiowps-premium-core.php:836
+msgid "template not found"
+msgstr ""
+
+#: src/aiowps-premium-free-required-notice.php:48
+msgid "please install and activate the free AIOS plugin"
+msgstr ""
+
+#: src/aiowps-premium-free-required-notice.php:46
+msgid "please activate the free AIOS plugin"
+msgstr ""
+
+#: src/aiowps-premium-free-required-notice.php:53
+msgid "AIOS Premium requires the AIOS free plugin to be installed and activated."
+msgstr ""
+
+#: src/aiowps-premium-free-required-notice.php:87
+msgid "Would you like to install and activate the AIOS free plugin?"
+msgstr ""
+
+#: src/aiowps-premium-free-required-notice.php:91
+msgid "Install the AIOS plugin now"
+msgstr ""
+
+#: src/aiowps-premium-free-required-notice.php:61
+msgid "The AIOS free plugin is installed, but not activated."
+msgstr ""
+
+#: src/aiowps-premium-free-required-notice.php:64
+msgid "Would you like to activate the AIOS free plugin?"
+msgstr ""
+
+#: src/aiowps-premium-free-required-notice.php:80
+msgid "Activate AIOS free plugin"
+msgstr ""
+
+#: src/aiowps-premium.php:36
+msgid "All In One WP Security & Firewall Premium"
+msgstr ""
+
+#: src/aiowps-premium.php:41
+msgid "%s plugin has been deactivated."
+msgstr ""
+
+#: src/aiowps-premium.php:42
+msgid "This plugin requires PHP version %s."
+msgstr ""
+
+#: src/aiowps-premium.php:43
+msgid "Your current PHP version is %s."
+msgstr ""
+
+#: src/aiowps-premium.php:44
+msgid "You will need to ask your web hosting company to upgrade."
+msgstr ""
+
+#: src/admin/aiowps-cb-settings-menu.php:19
+msgid "Country blocking"
+msgstr ""
+
+#: src/admin/aiowps-cb-settings-menu.php:30, src/admin/smart-404-settings-menu.php:30
+msgid "General settings"
+msgstr ""
+
+#: src/admin/aiowps-cb-settings-menu.php:34
+msgid "Secondary settings"
+msgstr ""
+
+#: src/admin/aiowps-cb-settings-menu.php:38
+msgid "Login settings"
+msgstr ""
+
+#: src/admin/aiowps-cb-settings-menu.php:42
+msgid "Whitelist"
+msgstr ""
+
+#: src/admin/aiowps-cb-settings-menu.php:46
+msgid "Advanced settings"
+msgstr ""
+
+#: src/admin/aiowps-cb-settings-menu.php:77, src/admin/aiowps-cb-settings-menu.php:134
+msgid "You entered an incorrect format for the \"Redirect URL\" field; it has been set to the default value."
+msgstr ""
+
+#: src/admin/aiowps-cb-settings-menu.php:91, src/admin/aiowps-cb-settings-menu.php:157, src/admin/smart-404-settings-menu.php:78
+msgid "Attention."
+msgstr ""
+
+#: src/admin/aiowps-cb-settings-menu.php:139
+msgid "You must submit at least one page or post ID"
+msgstr ""
+
+#: src/admin/aiowps-cb-settings-menu.php:273
+msgid "You entered an incorrect format for the \"Global redirect URL\" field; it has been set to the default value."
+msgstr ""
+
+#: src/admin/aiowps-cb-settings-menu.php:289
+msgid "Attention"
+msgstr ""
+
+#: src/admin/aiowps-premium-maxmind-settings.php:24, src/templates/wp-admin/settings/maxmind-settings.php:9
+msgid "Integration"
+msgstr ""
+
+#: src/admin/smart-404-list-blocked-ip.php:136
+msgid "Please select some records using the checkboxes"
+msgstr ""
+
+#: src/admin/smart-404-settings-menu.php:19, src/admin/wp-security-premium-admin-init.php:50, src/admin/wp-security-premium-admin-init.php:51, src/admin/wp-security-premium-admin-init.php:87
+msgid "Smart 404"
+msgstr ""
+
+#: src/admin/smart-404-settings-menu.php:34
+msgid "Blocked IPs"
+msgstr ""
+
+#: src/admin/smart-404-settings-menu.php:38
+msgid "Statistics"
+msgstr ""
+
+#: src/admin/smart-404-settings-menu.php:66
+msgid "You entered a non numeric value for the max login attempts field, it has been set to the default value."
+msgstr ""
+
+#: src/admin/smart-404-settings-menu.php:72
+msgid "You entered a non numeric value for the 404 retry time period field, it has been set to the default value."
+msgstr ""
+
+#: src/admin/smart-404-settings-menu.php:105
+msgid "You must submit at least one blocking string"
+msgstr ""
+
+#: src/admin/smart-404-settings-menu.php:139
+msgid "You must submit at least one IP address."
+msgstr ""
+
+#: src/admin/wp-security-premium-admin-init.php:42, src/admin/wp-security-premium-admin-init.php:43
+msgid "Country Blocking"
+msgstr ""
+
+#: src/admin/wp-security-premium-admin-init.php:132
+msgid "Country"
+msgstr ""
+
+#: src/classes/aiowps-wpcli-commands.php:66
+msgid "set command called without an option name."
+msgstr ""
+
+#: src/classes/aiowps-wpcli-commands.php:71
+msgid "set %s command not allowed."
+msgstr ""
+
+#: src/classes/aiowps-wpcli-commands.php:76
+msgid "set command called without an option value."
+msgstr ""
+
+#: src/classes/aiowps-wpcli-commands.php:130
+msgid "Command to set %s with value %s is not allowed."
+msgstr ""
+
+#: src/classes/aiowps-wpcli-commands.php:136
+msgid "Success: set %s to value %s."
+msgstr ""
+
+#: src/classes/aiowps-wpcli-commands.php:196
+msgid "reset --all is only supported right now."
+msgstr ""
+
+#: src/classes/aiowps-wpcli-commands.php:191
+msgid "Do you want to proceed?"
+msgstr ""
+
+#: src/templates/info/smart-404-widget.php:4
+msgid "# 404 Events Today:"
+msgstr ""
+
+#: src/templates/info/smart-404-widget.php:5
+msgid "# IPs Permanently Blocked Today:"
+msgstr ""
+
+#: src/templates/info/smart-404-widget.php:6
+msgid "All Time Total IPs Blocked:"
+msgstr ""
+
+#: src/templates/info/smart-404-widget.php:8
+msgid "View Blocked IPs"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/advanced-settings.php:3
+msgid "Country blocking advanced settings"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/advanced-settings.php:5
+msgid "Use AJAX for country blocking checks"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/advanced-settings.php:9
+msgid "If you are using a caching solution on your website such as WP Optimize or similar, then you will need to enable this feature."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/advanced-settings.php:17
+msgid "Enable country blocking AJAX"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/advanced-settings.php:20
+msgid "Enable this if you are using caching (such as WP Optimize etc.)"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/advanced-settings.php:25, src/templates/wp-admin/country-blocking/general-settings.php:73, src/templates/wp-admin/country-blocking/login-settings.php:70, src/templates/wp-admin/country-blocking/render-whitelist.php:34, src/templates/wp-admin/country-blocking/secondary-settings.php:105, src/templates/wp-admin/smart-404/general-settings.php:80, src/templates/wp-admin/smart-404/general-settings.php:123, src/templates/wp-admin/smart-404/general-settings.php:173
+msgid "Save settings"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:3
+msgid "Country blocking settings"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:8, src/templates/wp-admin/country-blocking/general-settings.php:23
+msgid "Enable country blocking"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:12
+msgid "Each country and territory around the world has an IP address range which is allocated to it."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:13
+msgid "When a visitor lands on your site, this feature will determine which country they are from by examining their IP address and it will block users based their country if applicable."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:14
+msgid "We use the most professional, accurate and up-to-date Geo-IP database available to maximize the successful identification of users and their originating countries."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:26
+msgid "Enable this if you want the country blocking feature"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:33
+msgid "Country blocking options"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:37, src/templates/wp-admin/country-blocking/secondary-settings.php:44, src/templates/wp-admin/profile/cb-profile-settings.php:14
+msgid "Blocking action"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:40, src/templates/wp-admin/country-blocking/secondary-settings.php:47, src/templates/wp-admin/profile/cb-profile-settings.php:17
+msgid "redirect"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:42, src/templates/wp-admin/country-blocking/secondary-settings.php:49, src/templates/wp-admin/profile/cb-profile-settings.php:19
+msgid "Set the type of blocking action you would like to perform"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:46, src/templates/wp-admin/country-blocking/secondary-settings.php:71, src/templates/wp-admin/profile/cb-profile-settings.php:37
+msgid "Redirect URL"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:48, src/templates/wp-admin/country-blocking/secondary-settings.php:73
+msgid "Set the value for the URL where you want to send the blocked visitor to"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/general-settings.php:53
+msgid "Select countries"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:3
+msgid "Country-blocking login settings"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:6
+msgid "This feature gives you the option of allowing certain user roles to enable country-restricted login."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:7
+msgid "Enabling region-locked login for user profiles:"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:8
+msgid "After enabling the country-blocking for user account login feature, visit any user profile page."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:9
+msgid "Scroll down to the section titled \"Region-locked login\"."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:10
+msgid "Enable the \"Enable region-locked login\" checkbox to activate region-based login restrictions for the selected user."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:11
+msgid "Choose the desired action to take when a blocked login attempt is detected from the dropdown menu under \"Blocking action\"."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:12
+msgid "Specify a custom redirect URL where blocked users should be directed."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:13
+msgid "To block login attempts from specific countries, select the respective countries from the provided list."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:14
+msgid "For users who frequently travel and may forget to disable region-locked login, a cookie mechanism has been implemented."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:15
+msgid "When a user logs in from a particular browser, a cookie is set to indicate prior successful login."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:16
+msgid "Subsequent login attempts from the same browser will be exempted from region-locked login restrictions."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:21
+msgid "If you are locked out by the country-blocking user account login feature, define the following constant %s in wp-config.php to disable the feature."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:25
+msgid "Enable country-blocking for user account login"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:32
+msgid "Enable country-blocking login for users"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:35
+msgid "Enable this if you want the country-blocking login feature"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:40
+msgid "Enable global country-blocking login redirect URL"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:43
+msgid "Enable this if you want to use the same URL across every user"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:48
+msgid "Global redirect URL"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:50
+msgid "Set the value for the global URL where you want to send the blocked visitor to"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/login-settings.php:55
+msgid "User roles"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/render-whitelist.php:3
+msgid "Country blocking login whitelist"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/render-whitelist.php:6
+msgid "This feature gives you the option of allowing certain IP addresses or ranges from blocked countries to have access to your WordPress site."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/render-whitelist.php:10
+msgid "Country blocking IP whitelist settings"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/render-whitelist.php:16
+msgid "Enable country blocking IP whitelist"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/render-whitelist.php:19, src/templates/wp-admin/smart-404/general-settings.php:151
+msgid "Enable this for the whitelisting of selected IP addresses specified in the settings below"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/render-whitelist.php:24, src/templates/wp-admin/smart-404/general-settings.php:163
+msgid "Enter whitelisted IP addresses:"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/render-whitelist.php:28, src/templates/wp-admin/smart-404/general-settings.php:167
+msgid "Enter one or more IP addresses or IP ranges you wish to include in your whitelist."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/render-whitelist.php:28
+msgid "The addresses specified here will have access to your site even if they come from a country which is blocked."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:3
+msgid "Secondary country blocking settings"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:8, src/templates/wp-admin/country-blocking/secondary-settings.php:30
+msgid "Enable secondary country blocking"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:12
+msgid "The secondary settings on this page allow you to further refine how you block visitors based on the specific pages and posts they try to visit."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:13
+msgid "The countries you selected in the \"General settings\" tab will be blocked from the whole site (You can think of the \"General settings\" as the first line of blocking defence)."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:14
+msgid "The settings on this page are for those countries which have not been blocked sitewide."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:14
+msgid "These settings allow you to select which countries will be blocked or allowed access to specific pages or posts specified in the configuration below (You can think of this as the second line of blocking defence)"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:15
+msgid "This feature can be very useful for eCommerce situations such as when merchants wish to confine their online sales to people from certain countries due to shipping or tax constraints."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:21
+msgid "NOTE: These settings will apply to visitors who are not blocked by the \"General settings\" configuration."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:21
+msgid "If your \"General settings\" configuration is disabled or no country is selected, then the \"Secondary settings\" will apply to all visitors."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:33
+msgid "Enable this if you want the secondary country blocking feature."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:40
+msgid "Country page blocking options"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:53
+msgid "Enter post/page IDs to protect:"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:57
+msgid "Enter one or more page/post IDs you wish to block/redirect certain countries for (Each entry must be on a new line)."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:58, src/templates/wp-admin/country-blocking/secondary-settings.php:74
+msgid "More info"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:61
+msgid "Each post/page ID must be on a new line."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:62
+msgid "To find the ID simply edit the post or page and look in your browser bar, the ID is value after the \"post.\" parameter."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:63
+msgid "Example: wp-admin/post.php?post=<strong>528</strong>&action=edit"
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:64
+msgid "The post/page ID in this example is 528."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:77
+msgid "Example: If you sell products which ship only in your country, you could create a special page for visitors from other countries."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:77
+msgid "On this page you can explain why they can't view your store pages."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:78
+msgid "You would then enter the URL of that page in this setting."
+msgstr ""
+
+#: src/templates/wp-admin/country-blocking/secondary-settings.php:85
+msgid "Select countries to block/redirect"
+msgstr ""
+
+#: src/templates/wp-admin/profile/cb-profile-settings.php:3
+msgid "Region-locked login"
+msgstr ""
+
+#: src/templates/wp-admin/profile/cb-profile-settings.php:6
+msgid "Enable region-locked login"
+msgstr ""
+
+#: src/templates/wp-admin/profile/cb-profile-settings.php:9
+msgid "Enable login restriction based on selected regions."
+msgstr ""
+
+#: src/templates/wp-admin/profile/cb-profile-settings.php:41
+msgid "Global settings applied"
+msgstr ""
+
+#: src/templates/wp-admin/profile/cb-profile-settings.php:41
+msgid "Set the value for the URL where you want to send users to"
+msgstr ""
+
+#: src/templates/wp-admin/profile/cb-profile-settings.php:50
+msgid "Blocked countries"
+msgstr ""
+
+#: src/templates/wp-admin/profile/cb-profile-settings.php:52
+msgid "Select/De-select All"
+msgstr ""
+
+#: src/templates/wp-admin/profile/cb-profile-settings.php:62
+msgid "Select countries to block."
+msgstr ""
+
+#: src/templates/wp-admin/settings/maxmind-settings.php:4
+msgid "Please add the MaxMind license key below to use the \"Country Blocking\" and \"Smart 404\" features."
+msgstr ""
+
+#: src/templates/wp-admin/settings/maxmind-settings.php:11
+msgid "MaxMind Geolocation"
+msgstr ""
+
+#: src/templates/wp-admin/settings/maxmind-settings.php:13
+msgid "An integration for utilizing MaxMind to do Geolocation lookups, please note that this integration will only do country lookups."
+msgstr ""
+
+#: src/templates/wp-admin/settings/maxmind-settings.php:17
+msgid "The key that will be used when dealing with MaxMind Geolocation services."
+msgstr ""
+
+#. translators: %s: Maxmind documentation & signup url
+#: src/templates/wp-admin/settings/maxmind-settings.php:19
+msgid "You can read how to generate a MaxMind Geolocation key from <a href=\"%s\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: src/templates/wp-admin/settings/maxmind-settings.php:20
+msgid "To create a MaxMind account signup <a href=\"%s\" target=\"_blank\">here</a>."
+msgstr ""
+
+#: src/templates/wp-admin/settings/maxmind-settings.php:27
+msgid "MaxMind License Key"
+msgstr ""
+
+#: src/templates/wp-admin/settings/maxmind-settings.php:39
+msgid "Save Settings"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/blocked-ips.php:5
+msgid "This tab displays the list of all permanently blocked IP addresses due to 404 events."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/blocked-ips.php:6
+msgid "NOTE: This feature does NOT use the .htaccess file to permanently block the IP addresses so it should be compatible with all web servers running WordPress."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/blocked-ips.php:7
+msgid "You can also view a list of all 404 events by clicking the following button:"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/blocked-ips.php:8
+msgid "View all 404 events"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/blocked-ips.php:14
+msgid "Permanently blocked IP addresses"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:3
+msgid "Smart 404 configuration"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:6
+msgid "Hackers often use automated scripts and bots to constantly probe your site looking for certain URLs they think they can exploit."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:7
+msgid "This repeated probing will cause a lot of http 404 events."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:8
+msgid "This addon allows you to monitor and permanently block IP addresses if they cause more than a certain number of 404 events."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:14
+msgid "Smart 404 settings"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:44
+msgid "# 404 events Today:"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:45
+msgid "# IPs permanently blocked today:"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:46
+msgid "All time total IPs blocked:"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:47
+msgid "View blocked IPs"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:31
+msgid "You currently have no IP addresses permanently blocked due to 404."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:60
+msgid "Enable smart 404 feature"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:63
+msgid "Enable this if you want smart404 blocking"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:68
+msgid "Max 404 events"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:70
+msgid "Set the value for the maximum number of 404 events before IP address is blocked"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:74
+msgid "404 retry time period (min)"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:76
+msgid "If the maximum number of http 404 events for a particular IP address occur within this time period the plugin will permanently block that address."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:86
+msgid "Instant 404 blocking based on string match"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:87
+msgid "This feature allows you instantly block an IP address based on whether a certain string is contained within the URL which produced the 404 event."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:88
+msgid "The settings below allow you to specify the strings you wish to look out for inside a URL which causes a 404."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:89
+msgid "If the plugin detects one of the strings inside the URL which caused the 404, it will instantly add the IP address to the permanent block list."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:94
+msgid "Instant 404 block by string match"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:104
+msgid "Enable instant 404 block based on string match"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:107
+msgid "Enable this if you want to instantly block an IP address if the URL contains one of the strings listed below and a 404 event."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:112
+msgid "Enter strings you wish to base 404 blocking on:"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:117
+msgid "Enter one or more strings you want to listen for during 404 events and based on this block the IP address instantly."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:118
+msgid "Each string must be on a new line."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:129
+msgid "Smart 404 white list"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:130
+msgid "In certain cases you may want to prevent particular IP addresses from being permanently blocked due to 404 events."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:131
+msgid "One common case is if you are using a malware scanning service, because the malware scanning bots can often produce 404 events as part of their checks."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:132
+msgid "This feature gives you the option of allowing certain IP addresses or ranges to be immune from being blocked permanently due to too many 404 events."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:138
+msgid "Smart 404 whitelist settings"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:148
+msgid "Enable IP whitelisting"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:156
+msgid "Your current IP address"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/general-settings.php:159
+msgid "You can copy and paste this address in the text box below if you want to include it in your smart 404 whitelist."
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/statistics.php:4
+msgid "Smart 404 stats"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/statistics.php:15, src/templates/wp-admin/smart-404/statistics.php:49, src/templates/wp-admin/smart-404/statistics.php:87, src/templates/wp-admin/smart-404/statistics.php:124
+msgid "No data to display yet"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/statistics.php:45
+msgid "Last 10 days - 404 events by IP"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/statistics.php:83
+msgid "All time top 5 - 404 events by country"
+msgstr ""
+
+#: src/templates/wp-admin/smart-404/statistics.php:120
+msgid "All time top 10 - number of IPs blocked by country"
+msgstr ""

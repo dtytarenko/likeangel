@@ -497,7 +497,7 @@ Options::add_section(
 	array(
 		'id'       => 'bought_together_section',
 		'parent'   => 'general_shop_section',
-		'name'     => esc_html__( 'Frequently bought together', 'woodmart' ),
+               'name'     => esc_html__( 'Looks', 'woodmart' ),
 		'priority' => 120,
 		'icon'     => 'xts-i-cart',
 	)

@@ -36,7 +36,7 @@ class Frequently_Bought_Together extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Frequently bought together', 'woodmart' );
+               return esc_html__( 'Complete the look', 'woodmart' );
 	}
 
 	/**
