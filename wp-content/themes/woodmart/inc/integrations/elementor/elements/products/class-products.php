@@ -148,7 +148,7 @@ class Products extends Widget_Base {
 						'single_product' => array(
 							'related' => esc_html__( 'Related (Single product)', 'woodmart' ),
 							'upsells' => esc_html__( 'Upsells (Single product)', 'woodmart' ),
-							'fbt'     => esc_html__( 'Frequently Bought Together', 'woodmart' ),
+                                               'look_bundle'     => esc_html__( 'Look Bundle', 'woodmart' ),
 						),
 						'cart'           => array(
 							'cross-sells' => esc_html__( 'Cross Sells', 'woodmart' ),
