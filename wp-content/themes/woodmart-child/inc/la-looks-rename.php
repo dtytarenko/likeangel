@@ -12,6 +12,7 @@ class LA_Looks_Rename {
         add_action( 'admin_menu', [ $this, 'rename_admin_menu' ], 99 );
         add_filter( 'register_post_type_args', [ $this, 'rename_post_type_labels' ], 10, 2 );
         add_filter( 'manage_woodmart_woo_fbt_posts_columns', [ $this, 'remove_primary_products_column' ] );
+        add_action( 'admin_head', [ $this, 'hide_primary_products_column_css' ] );
     }
 
     /**
@@ -178,6 +179,23 @@ class LA_Looks_Rename {
     public function remove_primary_products_column( $columns ) {
         unset( $columns['primary_products'] );
         return $columns;
+    }
+
+    /**
+     * Hide primary_products column with CSS
+     */
+    public function hide_primary_products_column_css() {
+        global $pagenow, $typenow;
+        
+        if ( $pagenow === 'edit.php' && $typenow === 'woodmart_woo_fbt' ) {
+            echo '<style>
+                .wp-list-table th#primary_products,
+                .wp-list-table td.primary_products,
+                .wp-list-table .column-primary_products {
+                    display: none !important;
+                }
+            </style>';
+        }
     }
 }
 
