@@ -11,6 +11,7 @@ class LA_Looks_Rename {
         add_action( 'elementor/widgets/widgets_registered', [ $this, 'rename_elementor_widget_title' ], 20 );
         add_action( 'admin_menu', [ $this, 'rename_admin_menu' ], 99 );
         add_filter( 'register_post_type_args', [ $this, 'rename_post_type_labels' ], 10, 2 );
+        add_filter( 'manage_woodmart_woo_fbt_posts_columns', [ $this, 'remove_primary_products_column' ] );
     }
 
     /**
@@ -166,6 +167,17 @@ class LA_Looks_Rename {
         }
 
         return $args;
+    }
+
+    /**
+     * Remove primary_products column from admin list
+     *
+     * @param array $columns
+     * @return array
+     */
+    public function remove_primary_products_column( $columns ) {
+        unset( $columns['primary_products'] );
+        return $columns;
     }
 }
 
