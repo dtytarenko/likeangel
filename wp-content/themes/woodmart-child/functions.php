@@ -16,29 +16,11 @@ require_once get_stylesheet_directory() . '/inc/la-looks-sync.php';
 require_once get_stylesheet_directory() . '/inc/la-looks-elementor.php';
 require_once get_stylesheet_directory() . '/inc/la_look_slider.php';
 
-// Додаємо wishlist до мобільного хедера через JavaScript
+// Переробляємо мобільний пошук для показу wd-search-full-screen
 add_action('wp_footer', function() {
     if (!is_admin()) { ?>
     <script>
     jQuery(document).ready(function($) {
-        // Знаходимо desktop wishlist
-        var $desktopWishlist = $('.whb-visible-lg .wd-header-wishlist').first();
-        // Знаходимо mobile right column
-        var $mobileRight = $('.whb-mobile-right.whb-hidden-lg');
-        
-        if ($desktopWishlist.length && $mobileRight.length) {
-            // Клонуємо wishlist
-            var $mobileWishlist = $desktopWishlist.clone();
-            
-            // Додаємо перед cart
-            var $cart = $mobileRight.find('.wd-header-cart').first();
-            if ($cart.length) {
-                $mobileWishlist.insertBefore($cart);
-            } else {
-                $mobileRight.prepend($mobileWishlist);
-            }
-        }
-        
         // Переробляємо мобільний пошук для показу wd-search-full-screen
         $('.wd-header-search-mobile:not(.wd-display-full-screen, .wd-display-full-screen-2)').off('click').on('click', function(e) {
             e.preventDefault();
