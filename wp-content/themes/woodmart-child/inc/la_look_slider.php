@@ -8,119 +8,87 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-/* -------------------------------------------------
- * 1. Збираємо ID товарів образу
- * ------------------------------------------------- */
 function la_collect_look_ids() {
-	if ( ! is_product() ) return [];
+	if ( ! is_product() ) { return []; }
 	global $product;
 
 	$bundle_ids = maybe_unserialize(
 		get_post_meta( $product->get_id(), 'woodmart_fbt_bundles_id', true )
 	);
-	if ( ! $bundle_ids ) return [];
+	if ( ! $bundle_ids ) { return []; }
 
 	$ids = [];
 	foreach ( (array) $bundle_ids as $bid ) {
 		$items = maybe_unserialize( get_post_meta( $bid, '_woodmart_fbt_products', true ) );
 		foreach ( (array) $items as $it ) {
-			if ( empty( $it['id'] ) ) continue;
+			if ( empty( $it['id'] ) ) { continue; }
 			$obj = wc_get_product( (int) $it['id'] );
-			if ( ! $obj ) continue;
+			if ( ! $obj ) { continue; }
 			$ids[] = $obj->is_type( 'variation' ) ? $obj->get_parent_id() : $obj->get_id();
 		}
 	}
 	return array_unique( $ids );
 }
 
-/* -------------------------------------------------
- * 2. Шорткод  [look_slider]
- * ------------------------------------------------- */
 add_shortcode( 'look_slider', function () {
 
 	$ids = la_collect_look_ids();
-	if ( ! $ids ) return '';
+	if ( ! $ids ) { return ''; }
+
+	if ( is_product() ) { $ids = array_diff( $ids, [ get_the_ID() ] ); }
+	if ( ! $ids ) { return ''; }
 
 	$q = new WP_Query( [
 		'post_type'        => 'product',
 		'post__in'         => $ids,
 		'orderby'          => 'post__in',
-		'posts_per_page'   => -1,            // змініть, якщо треба обмежити
+		'posts_per_page'   => -1,
 		'post_status'      => 'publish',
-		'suppress_filters' => true,          // показати even hidden
+		'suppress_filters' => true,
 	] );
-	if ( ! $q->have_posts() ) return '';
+	if ( ! $q->have_posts() ) { return ''; }
 
-	$carousel_id = 'la-look-slider-' . uniqid();
-	
+	$slider_id = 'la-look-slider-' . uniqid();
+
 	ob_start(); ?>
-	<div id="<?php echo esc_attr( $carousel_id ); ?>"
-	     class="wd-carousel-container wd-products-element wd-products products">
+	<h3 class="la-look-title wd-el-title title element-title">ЗБЕРІТЬ ВЕСЬ ОБРАЗ</h3>
 
+	<div id="<?php echo esc_attr( $slider_id ); ?>"
+	     class="la-look-slider wd-carousel-container wd-products-element wd-products products wd-stretch-cont-lg"
+	     data-lg="3" data-md="2" data-sm="2"
+	     data-loop="false" data-scroll-per-page="false">
 		<div class="wd-carousel-inner">
-			<div class="wd-carousel wd-grid" 
-			     data-carousel-id="<?php echo esc_attr( $carousel_id ); ?>"
-			     data-desktop-columns="3" 
-			     data-tablet-columns="2" 
-			     data-mobile-columns="2"
-			     data-speed="800"
-			     data-autoplay="false"
-			     data-loop="false"
-			     data-scroll-per-page="false">
-				
+			<div class="wd-carousel wd-grid"
+			     style="--wd-col-lg:2.5;--wd-col-md:2;--wd-col-sm:2;
+			            --wd-gap-lg:20px;--wd-gap-sm:10px;">
 				<div class="wd-carousel-wrap">
-					<?php
-					while ( $q->have_posts() ) {
-						$q->the_post();
-						echo '<div class="wd-carousel-item">';
-						wc_get_template_part( 'content', 'product' );
-						echo '</div>';
-					}
-					wp_reset_postdata();
-					?>
-				</div><!-- /.wd-carousel-wrap -->
-			</div><!-- /.wd-carousel -->
-		</div><!-- /.wd-carousel-inner -->
-	</div><!-- /#<?php echo esc_attr( $carousel_id ); ?> -->
+					<?php while ( $q->have_posts() ) { $q->the_post(); ?>
+						<div class="wd-carousel-item la-look-slider-item">
+							<?php wc_get_template_part( 'content', 'product' ); ?>
+						</div>
+					<?php } wp_reset_postdata(); ?>
+				</div>
+			</div>
+		</div>
+	</div>
 	<?php
 	return ob_get_clean();
 } );
 
-/* -------------------------------------------------
- * 3. Додаємо  wd-carousel-item  карткам
- * ------------------------------------------------- */
-add_filter( 'woocommerce_post_class', function ( $classes ) {
-	if ( is_product() && in_the_loop() && ! in_array( 'wd-carousel-item', $classes, true ) ) {
-		$classes[] = 'wd-carousel-item';
-	}
-	return $classes;
-}, 20 );
-
-/* -------------------------------------------------
- * 4. Точкова ініціалізація слайдера після завантаження
- * ------------------------------------------------- */
 add_action( 'wp_footer', function () {
-	if ( ! is_product() ) return; ?>
+	if ( ! is_product() ) { return; } ?>
 	<script>
-	document.addEventListener('DOMContentLoaded', function () {
-		const $slider = jQuery('#la-look-slider');
-		if (!$slider.length) return;
-
-		/* рідна функція Woodmart */
-		if (window.woodmartThemeModule?.carousels) {
-			woodmartThemeModule.carousels($slider);
-		}
-	});
-
-	/* якщо Elementor / AJAX підгрузить контент повторно */
-	jQuery(function ($) {
-		$('body').on('wdProductsLoaded wdUpdateCarousel', function () {
-			const $slider = $('#la-look-slider');
-			if ($slider.length && !$slider.hasClass('wd-initialized') &&
-				window.woodmartThemeModule?.carousels) {
-				woodmartThemeModule.carousels($slider);
+	(function ($) {
+		function init($el) {
+			if ($el.length && !$el.hasClass('wd-initialized')
+			    && window.woodmartThemeModule?.carousels) {
+				woodmartThemeModule.carousels($el);
 			}
+		}
+		$(function () { $('.la-look-slider').each(function () { init($(this)); }); });
+		$('body').on('wdProductsLoaded wdUpdateCarousel', function () {
+			$('.la-look-slider').each(function () { init($(this)); });
 		});
-	});
+	})(jQuery);
 	</script>
 <?php } );
