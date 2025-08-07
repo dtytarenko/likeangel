@@ -16,60 +16,6 @@ require_once get_stylesheet_directory() . '/inc/la-looks-sync.php';
 require_once get_stylesheet_directory() . '/inc/la-looks-elementor.php';
 require_once get_stylesheet_directory() . '/inc/la_look_slider.php';
 
-// Додаємо wishlist до мобільного хедера
-add_filter('whb_get_json', function($json) {
-    if (isset($json['structure']['content'])) {
-        foreach ($json['structure']['content'] as &$row) {
-            if ($row['id'] === 'general-header') {
-                foreach ($row['content'] as &$column) {
-                    if ($column['id'] === 'column_mobile4' && isset($column['content'])) {
-                        // Додаємо wishlist перед cart
-                        $has_wishlist = false;
-                        foreach ($column['content'] as $element) {
-                            if ($element['type'] === 'wishlist') {
-                                $has_wishlist = true;
-                                break;
-                            }
-                        }
-                        
-                        if (!$has_wishlist) {
-                            $wishlist_element = array(
-                                'id' => 'mobile_wishlist_' . uniqid(),
-                                'type' => 'wishlist',
-                                'params' => array(
-                                    'design' => array(
-                                        'id' => 'design',
-                                        'value' => 'icon',
-                                        'type' => 'selector'
-                                    ),
-                                    'hide_product_count' => array(
-                                        'id' => 'hide_product_count',
-                                        'value' => false,
-                                        'type' => 'switcher'
-                                    ),
-                                    'icon_type' => array(
-                                        'id' => 'icon_type',
-                                        'value' => 'default',
-                                        'type' => 'selector'
-                                    ),
-                                    'custom_icon' => array(
-                                        'id' => 'custom_icon',
-                                        'value' => '',
-                                        'type' => 'image'
-                                    )
-                                )
-                            );
-                            
-                            array_unshift($column['content'], $wishlist_element);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    return $json;
-});
-
 function woodmart_child_enqueue_styles() {
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), woodmart_get_theme_info( 'Version' ) );
 }
