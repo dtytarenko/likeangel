@@ -16,6 +16,83 @@ require_once get_stylesheet_directory() . '/inc/la-looks-sync.php';
 require_once get_stylesheet_directory() . '/inc/la-looks-elementor.php';
 require_once get_stylesheet_directory() . '/inc/la_look_slider.php';
 
+// Додаємо wishlist до мобільного хедера через JavaScript
+add_action('wp_footer', function() {
+    if (!is_admin()) { ?>
+    <script>
+    jQuery(document).ready(function($) {
+        // Знаходимо desktop wishlist
+        var $desktopWishlist = $('.whb-visible-lg .wd-header-wishlist').first();
+        // Знаходимо mobile right column
+        var $mobileRight = $('.whb-mobile-right.whb-hidden-lg');
+        
+        if ($desktopWishlist.length && $mobileRight.length) {
+            // Клонуємо wishlist
+            var $mobileWishlist = $desktopWishlist.clone();
+            
+            // Додаємо перед cart
+            var $cart = $mobileRight.find('.wd-header-cart').first();
+            if ($cart.length) {
+                $mobileWishlist.insertBefore($cart);
+            } else {
+                $mobileRight.prepend($mobileWishlist);
+            }
+        }
+        
+        // Переробляємо мобільний пошук для показу wd-search-full-screen
+        $('.wd-header-search-mobile:not(.wd-display-full-screen, .wd-display-full-screen-2)').off('click').on('click', function(e) {
+            e.preventDefault();
+            
+            var $searchWrapper = $('.wd-search-full-screen');
+            
+            if ($searchWrapper.length) {
+                // Використовуємо функції з searchFullScreen.js
+                if ($('html').hasClass('wd-search-opened')) {
+                    // Закриваємо якщо відкрито
+                    $('html').removeClass('wd-search-opened');
+                    $searchWrapper.removeClass('wd-opened');
+                    setTimeout(function() {
+                        $searchWrapper.removeClass('wd-searched');
+                    }, 500);
+                } else {
+                    // Відкриваємо пошук
+                    var $bar = $('#wpadminbar');
+                    var barHeight = $bar.length > 0 ? $bar.outerHeight() : 0;
+                    var $sticked = $('.whb-sticked');
+                    var $mainHeader = $('.whb-main-header');
+                    var offset;
+                    
+                    if ($sticked.length > 0) {
+                        if ($('.whb-clone').length > 0) {
+                            offset = $sticked.outerHeight() + barHeight;
+                        } else {
+                            offset = $mainHeader.outerHeight() + barHeight;
+                        }
+                    } else {
+                        offset = $mainHeader.outerHeight() + barHeight;
+                        if ($('body').hasClass('header-banner-display')) {
+                            offset += $('.header-banner').outerHeight();
+                        }
+                    }
+                    
+                    $searchWrapper.css('top', offset);
+                    $('html').addClass('wd-search-opened');
+                    $searchWrapper.addClass('wd-opened');
+                    
+                    setTimeout(function() {
+                        var $input = $searchWrapper.find('input[type="text"]');
+                        var length = $input.val().length;
+                        $input[0].setSelectionRange(length, length);
+                        $input.focus();
+                    }, 500);
+                }
+            }
+        });
+    });
+    </script>
+    <?php }
+});
+
 function woodmart_child_enqueue_styles() {
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'woodmart-style' ), woodmart_get_theme_info( 'Version' ) );
 }
